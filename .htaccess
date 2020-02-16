@@ -1,5 +1,9 @@
-RewriteEngine	on
-RewriteCond		%{REQUEST_URI}	!^$
-RewriteCond		%{REQUEST_URI}	!^/cdn/.*
-RewriteCond		%{REQUEST_URI}	!^/static/.*
-RewriteRule		.				index.php		[QSA,L]
+AddType text/html .tpl
+
+RewriteEngine on
+
+RewriteCond %{REQUEST_URI}	^.*	[NC]
+RewriteCond %{REQUEST_URI}	!^/favicon.ico	[NC]
+RewriteCond %{REQUEST_URI}	!^/static/.*	[NC]
+RewriteCond %{REQUEST_URI}	!^/cdn/.*		[NC]
+RewriteRule . index.php [QSA,L]

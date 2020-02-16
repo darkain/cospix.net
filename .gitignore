@@ -11,3 +11,16 @@ Thumbs.db
 
 
 # Application ignore list
+.DS_Store?
+ehthumbs.db
+Icon?
+*.psd
+*.zip
+/index.lighttpd.html
+/static/tinymce
+/static/events
+/static/fund
+/videos/
+/static/social3
+*.gz
+/test/image

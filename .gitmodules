@@ -1,26 +1,54 @@
 [submodule "_altaform"]
 	path = _altaform
-	url = https://github.com/darkain/altaform-core.git
+	url = git@github.com:darkain/altaform-core.git
 
 [submodule "_getvar"]
 	path = _getvar
-	url = https://github.com/darkain/getvar.git
+	url = git@github.com:darkain/getvar.git
 
 [submodule "_pudl"]
 	path = _pudl
-	url = https://github.com/darkain/pudl.git
+	url = git@github.com:darkain/pudl.git
+
+[submodule "_pudl_docs"]
+	path = _pudl_docs
+	url = git@github.com:darkain/pudl-docs.git
 
 [submodule "_tbx"]
 	path = _tbx
-	url = https://github.com/darkain/TinyButXtreme.git
+	url = git@github.com:darkain/TinyButXtreme.git
 
 [submodule "_minify"]
 	path = _minify
-	url = https://github.com/matthiasmullie/minify.git
+	url = git@github.com:matthiasmullie/minify.git
 
 [submodule "_pathconvert"]
 	path = _pathconvert
-	url = https://github.com/matthiasmullie/path-converter.git
+	url = git@github.com:matthiasmullie/path-converter.git
+
+[submodule "_twitter"]
+	path = _twitter
+	url = git@github.com:J7mbo/twitter-api-php.git
+
+[submodule "_phpmailer"]
+	path = _phpmailer
+	url = git@github.com:PHPMailer/PHPMailer.git
+
+[submodule "_buildurl"]
+	path = _buildurl
+	url = git@github.com:jakeasmith/http_build_url.git
+
+[submodule "_htmlawed"]
+	path = _htmlawed
+	url = git@github.com:vanilla/htmlawed.git
+
+[submodule "_facebook"]
+	path = _facebook
+	url = git@github.com:darkain/facebook-php-sdk.git
+
+[submodule "_products"]
+	path = _products
+	url = git@github.com:darkain/Amazon-ECS-PHP-Library.git
 
 [submodule "_scss"]
 	path = _scss
