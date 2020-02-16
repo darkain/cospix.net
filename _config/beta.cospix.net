@@ -1,0 +1,36 @@
+<?php
+
+
+//CONTENT DELIVARY NETWORKS
+$afurl->cdn			=	'//beta.cospix.net/files';
+$afurl->push		=	'https://chat.cospix.net/push';
+
+
+//Basic configuration for web site
+$afconfig([
+
+	'root'			=>	'_cospix',
+	'secure'		=>	['max-age'=>3600, 'includeSubDomains'],
+	'debug'			=>	true,	//Enable all DEBUG features!
+
+
+
+	//ALLOW UPLOADS FROM THE FOLLOWING DOMAINS
+	'origins'		=> [
+						'http://beta.cospix.net',
+						'https://beta.cospix.net',
+						'http://php.cospix.net',
+						'https://php.cospix.net',
+						'http://php7.cospix.net',
+						'https://php7.cospix.net',
+	],
+
+]);
+
+
+
+require_once($afconfig->root.'/cospix.php.inc');
+require_once('cospix.secret.php');
+require_once('_cospix/cospix.php.inc');
+
+$og['title'] = 'PROMETHEUS';

@@ -1,0 +1,9 @@
+<?php
+
+require('_config/beta.cospix.net');
+
+$og['title'] = 'MOBILE ' . $og['title'];
+
+$og['viewport'] = 'width=1000, user-scalable=no';
+
+\af\device::set('tablet');

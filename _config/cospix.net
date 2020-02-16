@@ -1,0 +1,31 @@
+<?php
+
+
+//CONTENT DELIVARY NETWORKS
+$afurl->cdn			=	'//cospix.net/files';
+$afurl->push		=	'//chat.cospix.net/push';
+
+
+//Basic configuration for web site
+$afconfig([
+
+	'root'			=>	'_cospix',
+	'secure'		=>	['max-age'=>3600, 'includeSubDomains'],
+
+
+
+	//ALLOW UPLOADS FROM THE FOLLOWING DOMAINS
+	'origins'		=> [
+						'http://cospix.net',
+						'https://cospix.net',
+						'http://m.cospix.net',
+						'https://m.cospix.net',
+	],
+
+]);
+
+
+
+require_once($afconfig->root.'/cospix.php.inc');
+require_once('cospix.secret.php');
+require_once('_cospix/cospix.php.inc');
