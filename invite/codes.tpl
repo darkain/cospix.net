@@ -1,0 +1,1 @@
+<div class="cpn-invite-code">[code.code;block=div;f=upper]</div>

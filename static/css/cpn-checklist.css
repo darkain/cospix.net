@@ -1,0 +1,72 @@
+.checklist-text, .cpn-checklist input {
+	display:inline;
+	border:0;
+	padding:0;
+	margin:0;
+}
+
+.warning {
+	padding:1em;
+	font-weight: bold;
+	background:#fe8;
+	color:#f00;
+}
+
+
+.checklist-add {
+	padding:0px 200px 10px 200px;
+}
+
+.checklist-add button {
+	width:100%;
+	display:block;
+	font-size:18px;
+	padding:10px;
+}
+
+.checklist-remove {
+	float:right;
+	padding:5px 10px;
+	margin:0 10px;
+}
+
+.checklist-item {
+	padding:5px;
+}
+
+.checklist-item input {
+	display:none;
+}
+
+.checklist-item label {
+	vertical-align:top;
+	display:inline-block;
+	width:32px;
+	height:32px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	cursor:pointer;
+	box-shadow:0 0 2px rgba(0,0,0,0.2);
+}
+
+.checklist-item > input:checked + label {
+	background-image: url(../img/check.png);
+}
+
+.checklist-text {
+	display:inline-block;
+	font-size:18px;
+	width:740px;
+	height:32px;
+	border:2px solid rgba(0,0,0,0);
+}
+
+.checklist-delete {
+	float:right;
+	display:block;
+	width:20px;
+	height:20px;
+	background-image:url(../glyph-cyan/close.png);
+	background-size:100%;
+	cursor:pointer;
+}

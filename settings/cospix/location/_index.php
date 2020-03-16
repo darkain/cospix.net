@@ -1,0 +1,1 @@
+<?php $af->render('_index.tpl');

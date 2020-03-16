@@ -1,0 +1,16 @@
+#body div.cpn-discover figure:after,
+#mobile-body div.cpn-discover figure:after {
+	width:125px; height:100px;
+	position:relative;
+	display:block;
+	top:-290px;
+	z-index:1;
+	background-image:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MS42IDQxLjEiPjxwYXRoIGZpbGw9IiMwRDBGMEYiIGQ9Ik0yNS42IDI1LjNjMi41IDUuNi4xIDEyLjItNS42IDE0LjgtNS42IDIuNS0xMi4yLjEtMTQuOC01LjYtMi41LTUuNiAxLjktOCA3LjUtMTAuNSA1LjctMi41IDEwLjQtNC4zIDEyLjkgMS4zek0wIDMwLjFTMzcuNCAxNS4yIDUwIDBsMS42IDEuMkMzOS4xIDE2LjUgMTUuMSAyOSAxNS4xIDI5UzUuOSAzMi4xLjUgMzIuNkwwIDMwLjF6Ii8+PC9zdmc+');
+	background-size:100%;
+	content:'';
+	pointer-events: none;
+}
+
+#mobile-body div.cpn-discover figure:after {
+	top:-385px;
+}

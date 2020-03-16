@@ -1,0 +1,48 @@
+<?php
+
+
+
+require_once('cpn_orm.php.inc');
+
+
+
+class			cpn_event
+	extends		cpn_orm {
+	use			cpnt_orm;
+
+
+
+
+	////////////////////////////////////////////////////////////////////////////
+	//URL TO THIS OBJECT
+	////////////////////////////////////////////////////////////////////////////
+	public function url() {
+		global $afurl;
+		return $afurl(['event', $this->event_name]);
+	}
+
+
+
+
+	////////////////////////////////////////////////////////////////////////////
+	//PROCESS PROMETHEUS STYLE FORMATTING
+	////////////////////////////////////////////////////////////////////////////
+	public function prometheus($size=300) {
+		$this->class	= 'cpn-discover-event';
+		$this->year		= date('Y', $this->event_start);
+		return parent::prometheus($size);
+	}
+
+
+
+
+	////////////////////////////////////////////////////////////////////////////
+	//LATE STATIC BINDING VARIABLES FROM PUDL ORM
+	////////////////////////////////////////////////////////////////////////////
+	const	name		= 'event_name';
+	const	column		= 'event_id';
+	const	icon		= 'ev.event_icon';
+	const	table		= 'pudl_event';
+	const	prefix		= 'ev';
+
+}

@@ -1,0 +1,135 @@
+.cpn-button-inv, a.cpn-button-inv {
+	display:inline-block;
+	text-align:center;
+	text-decoration:none;
+	background:#fff;
+	color:#636466;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	box-shadow:0 0 1px rgba(0,200,230,0.3);
+}
+
+
+.cpn-button-inv:hover, .cpn-profile-list-letter a:hover {
+	color:#00C8E6;
+	background:#fff;
+	box-shadow:0 0 4px #00C8E6;
+}
+
+.cpn-button,
+input.cpn-button,
+input[type=submit].cpn-button,
+input[type=button].cpn-button,
+input[type=reset].cpn-button,
+a.cpn-button,
+a.cpn-button:link,
+a.cpn-button:visited,
+a.cpn-button:active {
+	background: #00c8e6;
+	background: linear-gradient(to bottom, #00c8e6 0%,#00b9de 100%);
+	color:#fff;
+	cursor:pointer;
+	text-align:center;
+	text-decoration:none;
+	border-radius:0;
+	border:0;
+	display:inline-block;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+
+.cpn-button svg path,
+input.cpn-button svg path,
+input[type=submit].cpn-button svg path,
+input[type=button].cpn-button svg path,
+input[type=reset].cpn-button svg path,
+a.cpn-button svg path,
+a.cpn-button:link svg path,
+a.cpn-button:visited svg path,
+a.cpn-button:active svg path {
+	fill:#fff;
+}
+
+.cpn-button:hover,
+input.cpn-button:hover,
+input[type=submit].cpn-button:hover,
+input[type=button].cpn-button:hover,
+input[type=reset].cpn-button:hover,
+a.cpn-button:hover {
+	background:#fff;
+	color:#00C8E6;
+	box-shadow:0 0 4px #00C8E6;
+	border-radius:0;
+	border:0;
+}
+
+.cpn-button:hover svg path,
+input.cpn-button:hover svg path,
+input[type=submit].cpn-button:hover svg path,
+input[type=button].cpn-button:hover svg path,
+input[type=reset].cpn-button:hover svg path,
+a.cpn-button:hover svg path {
+	fill:#00C8E6;
+}
+
+.cpn-button:disabled,
+input.cpn-button:disabled,
+input[type=submit].cpn-button:disabled,
+input[type=button].cpn-button:disabled,
+input[type=reset].cpn-button:disabled,
+a.cpn-button:disabled {
+	color:#fff;
+	background:#888;
+	box-shadow:none;
+}
+
+
+
+button,
+.button,
+.button:link,
+.button:visited,
+#popup-window .ui-button,
+input[type=submit],
+input[type=button],
+input[type=reset] {
+	background: #fff;
+	background: linear-gradient(to bottom, #ffffff 0%,#ededed 100%);
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	color: #777;
+	cursor: pointer;
+	font: normal 12px/20px Arial, Tahoma, Verdana, sans-serif;
+	outline: none;
+	padding: 4px 6px;
+	text-align: center;
+	text-decoration: none;
+	line-height: 14px;
+}
+
+
+button:hover,
+.button:hover,
+.button:focus,
+.button:active,
+.ui-button:hover,
+input[type=submit]:hover,
+input[type=button]:hover,
+input[type=reset]:hover {
+	background: #ededed;
+	background: linear-gradient(to bottom, #ffffff 0%,#e0e0e0 100%);
+	border: 1px solid #bbb;
+	color: #555;
+	outline: none;
+	text-decoration: none !important;
+	box-shadow: 0px 0px 3px rgba(0,113,188,0.5);
+}
+
+button:active,
+.button:active {
+	background: linear-gradient(to bottom, #e0e0e0 0%,#ffffff 100%);
+	border: 1px solid #aaa;
+	color: #333;
+	box-shadow: 0px 0px 2px rgba(127,127,127,0.5);
+}

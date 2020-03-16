@@ -1,0 +1,102 @@
+/***************************/
+/*    COSPIX HOME PAGE     */
+/***************************/
+
+main, article {
+	width:990px;
+	margin:auto;
+}
+
+#cpn-home-summary {
+	width:670px;
+}
+
+#cpn-home-summary section {
+	height:310px;
+	margin-bottom:15px;
+	background:#fff;
+	color:#636466;
+}
+
+#cpn-home-summary .cpn-header, #cpn-home-sidebar .cpn-header {
+	padding:4px 10px;
+}
+
+#cpn-home-summary .cpn-header a:hover,
+#cpn-home-sidebar .cpn-header a:hover {
+	color:#fff;
+	text-shadow:-1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000, 1px 1px 1px #000;
+}
+
+#cpn-home-summary .cpn-home-summary-text {
+	float:right;
+	width:300px;
+	height:100%;
+	border:1px solid red;
+	overflow:hidden;
+}
+
+#cpn-home-summary .cpn-home-summary-img {
+	float:left;
+	width:360px;
+	margin:5px 0 0 5px;
+	height:100%;
+	overflow:hidden;
+}
+
+#cpn-home-summary .cpn-home-summary-img img {
+	width:100%;
+	height:240px;
+	margin-bottom:5px;
+}
+
+#cpn-home-summary .cpn-home-summary-date {
+	font-size:18px;
+}
+
+#cpn-home-summary .cpn-home-summary-like {
+	float:right;
+}
+
+#cpn-home-summary .cpn-home-summary-like span {
+	display:inline-block;
+	width:90px;
+	overflow:hidden;
+}
+
+#cpn-home-summary .cpn-home-summary-comment {
+	font-size:12px;
+}
+
+
+
+/***************************/
+/*    UGLY CODE TO FIX UP  */
+/***************************/
+.cpn-home-popular {
+	margin-bottom:15px;
+	padding:5px;
+}
+
+.cpn-home-popular a {
+	display:block;
+	text-decoration:none;
+}
+
+.cpn-home-popular a figcaption {
+	text-overflow:ellipsis;
+	overflow:hidden;
+	width:150px;
+	padding:0 5px;
+}
+
+/*
+section h1.cpn-header,
+section h2.cpn-header {
+	padding:2px 5px;
+	font-size:24px;
+}
+*/
+#cpn-home-summary section.cpn-home-auto {
+	height:auto;
+}

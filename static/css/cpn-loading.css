@@ -1,0 +1,61 @@
+#discover-loading {
+	height:100px;
+}
+
+.cpn-loading,
+.cpn-loading::before,
+.cpn-loading::after {
+	border: 1px solid rgb(0, 200, 230);
+	border: 1px solid rgba(0, 200, 230, 0.1);
+	border-left-color: rgb(0, 200, 230);
+	border-radius: 999px;
+	display:inline-block;
+	font-size:0;
+}
+
+.cpn-loading {
+	position: relative;
+	-webkit-animation: animation-rotate 1500ms linear infinite;
+	animation: animation-rotate 1500ms linear infinite;
+	width:100px;
+	height:100px;
+	margin:10px 0 0 -55px;
+	left:50%;
+}
+
+.cpn-loading::before {
+	content: "";
+	position: absolute;
+	left:50px;
+	top:50px;
+	margin: -20px 0 0 -20px;
+	height: 40px;
+	width: 40px;
+	-webkit-animation: animation-rotate 1000ms linear infinite;
+	animation: animation-rotate 1000ms linear infinite;
+}
+
+.cpn-loading::after {
+	content: "";
+	position: absolute;
+	left:50px;
+	top:50px;
+	margin: -35px 0 0 -35px;
+	height: 70px;
+	width: 70px;
+	-webkit-animation: animation-rotate 2000ms linear infinite;
+	animation: animation-rotate 2000ms linear infinite;
+}
+
+@-webkit-keyframes animation-rotate {
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes animation-rotate {
+	100% {
+		transform: rotate(360deg);
+	}
+}

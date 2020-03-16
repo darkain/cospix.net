@@ -1,0 +1,96 @@
+<?php
+\af\error(404);
+/*
+ * login_with_twitter.php
+ *
+ * @(#) $Id: login_with_twitter.php,v 1.3 2013/02/10 10:00:25 mlemos Exp $
+ *
+ */
+
+	require('_oauth/http.php');
+	require('_oauth/oauth_client.php');
+
+	$client = new oauth_client_class;
+	$client->debug = 0;
+	$client->debug_http = 1;
+	$client->server = 'Twitter';
+	$client->session_started	= true;
+	$client->redirect_uri = 'http://'.$_SERVER['HTTP_HOST'].
+		dirname(strtok($_SERVER['REQUEST_URI'],'?')).'/login_with_twitter.php';
+
+	$client->client_id		= $afconfig->twitter['id']; $application_line = __LINE__;
+	$client->client_secret	= $afconfig->twitter['secret'];
+
+	if(strlen($client->client_id) == 0
+	|| strlen($client->client_secret) == 0)
+		die('Please go to Twitter Apps page https://dev.twitter.com/apps/new , '.
+			'create an application, and in the line '.$application_line.
+			' set the client_id to Consumer key and client_secret with Consumer secret. '.
+			'The Callback URL must be '.$client->redirect_uri);
+
+	if(($success = $client->Initialize()))
+	{
+		if(($success = $client->Process()))
+		{
+			if(strlen($client->access_token))
+			{
+				$success = $client->CallAPI(
+					'https://api.twitter.com/1.1/account/verify_credentials.json',
+					'GET', array(), array('FailOnAccessError'=>true), $userdata);
+
+/* Tweet with an attached image
+
+				$success = $client->CallAPI(
+					"https://api.twitter.com/1.1/statuses/update_with_media.json",
+					'POST', array(
+						'status'=>'This is a test tweet to evaluate the PHP OAuth API support to upload image files sent at '.strftime("%Y-%m-%d %H:%M:%S"),
+						'media[]'=>'php-oauth.png'
+					),array(
+						'FailOnAccessError'=>true,
+						'Files'=>array(
+							'media[]'=>array(
+							)
+						)
+					), $userdata);
+*/
+			}
+		}
+		$success = $client->Finalize($success);
+	}
+	if($client->exit)
+		exit;
+	if($success)
+	{
+?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Twitter OAuth client results</title>
+</head>
+<body>
+<?php
+		echo '<h1>', HtmlSpecialChars($userdata->name),
+			' you have logged in successfully with Twitter!</h1>';
+		echo '<pre>', HtmlSpecialChars(print_r($userdata, 1)), '</pre>';
+?>
+</body>
+</html>
+<?php
+	}
+	else
+	{
+?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>OAuth client error</title>
+</head>
+<body>
+<h1>OAuth client error</h1>
+<pre>Error: <?php echo HtmlSpecialChars($client->error); ?></pre>
+</body>
+</html>
+<?php
+	}
+
+?>

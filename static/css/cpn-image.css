@@ -1,0 +1,101 @@
+.cpn-exif th {
+	text-align:right;
+}
+
+
+.cpn-image-prev, .cpn-image-next {
+	color:#00C8E6;
+	width:35px;
+	height:50px;
+	line-height:1em;
+	float:left;
+	margin:0 5px;
+}
+
+.cpn-image-next { float:right; }
+
+.cpn-image-prev a, .cpn-image-next a {
+	width:100%;
+	height:100%;
+	display:inline-block;
+	margin:0 0 0 -20px;
+	overflow:hidden;
+	background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAyCAYAAADWU2JnAAABI0lEQVRYw83ZsQ2FMAwE0NQMylRMwRZ/ji+WoAkVKEKQ+C7nmMIdxVNQ7MOknHPyrPT7Z/Oz3pCzQjElxAoaBrGAhkJaoOGQGigE8gYKgzyBQiF3UDikBH0CctVXINTJeEFgjCcEwnhDzJhpWfO0rK4QE+aEKEHUbLpDFCBqar9BekBUnmlBGBCV9KwQBERlYBRiAUF9rBdSA8HdXQF5AlEzTwUpQXQSUGPmbecxytc0b/tVNEYBKiEsSHK1nyAMqLvp1SAoqGscWCAIiB6UCMQKoiIEA7GA4HDVA2mBoNipgNRA5munhLyBoKbkDYJbtieIGmheIPrD3wPUtRL5zMkoQdI1WthtUoJcV6/DOrASNHRd7za1laDQXzyypKcEWZ89ACiI0tltvaKkAAAAAElFTkSuQmCC);
+}
+
+.cpn-image-next a {
+	margin:0 -20px 10px 0;
+	background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAyCAYAAADWU2JnAAABIElEQVRYw83ZzQ3CMAyG4Z4ZlKmYgi2YA7EElyAqBZWqP/bn13UP362HR2liW8nQWhssub7ezfqtGjOkpxQzhWSD3JBMkATJAsmQDFAIQoPCEBKEQCgQBiFAKCQKwlcmAkL3TBSEnSYChNQZChSuwHu53O5j0nuTFWIFyV3bC7GApHlGheyB3JNeFLIFMh87ErIGchUlErIEcpdsEjIHSQ2NhExBcrsnIT367PF4ngPzhfSU/qYphAJJG3gJEgVJR3sLooKkomeBeEFSO/BArCCpUSqQPZA0QkQgayBpuCIgc5A0dpKQHmkgr4T8YaohP8wZIKPjLJCUlUEui6oh6GlKuWCsgiAV+JBL6aMhoa5d8pBxFESa9Mrfmzoo+/HrAxvP0tkuksQjAAAAAElFTkSuQmCC);
+}
+
+.cpn-image-prev:hover, .cpn-image-next:hover { opacity:0.7; }
+
+
+
+
+#image-resources {
+	margin-top:1em;
+}
+
+#image-resources th {
+	width:7em;
+	font-size:1.5em;
+	text-align:right;
+	padding-right:0.5em;
+	vertical-align:top;
+}
+
+#image-resources li {
+	width:274px;
+	text-align:left;
+	float:left;
+	margin-right:5px;
+}
+
+.cpn-exif th {white-space:nowrap;}
+
+
+
+.cpn-favorite {
+	padding-top:14px;
+}
+
+.cpn-favorite span {
+	vertical-align:top;
+	margin-top:-10px;
+	display:inline-block;
+	width:32px;
+	height:32px;
+	background:url(../glyph-white/favorite.png);
+}
+
+.cpn-favorite:hover span {
+	background:url(../glyph-cyan/favorite.png);
+}
+
+
+.cpn-image-details h3 {
+	padding:3px 5px;
+	font-size:24px;
+	margin-top:10px;
+}
+
+
+
+#cpn-image-download a {
+	text-align:left;
+	text-decoration:none;
+	font-size:20px;
+}
+
+#cpn-image-download img {
+	width:30px;
+	height:30px;
+	vertical-align:middle;
+}
+
+#cpn-image-download a:hover img { opacity:0.8; }
+
+#cpn-image-download a figcaption {
+	display:inline;
+}

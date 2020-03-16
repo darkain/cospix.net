@@ -1,0 +1,130 @@
+.cpn-feed-item a {
+	text-decoration:none;
+}
+
+.cpn-activity-image {
+	width:50px;
+	height:50px;
+	float:left;
+	margin-right:10px;
+	display:block;
+}
+
+.cpn-activity-image img {
+	width:100%;
+	height:100%;
+}
+
+.cpn-activity-image:hover img {
+	box-shadow:0 0 4px #00C8E6;
+	background:#00C8E6;
+	opacity:0.8;
+}
+
+.cpn-activity-feed-list {
+	width:990px;
+	margin:auto;
+}
+
+.cpn-feed-more {
+	background:#00C8E6;
+	color:#fff;
+	padding:0 7px 2px 7px;
+	margin-left:5px;
+	width:80%;
+	margin:20px auto;
+	cursor:pointer;
+	font-size:25px;
+	padding:5px;
+	text-align:center;
+}
+
+.cpn-feed-more:hover {
+	background:#fff;
+	color:#00C8E6;
+	box-shadow:0 0 4px #00C8E6;
+}
+
+
+.cpn-feed-gallery {
+	float:left;
+	margin:10px 10px 0 0;
+}
+
+.cpn-feed-gallery img {
+	box-shadow: 0 0 1px rgba(0,200,230,0.3);
+	width:150px;
+	height:150px;
+}
+
+.cpn-feed-gallery img:hover {
+	box-shadow:0 0 4px #00C8E6;
+	background:#00C8E6;
+	opacity:0.8;
+}
+
+
+section.cpn-feed-item {
+	width:990px;
+	margin:10px auto 0 auto;
+	font-size:18px;
+	padding:0px;
+	border:1px solid #ddd;
+}
+
+section.cpn-feed-item .cpn-feed-body {
+	padding:10px;
+}
+
+#cpn-profile-body section.cpn-feed-item .cpn-feed-body {
+	padding-right:7px;
+}
+
+#cpn-profile-body .cpn-feed-item {
+	width:auto;
+	margin:10px 0 0 0;
+}
+
+.cpn-feed-since {
+	color:#aaa;
+	font-size:16px;
+	margin-left:60px;
+}
+
+
+.cpn-feed-event-img {
+	float:right;
+	margin-top:-70px;
+	display:block;
+	width:100px;
+	height:100px;
+}
+
+.cpn-feed-event div {
+	margin-top:20px;
+}
+
+.cpn-feed-event a img {
+	width:100%;
+	height:100%;
+}
+
+.cpn-feed-event a img:hover {
+	box-shadow:0 0 4px #00C8E6;
+	background:#00C8E6;
+	opacity:0.8;
+}
+
+
+#cpn-post-feed textarea { width:100%; }
+
+#cpn-post-feed button {
+	float:right;
+	font-size:18px;
+	padding:8px 15px;
+}
+
+.cpn-post-button {
+	background:#f8f8f8;
+	padding:15px;
+}

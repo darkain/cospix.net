@@ -1,0 +1,43 @@
+
+.settings-list {padding:0;margin:0;}
+.settings-list li {padding:0;margin:10px 0;list-style:none}
+.settings-list li input {width:0px;height:0px;border:0;margin:0;padding:0;}
+
+.settings-list label {
+	color:#00C8E6;
+	font-size:1.7em;
+	padding:4px 10px 6px 35px;
+}
+
+.settings-list label.enabled {
+	background:url('../img/check.png') no-repeat left top;
+	background-size:32px 32px;
+}
+
+.settings-list label:hover{opacity:0.8;}
+.settings-list label:active{opacity:0.6;}
+
+#af-prefs-saved {
+	color:#fff;
+	text-shadow:-1px -1px 7px #00C8E6, 1px 1px 7px #00C8E6, 0px 0px 1px #000;
+	display:none;
+	float:right;
+	margin:10px;
+	font-size:20px;
+}
+
+.af-prefs-list {padding:10px 0;}
+
+#cpn-fb-change {
+	background:#00C8E6;
+	color:#fff;
+	padding:0 5px;
+	margin:0 5px;
+	cursor:pointer;
+}
+
+#cpn-fb-change:hover {
+	background:#fff;
+	color:#00C8E6;
+	box-shadow:0 0 2px #00C8E6;
+}

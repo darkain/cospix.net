@@ -1,0 +1,115 @@
+#body .cpn-panel-list { font-size:20px; background-color:#f8f8f8; }
+#mobile-body .cpn-panel-list { font-size:40px; background-color:#f8f8f8; }
+
+#body .cpn-panel-list * { line-height:25px; max-height:999999px; }
+#mobile-body .cpn-panel-list * { line-height:50px; max-height:999999px; }
+
+aside.cpn-panel-list { background-color:#f4f4f4; }
+
+#body .cpn-panel-hour div { padding:5px; margin-left:-85px; }
+#mobile-body .cpn-panel-hour div { padding:10px; }
+
+#body .cpn-panel-hour {
+	margin:5px;
+	padding:5px 5px 5px 190px;
+}
+
+#mobile-body .cpn-panel-hour {
+	margin:5px;
+	padding:10px 10px 10px 190px;
+}
+
+#body .cpn-panel-day>span,
+#body .cpn-panel-name>span {
+	display:block;
+	margin:30px 0 -10px 15px;
+	font-size:45px;
+	line-height:1em;
+	text-shadow:1px 1px 3px #00c8e6;
+}
+
+#mobile-body .cpn-panel-day>span,
+#mobile-body .cpn-panel-name>span {
+	display:block;
+	margin:30px 0 -10px 15px;
+	font-size:90px;
+	line-height:1em;
+	text-shadow:2px 2px 10px #00c8e6;
+}
+
+#body .cpn-panel-name>span { font-size: 35px; }
+#mobile-body .cpn-panel-name>span { font-size: 70px; }
+
+.cpn-panel-time {
+	margin:9px 0 0 -180px;
+	float:left;
+	background:#00c8e6;
+	border:1px solid #fff;
+	color:#fff;
+	padding:5px 8px;
+}
+
+#mobile-body .cpn-panel-time {margin-top:14px;}
+
+a.cpn-panel-item {
+	display:inline-block;
+	box-shadow:0 0 5px #00c8e6;
+	margin:5px 10px;
+	padding:5px 12px;
+	background:#fff;
+	cursor:pointer;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	max-width:775px;
+	text-decoration:none;
+}
+
+.cpn-panel-item:hover {
+	background:#00c8e6;
+	color:#fff;
+}
+
+.cpn-panel-restrict {
+	color:red;
+	text-shadow:none;
+}
+
+.cpn-panel-details .cpn-panel-restrict {
+	display:block;
+	padding-bottom:20px;
+}
+
+#body .cpn-panel-details {
+	font-size:20px;
+	padding:20px 18px;
+}
+
+#mobile-body .cpn-panel-details {
+	font-size:40px;
+	padding:40px 20px;
+}
+
+body a.cpn-panel-workshop { color:#6088a6; box-shadow:0 0 5px #6088a6; }
+body a.cpn-panel-concert { color:#60a688; box-shadow:0 0 5px #60a688; }
+body a.cpn-panel-autograph { color:#c6a0b8; box-shadow:0 0 5px #c6a0b8; }
+body a.cpn-panel-gathering { color:#c86680; box-shadow:0 0 5px #c86680; }
+body a.cpn-panel-video { color:#d86660; box-shadow:0 0 5px #d86660; }
+body a.cpn-panel-panel { color:#88c6c0; box-shadow:0 0 5px #88c6c0; }
+
+div.cpn-panel-workshop { background-color:#6088a6; border-color:#6088a6; }
+div.cpn-panel-concert { background-color:#60a688; border-color:#60a688; }
+div.cpn-panel-autograph { background-color:#c6a0b8; border-color:#c6a0b8; }
+div.cpn-panel-gathering { background-color:#c86680; border-color:#c86680; }
+div.cpn-panel-video { background-color:#d86660; border-color:#d86660; }
+div.cpn-panel-panel { background-color:#88c6c0; border-color:#88c6c0; }
+
+.cpn-anchor{
+	display:block;
+	position:relative;
+	visibility:hidden;
+}
+
+#body .cpn-anchor { top:-10px; }
+#mobile-body .cpn-anchor { top:-150px; }
+
+

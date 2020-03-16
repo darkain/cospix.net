@@ -1,0 +1,84 @@
+stdClass Object
+(
+[FileName] => phpS1UeOE
+[FileDateTime] => 1383273855
+[FileSize] => 495665
+[FileType] => 2
+[MimeType] => image/jpeg
+[SectionsFound] => ANY_TAG, IFD0, THUMBNAIL, EXIF
+[COMPUTED] => stdClass Object
+	(
+	[html] => 
+	[Height] => 1024
+	[Width] => 1024
+	[IsColor] => 1
+	[ByteOrderMotorola] => 0
+	[CCDWidth] => 4mm
+	[ApertureFNumber] => f/2.0
+	[Copyright] => Copyright 2013 http://darkain.com - @[321676175507:]
+	[Thumbnail.FileType] => 2
+	[Thumbnail.MimeType] => image/jpeg
+	)
+
+[Make] => Canon
+[Model] => Canon EOS M
+[Orientation] => 1
+[XResolution] => 2400000/10000
+[YResolution] => 2400000/10000
+[ResolutionUnit] => 2
+[Software] => Adobe Photoshop CC (Windows)
+[DateTime] => 2013:10:31 17:41:34
+[Artist] => Vincent E Milum Jr
+[Copyright] => Copyright 2013 http://darkain.com - @[321676175507:]
+[Exif_IFD_Pointer] => 304
+[THUMBNAIL] => stdClass Object
+	(
+	[Compression] => 6
+	[XResolution] => 72/1
+	[YResolution] => 72/1
+	[ResolutionUnit] => 2
+	[JPEGInterchangeFormat] => 986
+	[JPEGInterchangeFormatLength] => 8224
+	)
+
+[ExposureTime] => 1/40
+[FNumber] => 2/1
+[ExposureProgram] => 1
+[ISOSpeedRatings] => 400
+[UndefinedTag:0x8830] => 2
+[UndefinedTag:0x8832] => 400
+[ExifVersion] => 0230
+[DateTimeOriginal] => 2013:10:31 17:15:35
+[DateTimeDigitized] => 2013:10:31 17:15:35
+[ShutterSpeedValue] => 5321928/1000000
+[ApertureValue] => 2/1
+[ExposureBiasValue] => 0/1
+[MaxApertureValue] => 2/1
+[MeteringMode] => 3
+[Flash] => 9
+[FocalLength] => 22/1
+[SubSecTime] => 06
+[SubSecTimeOriginal] => 06
+[SubSecTimeDigitized] => 06
+[ColorSpace] => 65535
+[ExifImageWidth] => 1024
+[ExifImageLength] => 1024
+[FocalPlaneXResolution] => 5184000/894
+[FocalPlaneYResolution] => 3456000/597
+[FocalPlaneResolutionUnit] => 2
+[CustomRendered] => 0
+[ExposureMode] => 1
+[WhiteBalance] => 0
+[SceneCaptureType] => 0
+[BodySerialNumber] => 033021200790
+[LensSpecification] => Array
+	(
+	[0] => 22/1
+	[1] => 22/1
+	[2] => 0/0
+	[3] => 0/0
+	)
+
+[LensModel] => EF-M22mm f/2 STM
+[LensSerialNumber] => 0000010584
+)

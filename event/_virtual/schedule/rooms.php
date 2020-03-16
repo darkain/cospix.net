@@ -1,0 +1,43 @@
+<?php
+
+$user->requireAccessStaff('event', $event);
+
+if (empty($event)) require_once('../event.php.inc');
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//PULL ALL THE ROOM NAMES
+////////////////////////////////////////////////////////////////////////////////
+$rooms = $db->rowsId('pudl_schedule_room', 'event_id', $event);
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//PULL SELECTED ROOM
+////////////////////////////////////////////////////////////////////////////////
+$room = $db->rowId('pudl_schedule_room', 'schedule_room_id', $get->id());
+if (empty($room)  ||  $room['event_id'] !== $event['event_id']) {
+	$room = [
+		'schedule_room_id'			=> 0,
+		'schedule_room_increment'	=> 30,
+		'schedule_room_name'		=> '',
+		'schedule_room_text'		=> '',
+	];
+}
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//RENDER ALL THE THINGS!!
+////////////////////////////////////////////////////////////////////////////////
+$af	->load('schedule/rooms.tpl')
+		->field('event',	$event)
+		->field('profile',	$profile)
+		->field('room',		$room)
+		->block('rooms',	$rooms)
+	->render();
+

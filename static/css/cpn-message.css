@@ -1,0 +1,51 @@
+.cpn-message-action {
+	float:right;
+	display: inline-block;
+	background: #EBEBEB;
+	color: #636466;
+	padding: 7px 10px;
+	font-size: 18px;
+	margin: 8px;
+	text-align: center;
+	height: 27px;
+	line-height: 14px;
+	cursor: pointer;
+}
+
+.cpn-message-action:hover {
+	background:#fff;
+	color:#00C8E6;
+}
+
+
+.cpn-all-read {
+	float:right;
+	font-size:16px;
+	cursor:pointer;
+}
+
+.cpn-messages a {
+	display:block;
+	padding:2px;
+	color:#888;
+	border-bottom:1px solid #E6E7E9;
+	vertical-align:top;
+	text-decoration:none;
+	font-size:16px;
+}
+
+.cpn-messages a.cpn-message-new {
+	color:#00C8E6;
+}
+
+.cpn-messages a:hover, .cpn-messages a.cpn-message-new:hover {
+	color:#fff;
+	background:#00C8E6;
+}
+
+.cpn-messages a img {
+	float:left;
+	width:50px;
+	height:50px;
+	margin-right:5px;
+}

@@ -1,0 +1,65 @@
+.tagit {
+	padding:1px 5px;
+	overflow:auto;
+}
+
+.tagit>* {
+	display:inline-block;
+	margin:2px 5px 2px 0;
+}
+
+.tagit .tagit-choice {
+	line-height:inherit;
+}
+
+input.tagit-hidden-field {
+	display:none;
+}
+
+.tagit .tagit-choice-read-only {
+	padding:0.2em 0.5em 0.2em 0.5em;
+}
+
+.tagit .tagit-choice-editable {
+	padding:0.2em 0.5em;
+}
+
+.tagit .tagit-new {
+	padding:0.25em 4px 0.25em 0;
+	cursor:default;
+}
+
+.tagit .tagit-choice a.tagit-label {
+	text-decoration:none;
+}
+
+.tagit .ui-icon {
+	display:inline-block;
+	padding:0.3em;
+}
+
+.tagit .tagit-choice .tagit-close {
+	cursor:pointer;
+	display:inline-block;
+}
+
+/* used for some custom themes that don't need image icons */
+.tagit .tagit-choice .tagit-close .text-icon {
+	display:none;
+}
+
+.tagit .tagit-choice input {
+	display:inline-block;
+	margin:2px 5px 2px 0;
+}
+
+.tagit input[type="text"] {
+	box-sizing:border-box;
+	box-shadow:none;
+	border:none;
+	margin:0;
+	padding:0;
+	width:inherit;
+	background-color:inherit;
+	outline:none;
+}

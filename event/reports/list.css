@@ -1,0 +1,9 @@
+.tablesorter-blue a { text-decoration:none; }
+.tablesorter-blue th, .tablesorter-blue td {
+	border-color:rgba(127,127,127, 0.1);
+}
+
+main.cpn-default {
+	width:auto;
+	margin:0 10px;
+}

@@ -1,0 +1,7 @@
+<?php
+
+//THIS IS COMPATIBILITY WITH AN OLDER
+//VERSION OF COSPIX THAT HAD A DIFFERENT
+//URL FORMAT
+
+require('../_virtual/_index.php');

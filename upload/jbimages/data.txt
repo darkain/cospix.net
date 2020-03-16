@@ -1,0 +1,353 @@
+array(19) {
+  ["file_hash"]=>
+  array(1) {
+    ["UNHEX"]=>
+    string(34) "'034c395bc0645a3f109c865145b65c66'"
+  }
+  ["file_size"]=>
+  int(491651)
+  ["file_name"]=>
+  string(17) "_MG_8440 copy.jpg"
+  ["mime_id"]=>
+  string(2) "31"
+  ["mime_ext"]=>
+  string(3) "jpg"
+  ["mime_type"]=>
+  string(10) "image/jpeg"
+  ["file_cdn"]=>
+  string(11) "/tmp/rStVYF"
+  ["file_url"]=>
+  string(62) "http://cdn.cospix.net/034/c39/034c395bc0645a3f109c865145b65c66"
+  ["hash"]=>
+  string(32) "034c395bc0645a3f109c865145b65c66"
+  ["parent"]=>
+  array(1) {
+    ["UNHEX"]=>
+    string(34) "'034c395bc0645a3f109c865145b65c66'"
+  }
+  ["exif"]=>
+  array(50) {
+    ["FileName"]=>
+    string(6) "rStVYF"
+    ["FileDateTime"]=>
+    int(1429852504)
+    ["FileSize"]=>
+    int(491651)
+    ["FileType"]=>
+    int(2)
+    ["MimeType"]=>
+    string(10) "image/jpeg"
+    ["SectionsFound"]=>
+    string(30) "ANY_TAG, IFD0, THUMBNAIL, EXIF"
+    ["COMPUTED"]=>
+    array(10) {
+      ["html"]=>
+      string(26) "width="1920" height="1280""
+      ["Height"]=>
+      int(1280)
+      ["Width"]=>
+      int(1920)
+      ["IsColor"]=>
+      int(1)
+      ["ByteOrderMotorola"]=>
+      int(0)
+      ["CCDWidth"]=>
+      string(4) "12mm"
+      ["ApertureFNumber"]=>
+      string(5) "f/3.2"
+      ["Copyright"]=>
+      string(31) "Darkain Multimedia / Cospix.net"
+      ["Thumbnail.FileType"]=>
+      int(2)
+      ["Thumbnail.MimeType"]=>
+      string(10) "image/jpeg"
+    }
+    ["Make"]=>
+    string(5) "Canon"
+    ["Model"]=>
+    string(20) "Canon EOS 5D Mark II"
+    ["Orientation"]=>
+    int(1)
+    ["XResolution"]=>
+    string(13) "2400000/10000"
+    ["YResolution"]=>
+    string(13) "2400000/10000"
+    ["ResolutionUnit"]=>
+    int(2)
+    ["Software"]=>
+    string(33) "Adobe Photoshop CC 2014 (Windows)"
+    ["DateTime"]=>
+    string(19) "2015:04:21 23:12:08"
+    ["Artist"]=>
+    string(16) "Vincent Milum Jr"
+    ["Copyright"]=>
+    string(31) "Darkain Multimedia / Cospix.net"
+    ["Exif_IFD_Pointer"]=>
+    int(292)
+    ["THUMBNAIL"]=>
+    array(6) {
+      ["Compression"]=>
+      int(6)
+      ["XResolution"]=>
+      string(4) "72/1"
+      ["YResolution"]=>
+      string(4) "72/1"
+      ["ResolutionUnit"]=>
+      int(2)
+      ["JPEGInterchangeFormat"]=>
+      int(954)
+      ["JPEGInterchangeFormatLength"]=>
+      int(5975)
+    }
+    ["ExposureTime"]=>
+    string(4) "1/50"
+    ["FNumber"]=>
+    string(5) "32/10"
+    ["ExposureProgram"]=>
+    int(1)
+    ["ISOSpeedRatings"]=>
+    int(400)
+    ["ExifVersion"]=>
+    string(4) "0221"
+    ["DateTimeOriginal"]=>
+    string(19) "2015:01:10 14:24:40"
+    ["DateTimeDigitized"]=>
+    string(19) "2015:01:10 14:24:40"
+    ["ShutterSpeedValue"]=>
+    string(15) "5643856/1000000"
+    ["ApertureValue"]=>
+    string(15) "3356144/1000000"
+    ["ExposureBiasValue"]=>
+    string(3) "0/1"
+    ["MaxApertureValue"]=>
+    string(3) "1/1"
+    ["MeteringMode"]=>
+    int(5)
+    ["Flash"]=>
+    int(9)
+    ["FocalLength"]=>
+    string(4) "50/1"
+    ["SubSecTime"]=>
+    string(2) "48"
+    ["SubSecTimeOriginal"]=>
+    string(2) "48"
+    ["SubSecTimeDigitized"]=>
+    string(2) "48"
+    ["ColorSpace"]=>
+    int(65535)
+    ["ExifImageWidth"]=>
+    int(1920)
+    ["ExifImageLength"]=>
+    int(1280)
+    ["FocalPlaneXResolution"]=>
+    string(12) "5616000/1459"
+    ["FocalPlaneYResolution"]=>
+    string(11) "3744000/958"
+    ["FocalPlaneResolutionUnit"]=>
+    int(2)
+    ["CustomRendered"]=>
+    int(0)
+    ["ExposureMode"]=>
+    int(1)
+    ["WhiteBalance"]=>
+    int(1)
+    ["SceneCaptureType"]=>
+    int(0)
+    ["CameraOwnerName"]=>
+    string(16) "Vincent Milum Jr"
+    ["BodySerialNumber"]=>
+    string(10) "4061813362"
+    ["LensSpecification"]=>
+    array(4) {
+      [0]=>
+      string(4) "50/1"
+      [1]=>
+      string(4) "50/1"
+      [2]=>
+      string(3) "0/0"
+      [3]=>
+      string(3) "0/0"
+    }
+    ["LensModel"]=>
+    string(16) "EF50mm f/1.4 USM"
+  }
+  ["thumb_type"]=>
+  int(200)
+  [800]=>
+  array(10) {
+    ["thumb_hash"]=>
+    array(1) {
+      ["UNHEX"]=>
+      string(34) "'8f5ebc0d100615d2c55c33a367b27c30'"
+    }
+    ["file_hash"]=>
+    array(1) {
+      ["UNHEX"]=>
+      string(34) "'034c395bc0645a3f109c865145b65c66'"
+    }
+    ["thumb_size"]=>
+    int(90353)
+    ["thumb_type"]=>
+    int(800)
+    ["mime_id"]=>
+    string(2) "31"
+    ["mime_ext"]=>
+    string(3) "jpg"
+    ["mime_type"]=>
+    string(10) "image/jpeg"
+    ["file_cdn"]=>
+    string(26) "/tmp/thumb-Q1tiE9.x800.jpg"
+    ["file_url"]=>
+    string(62) "http://cdn.cospix.net/8f5/ebc/8f5ebc0d100615d2c55c33a367b27c30"
+    ["hash"]=>
+    string(32) "8f5ebc0d100615d2c55c33a367b27c30"
+  }
+  [1280]=>
+  array(10) {
+    ["thumb_hash"]=>
+    array(1) {
+      ["UNHEX"]=>
+      string(34) "'9249b8f086ea7d6c4184edc843459958'"
+    }
+    ["file_hash"]=>
+    array(1) {
+      ["UNHEX"]=>
+      string(34) "'034c395bc0645a3f109c865145b65c66'"
+    }
+    ["thumb_size"]=>
+    int(180937)
+    ["thumb_type"]=>
+    int(1280)
+    ["mime_id"]=>
+    string(2) "31"
+    ["mime_ext"]=>
+    string(3) "jpg"
+    ["mime_type"]=>
+    string(10) "image/jpeg"
+    ["file_cdn"]=>
+    string(27) "/tmp/thumb-Q1tiE9.x1280.jpg"
+    ["file_url"]=>
+    string(62) "http://cdn.cospix.net/924/9b8/9249b8f086ea7d6c4184edc843459958"
+    ["hash"]=>
+    string(32) "9249b8f086ea7d6c4184edc843459958"
+  }
+  [50]=>
+  array(10) {
+    ["thumb_hash"]=>
+    array(1) {
+      ["UNHEX"]=>
+      string(34) "'626fa9e05d0979d0d8031a6acf3ba942'"
+    }
+    ["file_hash"]=>
+    array(1) {
+      ["UNHEX"]=>
+      string(34) "'034c395bc0645a3f109c865145b65c66'"
+    }
+    ["thumb_size"]=>
+    int(2368)
+    ["thumb_type"]=>
+    int(50)
+    ["mime_id"]=>
+    string(2) "31"
+    ["mime_ext"]=>
+    string(3) "jpg"
+    ["mime_type"]=>
+    string(10) "image/jpeg"
+    ["file_cdn"]=>
+    string(25) "/tmp/thumb-Q1tiE9.x50.jpg"
+    ["file_url"]=>
+    string(62) "http://cdn.cospix.net/626/fa9/626fa9e05d0979d0d8031a6acf3ba942"
+    ["hash"]=>
+    string(32) "626fa9e05d0979d0d8031a6acf3ba942"
+  }
+  [100]=>
+  array(10) {
+    ["thumb_hash"]=>
+    array(1) {
+      ["UNHEX"]=>
+      string(34) "'5990191dde300a2ba7065d6d8213e67b'"
+    }
+    ["file_hash"]=>
+    array(1) {
+      ["UNHEX"]=>
+      string(34) "'034c395bc0645a3f109c865145b65c66'"
+    }
+    ["thumb_size"]=>
+    int(5800)
+    ["thumb_type"]=>
+    int(100)
+    ["mime_id"]=>
+    string(2) "31"
+    ["mime_ext"]=>
+    string(3) "jpg"
+    ["mime_type"]=>
+    string(10) "image/jpeg"
+    ["file_cdn"]=>
+    string(26) "/tmp/thumb-Q1tiE9.x100.jpg"
+    ["file_url"]=>
+    string(62) "http://cdn.cospix.net/599/019/5990191dde300a2ba7065d6d8213e67b"
+    ["hash"]=>
+    string(32) "5990191dde300a2ba7065d6d8213e67b"
+  }
+  [150]=>
+  array(10) {
+    ["thumb_hash"]=>
+    array(1) {
+      ["UNHEX"]=>
+      string(34) "'86de6282b3839a6cc435d883439fdf8e'"
+    }
+    ["file_hash"]=>
+    array(1) {
+      ["UNHEX"]=>
+      string(34) "'034c395bc0645a3f109c865145b65c66'"
+    }
+    ["thumb_size"]=>
+    int(10246)
+    ["thumb_type"]=>
+    int(150)
+    ["mime_id"]=>
+    string(2) "31"
+    ["mime_ext"]=>
+    string(3) "jpg"
+    ["mime_type"]=>
+    string(10) "image/jpeg"
+    ["file_cdn"]=>
+    string(26) "/tmp/thumb-Q1tiE9.x150.jpg"
+    ["file_url"]=>
+    string(62) "http://cdn.cospix.net/86d/e62/86de6282b3839a6cc435d883439fdf8e"
+    ["hash"]=>
+    string(32) "86de6282b3839a6cc435d883439fdf8e"
+  }
+  [200]=>
+  array(10) {
+    ["thumb_hash"]=>
+    array(1) {
+      ["UNHEX"]=>
+      string(34) "'b2e68a1e5bc3924730878063f5aff626'"
+    }
+    ["file_hash"]=>
+    array(1) {
+      ["UNHEX"]=>
+      string(34) "'034c395bc0645a3f109c865145b65c66'"
+    }
+    ["thumb_size"]=>
+    int(15359)
+    ["thumb_type"]=>
+    int(200)
+    ["mime_id"]=>
+    string(2) "31"
+    ["mime_ext"]=>
+    string(3) "jpg"
+    ["mime_type"]=>
+    string(10) "image/jpeg"
+    ["file_cdn"]=>
+    string(26) "/tmp/thumb-Q1tiE9.x200.jpg"
+    ["file_url"]=>
+    string(62) "http://cdn.cospix.net/b2e/68a/b2e68a1e5bc3924730878063f5aff626"
+    ["hash"]=>
+    string(32) "b2e68a1e5bc3924730878063f5aff626"
+  }
+  ["img"]=>
+  string(62) "http://cdn.cospix.net/b2e/68a/b2e68a1e5bc3924730878063f5aff626"
+}
+*

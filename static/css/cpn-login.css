@@ -1,0 +1,114 @@
+#cpn-login-services {
+	float:right;
+	width:370px;
+}
+
+#cpn-login-services a {
+	display:block;
+	width:100%;
+	margin-bottom:15px;
+	cursor:pointer;
+	font-size:0;
+}
+
+#cpn-login-services a:hover {
+	opacity:0.8;
+}
+
+#cpn-login-services svg path {
+	fill:#fff;
+}
+
+#cpn-login-email {
+	float:left;
+	width:370px;
+	font-size:2em;
+}
+
+#cpn-login-email input {
+	display:block;
+	width:100%;
+	font-size:1em;
+	margin-bottom:20px;
+	padding:0 4px;
+}
+
+#cpn-login-email .center {
+	margin-top:30px;
+}
+
+#cpn-login-email .cpn-button {
+	padding:20px;
+}
+
+/*
+#cpn-signup {
+	position:fixed;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	z-index:9999999;
+	background:#000;
+	background:rgba(0,0,0,0.8);
+	display:none;
+}
+
+#cpn-signup .close {
+	font-size:40px;
+	line-height:40px;
+	position:fixed;
+	right:25px;
+	top:20px;
+	color:#fff;
+	cursor:pointer;
+	padding:5px 10px;
+}
+
+#cpn-signup .close:hover {
+	color:#00C8E6;
+}
+
+#cpn-signup .display {
+	width:800px;
+	height:420px;
+	margin:100px auto;
+	background:#fff;
+}
+
+#cpn-signup .cpn-header {
+	text-align:center;
+	padding:15px;
+	font-size:30px;
+}
+
+#cpn-signup .display div {
+	padding:0 40px;
+	text-align:justify;
+	font-size:20px;
+}
+
+#cpn-signup .display a {
+	margin:10px 40px;
+	display:inline-block;
+	background:#fff;
+	width:150px;
+	height:150px;
+	text-align:center;
+	text-decoration:none;
+	padding-top:20px;
+	border-radius:200px;
+	border:5px solid #00C8E6;
+}
+
+#cpn-signup .display a:hover {
+	opacity:0.8;
+	color:#00C8E6;
+	background:#ddd;
+}
+
+#cpn-signup .display a img {
+	width:70px;
+	height:70px;
+}
+*/

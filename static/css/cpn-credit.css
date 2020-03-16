@@ -1,0 +1,73 @@
+.cpn-user-credit, .cpn-user-credit-disabled {
+	float:left;
+	width:245px;
+	overflow:hidden;
+	white-space:nowrap;
+	margin:3px;
+}
+
+.cpn-user-credit img, .cpn-user-credit-disabled img {
+	float:left;
+	width:50px;
+	height:50px;
+	margin-right:5px;
+}
+
+.cpn-user-credit:hover {
+	color:#00C8E6;
+	box-shadow: 0 0 4px #00C8E6;
+	cursor:pointer;
+}
+
+.cpn-user-credit-active {
+	color:#fff;
+	background:#00C8E6;
+}
+
+.cpn-user-credit-active:hover {
+	color:#fff;
+}
+
+.cpn-user-credit-disabled {
+	background:#bbb;
+	color:#333;
+}
+
+
+.cpn-credit-delete {
+	position:absolute;
+	overflow:hidden;
+	float:right;
+	margin-left:168px;
+	margin-top:-205px;
+	z-index:10;
+	width:32px;
+	height:32px;
+	display:none;
+	background:#fff url('../glyph-cyan/close.png');
+}
+
+.cpn-credit-add-gallery {
+	position:absolute;
+	overflow:hidden;
+	float:right;
+	margin-left:136px;
+	margin-top:-205px;
+	z-index:10;
+	width:32px;
+	height:32px;
+	display:none;
+	background:#fff url('../glyph-cyan/photo.png');
+}
+
+
+.cpn-credit-add-to {
+	float:left;
+	width:245px;
+	margin-right:5px;
+}
+
+ul li.cpn-credit-add-selected a {
+	background:#00C8E6;
+	color:#fff;
+}

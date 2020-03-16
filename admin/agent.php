@@ -1,0 +1,1 @@
+<?php echo $get->server('HTTP_USER_AGENT');

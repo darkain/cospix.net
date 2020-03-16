@@ -1,0 +1,161 @@
+/***************************/
+/*       COSPIX MAP        */
+/***************************/
+
+#gmap-canvas-parent {
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:0;
+	padding:128px 0 0 250px;
+	height:100%;
+	width:100%;
+}
+
+#gmap-canvas {
+	width:100%;
+	height:100%;
+}
+
+#cpn-map-menu {
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:1;
+	padding:128px 0 0 0;
+	height:100%;
+	max-height:100%;
+	width:250px;
+	background:#636466;
+	overflow:hidden;
+}
+
+#cpn-map-menu-container {
+	width:300px;
+	overflow-y:scroll;
+	max-height:100%;
+	margin:0;
+	padding:0;
+}
+
+
+ul.cpn-map-list {
+	padding:0;
+	width:100%;
+	margin:0;
+	list-style-type:none;
+}
+
+ul.cpn-map-list li {
+	width:100%;
+	text-align:left;
+	float:left;
+	margin-right:5px;
+	box-shadow:0 0 1px rgba(0,200,230,0.3);
+	overflow:hidden;
+	height:50px;
+	margin:0 5px 5px 0;
+	vertical-align:top;
+	white-space:nowrap;
+}
+
+ul.cpn-tag-list li { width:318px; }
+ul.cpn-tag-relate li { width:263px; }
+ul.cpn-tag-gathering li { width:243px; }
+ul.cpn-gathering-list li { width:256px; }
+div.cpn-profile-costume ul li { width:402px; }
+
+ul.cpn-map-list figcaption {
+	font-weight:bold;
+}
+
+ul.cpn-map-list li:hover {
+	box-shadow:0 0 4px #00C8E6;
+}
+
+#gmap-canvas ul.cpn-map-list {
+	margin:2px;
+	width:300px;
+}
+
+ul.cpn-map-list a {
+	display:block;
+	background:#fff;
+	color:#636466;
+	height:100%;
+	text-decoration:none;
+}
+
+ul.cpn-map-list a:hover {
+	color:#00C8E6;
+	background:#fff;
+}
+
+ul.cpn-map-list a img {
+	width:50px;
+	height:50px;
+	margin-right:3px;
+	float:left;
+}
+
+ul.cpn-map-list a:hover img {
+	opacity:0.8;
+}
+
+ul.cpn-map-list a strong {
+	display:block;
+	font-weight:bold;
+	display:block;
+	margin-bottom:2px;
+}
+
+ul.cpn-map-list a em {
+	display:block;
+	line-height:1.2em;
+	opacity:0.8;
+	font-size:0.8em;
+	font-weight:bold;
+}
+
+ul.cpn-map-list a span {
+	position:relative;
+	float:right;
+	font-size:15px;
+	padding-top:13px;
+	padding-right:3px;
+	opacity:0.3;
+}
+
+#cpn-map-menu-container ul.cpn-map-list a span {
+	padding-right:38px;
+}
+
+
+.gmap-cpn-buttons {
+	margin-right: 6px;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.298039);
+}
+
+.gmap-cpn-buttons a {
+	padding: 1px 6px;
+	color:#565656;
+	background:#fff;
+	text-decoration:none;
+	display:inline-block;
+}
+
+.gmap-cpn-buttons a:hover {
+	background:#EBEBEB;
+	color:#000;
+}
+
+
+div ul.cpn-share-list li {
+/*	border-radius:16px 0 0 16px; */
+	width:190px;
+	height:33px;
+	font-size:14px;
+	padding-top:6px;
+}
+
+div ul.cpn-share-list li img { width:33px; height:33px; margin-top:-6px; }

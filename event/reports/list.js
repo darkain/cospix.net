@@ -1,0 +1,3 @@
+$(function(){
+	$('.tablesorter-blue').tablesorter();
+});

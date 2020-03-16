@@ -1,0 +1,11 @@
+#tool-hotel {width:100%}
+#tool-hotel td, #tool-hotel th {text-align:center}
+#tool-hotel thead tr {background:#eee;}
+#tool-hotel tr:nth-child(even) {background:#eee;}
+#tool-hotel td input {opacity:0.7}
+#tool-hotel td input[type="checkbox"] {display:none;}
+#tool-hotel td.checked {background:#00C8E6;}
+#tool-hotel td.hotel-day {width:75px;border-left:1px solid #ddd;cursor:pointer}
+#tool-hotel td.hotel-day:hover {background:#888}
+#tool-hotel td.hotel-sub, #tool-hotel th.hotel-sub {width:75px;border-left:1px solid #ddd}
+#tool-hotel-share {width:450px;display:none;}

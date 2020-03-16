@@ -1,0 +1,46 @@
+
+ul.droplist {
+	display:block;
+	overflow:visible;
+	list-style-type:none;
+	max-height: 500px;
+	padding:0;
+	margin:0;
+	cursor:pointer;
+}
+
+ul.droplist:hover { background:#ffffd3; }
+
+ul.droplist_active {
+	z-index:10;
+	position: absolute;
+	height: 336px;
+	min-width: 10em;
+	overflow-x: hidden;
+	overflow-y: auto;
+	margin-top: -10px;
+	background:none;
+	box-shadow:0 0 10px #000;
+}
+
+ul.droplist_active:hover { background:none; }
+
+ul.droplist li {
+	position:relative;
+	cursor:pointer;
+	white-space: nowrap;
+	min-height:1.5em;
+}
+
+ul.droplist_active li {
+	z-index:11;
+	background:#fff;
+	color:#00C8E6;
+	padding:2px 5px;
+}
+
+ul.droplist_active li.selected { background:#999; color:#fff; }
+
+ul.droplist li.unselected { display:none; }
+ul.droplist_active li, ul.droplist_active li.unselected { display:block; }
+ul.droplist_active li:hover { display:block; color:#fff; background:#00C8E6; }

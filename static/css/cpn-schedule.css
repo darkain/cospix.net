@@ -1,0 +1,63 @@
+/***************************/
+/*    CALENDAR STYLES      */
+/***************************/
+
+#calendar td, #calendar th { padding:0; }
+
+#calendar table.fc-header, #calendar table.fc-header td, #calendar table.fc-header th {
+	border: none;
+}
+
+#calendar table.fc-border-separate td, #calendar table.fc-border-separate td {
+	vertical-align: top;
+}
+
+#calendar td.fc-sat, #calendar td.fc-sun {
+	background: #C2D8F8;
+}
+
+#calendar table td.fc-today {
+	background: #C2F8D8;
+}
+
+#calendar a.fc-event {
+	background:#fff;
+	color:#00C8E6;
+	border:1px solid #00C8E6;
+	padding:0 3px;
+	border-radius:0;
+	text-decoration:none;
+	font-size:14px;
+}
+
+#calendar a.fc-event:hover {
+	background:#00C8E6;
+	color:#fff;
+}
+
+#calendar div.fc-event:hover {
+	cursor:pointer;
+	background:#00C8E6;
+	color:#fff;
+	border-color:#00C8E6;
+}
+
+#calendar .fc-slot0, #calendar .fc-slot4, #calendar .fc-slot8, #calendar .fc-slot12,
+#calendar .fc-slot16, #calendar .fc-slot20, #calendar .fc-slot24, #calendar .fc-slot28,
+#calendar .fc-slot32, #calendar .fc-slot36, #calendar .fc-slot40, #calendar .fc-slot44,
+#calendar .fc-slot48, #calendar .fc-slot52, #calendar .fc-slot56, #calendar .fc-slot60,
+#calendar .fc-slot64, #calendar .fc-slot68, #calendar .fc-slot72, #calendar .fc-slot76,
+#calendar .fc-slot80, #calendar .fc-slot84, #calendar .fc-slot88, #calendar .fc-slot92
+{ background:rgba(230,230,255,0.5); }
+
+
+#calendar div.schedule-taken, #calendar div.schedule-viewonly {
+	background:rgb(173, 58, 58);
+	border-color:rgb(173, 58, 58);
+}
+
+#calendar div.schedule-available {
+	background:rgb(58, 173, 58);
+	border-color:rgb(58, 173, 58);
+}
+

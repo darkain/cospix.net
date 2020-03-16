@@ -1,0 +1,71 @@
+/***************************/
+/*    UPLOAD NEW IMAGES    */
+/***************************/
+
+.dimmed {color:#888;}
+
+#new-gallery-title {
+	font-weight:bold;
+	width:100%;
+	font-size:2em;
+	padding: 0.1em 0.3em;
+	margin:0;
+}
+
+div.dz-preview {
+	display:inline-block;
+	border:1px solid rgba(127,127,127,0.2);
+	width:202px;
+	height:202px;
+	margin:1px;
+	text-align:center;
+	vertical-align:top;
+	overflow:hidden;
+	white-space:nowrap;
+	background:#fff;
+	float:left;
+}
+
+div.dz-size {display:none;}
+
+div.dz-filename {
+	visibility:hidden;
+	position:relative;
+	background:rgba(0,0,0, 0.5);
+	color:#fff;
+	top:180px;
+	font:15px;
+	height:20px;
+	width:200px;
+	white-space:nowrap;
+	overflow:hidden;
+	z-index:2;
+}
+
+div.dz-details {
+	width:200px;
+	height:200px;
+}
+
+div.dz-details img {
+	position:relative;
+	top:-20px;
+	z-index:1;
+}
+
+div.dz-error-mark, div.dz-success-mark {display:none;}
+
+
+div.dz-progress {
+	position:relative;
+	opacity:0.5;
+	z-index:3;
+	top:-400px;
+	width:200px;
+	height:200px;
+	background:none;
+	background-image:url('../img/loading.gif');
+	background-size:100px 100px;
+	background-repeat:no-repeat;
+	background-position:center;
+}

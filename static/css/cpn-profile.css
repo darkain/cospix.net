@@ -1,0 +1,629 @@
+/***************************/
+/* COSPIX PROFILE LIST     */
+/***************************/
+.cpn-profile-list-type a, .cpn-profile-list-letter a {
+	display:inline-block;
+	width:312px;
+	margin:5px;
+	text-align:center;
+	padding:10px 0;
+	text-decoration:none;
+	font-size:18px;
+	background:#fff;
+	color:#636466;
+	overflow:hidden;
+	box-shadow:0 0 1px rgba(0,200,230,0.3);
+}
+
+.cpn-profile-list-type a:hover, .cpn-profile-list-letter a:hover {
+	color:#00C8E6;
+	background:#fff;
+	box-shadow:0 0 4px #00C8E6;
+}
+
+.cpn-profile-list-letter a {
+	width:59px;
+}
+
+
+
+/***************************/
+/* COSPIX PROFILE PRODUCTS */
+/***************************/
+#cpn-profile-products {
+	margin-top:20px;
+	width:150px;
+	height:auto;
+	/*opacity:0.7;*/
+	overflow:visible;
+}
+
+#cpn-profile-products:hover {
+	background:none;
+}
+
+#cpn-profile-products h3 {
+	padding:3px 5px;
+}
+
+#cpn-profile-products a {
+	background:white;
+	width:150px;
+	height:auto;
+	display:block;
+	text-align:center;
+	padding:5px;
+	opacity:0.7;
+	margin:3px 0;
+}
+
+#cpn-profile-products a:hover {
+	opacity:1.0;
+	box-shadow:0 0 4px #00C8E6;
+}
+
+#cpn-profile-products a img {
+	max-width:100%;
+}
+
+
+
+
+/***************************/
+/* COSPIX PROFILE / EVENT  */
+/***************************/
+#cpn-profile-canvas {
+	width:820px;
+	float:right;
+}
+
+#cpn-profile-canvas article {
+	width:820px;
+}
+
+#cpn-profile-top {
+	margin:10px 0 0 0;
+	padding:0 10px 0 0;
+	background:#fff;
+}
+
+#cpn-profile-top .cpn-more {
+	margin-left:5px;
+	background-color:#00c8e6;
+	border-radius:16px;
+}
+
+.cpn-profile-links {
+	float:right;
+}
+
+.cpn-profile-links a {
+	text-decoration:none;
+	display:inline-block;
+	width:32px;
+	height:32px;
+}
+
+.cpn-profile-links a:hover img {
+	opacity:0.5;
+}
+
+.cpn-profile-links img {
+	width:32px;
+	height:32px;
+}
+
+.cpn-profile-left {
+	float:left;
+	width:530px;
+	margin-left:-13px;
+}
+
+.cpn-profile-right {
+	float:right;
+	width:300px;
+}
+
+.cpn-profile-sidebar {
+	padding-top:10px;
+	float:left;
+	width:160px;
+}
+
+.cpn-profile-sidebar div, .cpn-profile-sidebar a {
+	height:50px;
+	width:200px;
+	margin:3px 0 0;
+	font-size:14px;
+	padding:0;
+	cursor:pointer;
+	text-align:left;
+	text-decoration:none;
+	display:block;
+	overflow:hidden;
+	white-space:nowrap;
+}
+
+.cpn-profile-sidebar div:hover, .cpn-profile-sidebar a:hover {
+	color:#00C8E6;
+	background:#fff;
+}
+
+a.cpn-profile-sidebar-item {
+	font-size:18px;
+	width:150px;
+	height:33px;
+	padding:3px 20px 0 10px;
+	color:#636466;
+	text-transform:uppercase;
+}
+
+a.cpn-profile-sidebar-selected, a.cpn-profile-sidebar-selected:hover {
+	background:url('../img/menu-select.gif');
+	color:#fff;
+	width:160px;
+	padding:3px 30px 0 10px;
+}
+
+.cpn-profile-recent {
+	margin-top:10px;
+	min-height:120px;
+}
+
+.cpn-profile-recent h3 {
+	margin-bottom:10px;
+}
+
+.cpn-profile-recent a {
+	text-decoration:none;
+	display:inline-block;
+	margin:0 0 10px 23px;
+	width:100px;
+	overflow:hidden;
+	white-space:nowrap;
+	text-align:center;
+	line-height:1.1em;
+}
+
+.cpn-profile-recent img {
+	margin-bottom:-5px;
+	width:100px;
+	height:100px;
+}
+
+.cpn-profile-recent a:hover {
+	background:#00C8E6;
+	color:#fff;
+	cursor:pointer;
+	box-shadow:0px 0px 7px #00C8E6;
+}
+
+.cpn-profile-recent a:hover img { opacity:0.8; }
+
+
+
+
+/***************************/
+/*   COSPIX ACCOUNT LIST   */
+/***************************/
+
+.cpn-account-list {
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+
+.cpn-account-list li {
+	padding:0;
+	margin:2px;
+	float:none;
+	display:inline-block;
+	white-space:nowrap;
+	overflow:hidden;
+	width:319px;
+	height:100px;
+	font-size:13px;
+	line-height:1.3em;
+	vertical-align:top;
+	box-shadow:0 0 1px rgba(0,200,230,0.3);
+	margin-bottom:5px;
+}
+
+#cpn-profile-body .cpn-account-list li {
+	width:395px;
+}
+
+.cpn-account-list li:hover {
+	box-shadow:0 0 4px #00C8E6;
+}
+
+a.cpn-account-name {
+	display:block;
+	width:100%;
+	height:100%;
+	text-decoration:none;
+	background:#fff;
+	color:#636466;
+	font-size:24px;
+	vertical-align:top;
+}
+
+a.cpn-account-name:hover {
+	background:#fff;
+	color:#00C8E6;
+}
+
+a.cpn-account-name img,
+a.cpn-account-name .cpn-thumb-add {
+	width:100px;
+	height:100px;
+	float:left;
+	margin-right:5px;
+	top:0;
+	padding:0;
+	line-height:100%;
+}
+
+a.cpn-account-name:hover img,
+a.cpn-account-name:hover .cpn-thumb-add {
+	opacity:0.8;
+}
+
+a.cpn-account-name figcaption {
+	font-size:14px;
+	display:block;
+	white-space:normal;
+	padding-left:105px;
+}
+
+.cpn-account-subtext {
+	display:block;
+	font-size:16px;
+	margin:-8px 0 5px 0;
+	opacity:0.7;
+}
+
+.cpn-account-type {
+	display:block;
+	font-size:12px;
+	white-space:normal;
+	max-width:100%;
+	line-height:1em;
+	opacity:0.7;
+}
+
+
+.cpn-account-follow {
+	display:inline-block;
+	background:#EBEBEB;
+	color:#636466;
+	padding:7px 10px;
+	font-size:18px;
+	margin-top:8px;
+	border:0;
+	border-radius:0;
+	text-decoration:none;
+	text-align:center;
+	height:27px;
+	line-height:14px;
+	cursor:pointer;
+}
+
+.cpn-account-follow:hover {
+	background:#fff;
+	color:#00C8E6;
+	box-shadow:0 0 4px #00C8E6;
+}
+
+
+.cpn-tutorial-remove {
+	padding:0;
+	margin:0 0 0 363px;
+	position:absolute;
+	z-index:20;
+	background:#fff url('../glyph-cyan/close.png');
+	display:none;
+	height:32px;
+	width:32px;
+	overflow:hidden;
+}
+
+a.cpn-account-name:hover .cpn-tutorial-remove { display:block; }
+
+
+
+/***************************/
+/*   UGLY CALENDAR / TWITTER CODE   */
+/***************************/
+
+
+#full-calendar {
+	position:fixed;
+	z-index:1;
+	top:0;
+	left:0;
+	width:100%;
+	max-height:100%;
+	min-height:100%;
+	padding:128px 0 0 150px;
+	overflow-y:auto;
+}
+#full-calendar .fc-header {display:none;}
+#full-calendar .fc-view-month table {height:100%; min-height:100%; max-height:100%;}
+#cal-sidebar div {font-size:2em;width:150px;height:1.5em;padding:0 0.3em;cursor:pointer;}
+#cal-sidebar div:hover {background:#00C8E6;color:#fff;}
+
+
+
+
+/***************************/
+/* COSPIX PROFILE / EVENT  */
+/***************************/
+section.profile-box {
+	background:#fff;
+	margin:0;
+	padding:0;
+}
+
+div.profile-box .ui-datepicker,
+section.profile-box .ui-datepicker {
+	width:100%;
+	border:0;
+	padding:0;
+	margin:0;
+	border-radius:0;
+}
+
+div.profile-box .ui-datepicker-calendar,
+section.profile-box .ui-datepicker-calendar {
+	width:277px;
+	margin:0 auto 5px auto;
+}
+
+div.profile-box .ui-datepicker-header,
+section.profile-box .ui-datepicker-header {
+	border:0;
+	padding:0;
+	margin:0;
+	border-radius:0;
+	height:34px;
+	text-align:left;
+	vertical-align:middle;
+	color:#fff;
+	background: #00c8e6;
+	background: -moz-linear-gradient(top, #00c8e6 0%, #00b9de 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00c8e6), color-stop(100%,#00b9de));
+	background: -webkit-linear-gradient(top, #00c8e6 0%,#00b9de 100%);
+	background: -o-linear-gradient(top, #00c8e6 0%,#00b9de 100%);
+	background: -ms-linear-gradient(top, #00c8e6 0%,#00b9de 100%);
+	background: linear-gradient(to bottom, #00c8e6 0%,#00b9de 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c8e6', endColorstr='#00b9de',GradientType=0 );
+}
+
+div.profile-box .ui-datepicker-title,
+section.profile-box .ui-datepicker-title {
+	text-align:left;
+	margin:0;
+	padding:0 10px;
+	font-size:20px;
+	font-weight:bold;
+}
+
+
+div.profile-box {
+	display:block;
+	background:#fff;
+	margin:10px 0 0 13px;
+}
+
+div.profile-box-body {
+	padding:10px;
+}
+
+div.profile-box h3,
+section.profile-box h3 {
+	font-size:20px;
+	font-weight:bold;
+	padding: 7px 10px;
+}
+
+div.profile-box h3 a,
+section.profile-box h3 a {
+	line-height:20px;
+}
+
+.cpn-profile-about p {
+	padding:0;
+	margin:0;
+	cursor:text;
+	min-height:1em;
+	overflow:hidden;
+}
+
+.cpn-profile-about p.af-edit-field {
+	min-height:4em;
+}
+
+.cpn-profile-about textarea {
+	width:100%;
+	height:300px;
+	display:none;
+}
+
+
+.cpn-profile-ask textarea {
+	width:100%;
+	min-width:100%;
+	max-width:100%;
+	min-height:5em;
+}
+
+#ui-event-date { display:none; }
+
+#ui-event-date .ui-state-default, #ui-event-date .ui-state-default:hover {
+	background:#00c8e6;
+	cursor:default;
+	border-width:0px;
+	color:#fff;
+	font-weight:bold;
+}
+
+#ui-event-date .ui-state-disabled .ui-state-default {
+	background:#e6e6e6;
+	color:#555;
+	font-weight:normal;
+}
+
+#event-header-links {
+	padding-bottom:2em;
+}
+
+#event-header-links a {
+	display:inline-block;
+	float:left;
+	width:306px;
+	padding:10px;
+	text-align:center;
+	font-size:2em;
+}
+
+#event-header-links a:hover{
+	background:#0075BC;
+	color:#fff;
+}
+
+#cpn-event-map-hack {
+	position:absolute;
+	height:100%;
+	width:0px;
+	top:0;
+	padding:215px 0 0 0;
+	overflow:hidden;
+}
+
+#cpn-event-map-hack div {
+	height:100%;
+}
+
+#cpn-profile-name {
+	font-size:30px;
+	line-height:35px;
+	color:#636466;
+	vertical-align:top;
+}
+
+#cpn-profile-name button, #cpn-profile-name a {
+	float:right;
+	vertical-align:top;
+	display:inline-block;
+	background:#EBEBEB;
+	color:#636466;
+	padding:7px 10px;
+	font-size:18px;
+	margin-top:8px;
+	border:0;
+	border-radius:0;
+	text-decoration:none;
+	text-align:center;
+	height:27px;
+	line-height:14px;
+	cursor:pointer;
+}
+
+#cpn-profile-name button:hover, #cpn-profile-name a:hover {
+	background:#fff;
+	color:#00C8E6;
+	box-shadow:0 0 4px #00C8E6;
+}
+
+#cpn-profile-name span, .cpn-profile-tagline, #cpn-event-venue {
+	display:inline-block;
+	min-width:400px;
+	min-height:1.5em;
+	padding-left:10px;
+}
+
+#cpn-event-venue {
+	font-size:14px;
+	color:#00c8e6;
+	display:inline-block;
+}
+
+.profile-pic-upload {
+	position:absolute;
+	display:none;
+	width:150px;
+	height:30px;
+	padding-top:2px;
+	margin-top:120px;
+	text-align:center;
+	background:#00C8E6;
+	color:#fff;
+	font-weight:bold;
+	font-size:16px;
+	opacity:0.8;
+}
+
+.profile-pic:hover .profile-pic-upload {
+	display:block;
+	cursor:pointer;
+}
+
+.profile-pic input {
+	display:none;
+	position:absolute;
+}
+
+.profile-pic img {
+	width:150px;
+	height:150px;
+}
+
+
+
+
+.cpn-profile-about p {
+	padding:0;
+	margin:0;
+	cursor:text;
+	min-height:1em;
+}
+
+.cpn-profile-about textarea {
+	width:100%;
+	height:300px;
+	display:none;
+}
+
+
+
+
+#frm-edit-dates .ui-state-active {
+	color:#00C8E6;
+	background:#fff;
+}
+
+.frm-social-links img {
+	vertical-align:middle;
+	width:26px; height:26px;
+}
+
+#frm-edit-dates .frm-social-links input {
+	font-size:0.9em;
+}
+
+#frm-edit-dates .frm-social-links td {margin:0; padding:0;}
+
+#frm-edit-dates .ui-datepicker .ui-datepicker-header {padding:0;}
+
+#frm-edit-dates .ui-datepicker .ui-datepicker-title select {
+	font-size:10px;
+	vertical-align:top;
+	margin-top:5px;
+}
+
+#frm-edit-dates .ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+	width:20px; height:20px;
+	vertical-align:middle;
+	margin:2px 3px;
+}

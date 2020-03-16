@@ -1,0 +1,15 @@
+#frm-submit-event {
+/*	font-size:0.8em; */
+}
+
+#frm-submit-event input, #frm-submit-event textarea {
+	width:75%;
+}
+
+#frm-submit-event textarea {
+	height:7em;
+}
+
+#frm-submit-event .ui-datepicker .ui-datepicker-title {
+	font-size:11px;
+}

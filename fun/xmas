@@ -1,0 +1,129 @@
+<style>
+#flame {
+	left:0;
+	top:0;
+	position:fixed;
+	border:0;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	z-index:0;
+}
+
+article {
+	padding-top:1000px;
+}
+
+article * {
+	position:relative;
+	z-index:1;
+	background:none !important;
+}
+
+article img {
+	opacity:0.9;
+}
+
+html, body, #body {
+	background:#000 !important;
+}
+</style>
+
+<iframe id="flame" src="https://www.youtube.com/embed/97g1krDkzNI?rel=0&amp;controls=0&amp;showinfo=0;autoplay=1"></iframe>
+
+<article><h1 style="display:none">Cospix</h1>
+
+	<aside style="float:right; width:320px" id="cpn-home-sidebar">
+
+		<div class="cpn-ad-block">
+			[onshow;block=div;when [user.permission.adfree]=0]
+			<ins class="adsbygoogle" data-ad-client="ca-pub-0556075448585716" data-ad-slot="4979146330"></ins>
+		</div>
+
+
+		<h2 class="cpn-header"><a href="[afurl.base]/tag/series/trending/">Trending Series</a></h2>
+		<div class="cpn-home-popular" style="background:#fff;padding:3px 0 10px 3px">
+			<ul class="cpn-map-list">
+				<li style="height:175px;width:150px;overflow:hidden;margin:5px 0 0 5px">
+					<a href="[afurl.base]/tag/series/[series.group_label;ope=cus:url;block=li;bmagnet=tr]/"><figure>
+						<img src="[series.img;noerr;ifempty='[afurl.static]/thumb2/series.svg']" style="float:none;width:150px;height:150px"/>
+						<figcaption>[series.group_label]</figcaption>
+					</figure></a>
+				</li>
+			</ul>
+			<div class="clear">&nbsp;</div>
+		</div>
+
+
+		<h2 class="cpn-header"><a href="[afurl.base]/calendar/">Upcoming Conventions</a></h2>
+		<div style="background:#fff">
+			<div class="clear">&nbsp;</div>
+			<div class="button" style="margin:5px 15px" onclick="popup('[afurl.base]/event/suggest/', $(this).text())">[onshow;block=div;when [user.user_id]+-0]Suggest A New Event</div>
+			<div style="padding:5px 5px 2px 5px; max-height:600px; overflow-y:auto">[onload;file=map/list.tpl]</div>
+		</div>
+
+	</aside>
+
+	<div id="cpn-home-summary" style="width:660px">
+	<!--
+		<section class="cpn-home-auto">
+			<h2 class="cpn-header">Cospix @ Anime Expo 2015</h2>
+			<div class="cpn-default" style="padding:0;font-size:0;background:#5fc2d9">
+				<a href="[afurl.base]/ax/">
+					<img src="[afurl.static]/events/2015-anime-expo-00.jpg" alt="Visit the Team Cospix Photo Booth in the Anime Expo Entertainment Hall for your Free Cosplay Photos!" style="width:670px;max-height:483px;max-width:100%" />
+				</a>
+			</div>
+		</section>
+	-->
+
+		<section class="cpn-home-auto">
+			<h2 class="cpn-header"><a href="[afurl.base]/featured/">Photo of the Day</a></h2>
+			<div class="cpn-default" style="padding:0">
+				<a href="[afurl.base]/image/[featured.hash]/?gallery=[featured.gallery_id]" style="margin:10px" class="cpn-thumb-link"><figure>
+					<figcaption>[featured.feature_timestamp;date='F jS';block=a]</figcaption>
+					<img src="[featured.img]" />
+				</figure></a>
+				<div class="clear-left"></div>
+				<div class="center">
+					<a href="[afurl.base]/featured/" class="cpn-button larger" style="padding:5px 15px; margin:10px">Submit your photos and vote on other's submissions</a>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="cpn-home-auto">
+			<h2 class="cpn-header">Recent Convention Galleries</h2>
+			<div class="cpn-default" style="padding:0">
+				<a href="[afurl.base]/event/[congallery.event_name;ope=cus:url]/photos/" style="margin:10px" class="cpn-thumb-link"><figure>
+					<figcaption>[congallery.event_name;block=a]</figcaption>
+					<img src="[congallery.img;ifempty='[afurl.static]/thumb2/gallery.svg']" />
+				</figure></a>
+				<div class="clear-left"></div>
+			</div>
+		</section>
+
+
+		<section class="cpn-home-auto" style="padding-bottom:10px">
+			<h2 class="cpn-header"><a href="[afurl.base]/cosplay/">Recently Updated Cosplays</a></h2>
+			<div class="cpn-default">
+				[onload;file=costume/cosplay.tpl]
+				<div class="clear-left"></div>
+			</div>
+		</section>
+
+
+		<section class="cpn-home-auto">
+			<h2 class="cpn-header"><a href="[afurl.base]/gallery/">Recently Updated Galleries</a></h2>
+			<div class="cpn-default" style="padding:0">
+				<a href="[afurl.base]/[gallery.user_url;ifempty='[gallery.user_id]']/gallery/[gallery.gallery_id]/" style="margin:10px" class="cpn-thumb-link"><figure>
+					<figcaption>[gallery.gallery_name;block=a;ifempty='Untitled Gallery']</figcaption>
+					<img src="[gallery.img;ifempty='[afurl.static]/thumb2/gallery.svg']" />
+				</figure></a>
+				<div class="clear-left"></div>
+			</div>
+		</section>
+
+	</div>
+
+</article>

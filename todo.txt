@@ -1,0 +1,232 @@
+LIST OF PAGES THAT NEED UPDATING
+/settings
+/messages
+
+/featured
+/featured/voting
+/calendar
+/image/virtual
+
+/darkain
+
+
+
+TEST ALL DEVICES
+* IPHONE 5C
+* GALAXY S5
+* NEXUS 7
+* DRAGON TOUCH
+* KINDLE (OLD)
+* KINDLE (NEW)
+* GALAXY S3
+* GALAXY S2
+* VIBRANT
+* WINDOWS PHONE
+* NINTENDO 3DS
+* OPERA MOBILE EMULATOR
+* CHROME MOBILE EMULATOR (-SHOULD- BE SAME AS OPERA)
+
+
+REMOVE OLD COSPIX.CSS AND MERGE NEEDED CONTENT INTO PROMETHEUS.CSS
+
+
+
+INSPECT ALL 500PX IMAGES FOR ASPECT RATIO, ROTATE AS NEEDED IF FUCKED
+Examples
+https://beta.cospix.net/files/4ae/a17/4aea17b7f3e8d38725aa932a2dcba1bb.jpg
+https://beta.cospix.net/files/a9b/753/a9b7537b7fac46f6da1ad46f31f395f2.jpg
+
+
+
+FEATHERLIGHT
+Implement on all popup windows
+- Messages
+- Add Gallery
+- Add Events?
+- Edit Credits?
+
+
+
+
+SEPARATE IMAGE SERVER INSTANCES OUT FROM APPLICATION SERVER INSTANCES
+1) this eliminates the need for an HTTPD on the application server, JUST PHP/HHVM is needed!
+2) place new HTTPD image servers as super light jails on each file server
+3) HTTPDs can only serve their local contents
+4) No more NFS would be needed to serve these images!
+5) Paths would be symlinked instead of NFS access
+-
+Application level for uploader: try to open and close an empty stub file
+Set short filesystem timeout (5 seconds?) - if timeout happens, present upload error message to user
+-
+On the syncled slave, set them up as nginx with "try_files" and NFS back to master
+This way if a file isn't synced yet, it'll try to read it from the master server
+-
+If your NFS server is soft mounted then the client may eventually return even if the NFS server is totally borked. Use this in conjunction with the timeo NFS mount option to specify the retransmission timeout.
+-
+bug
+solid color image with only alpha channel will break with image processor
+https://beta.cospix.net/tag/series/yuri+kuma+arashi
+-
+store images at smaller file size thumgs for #Prometheus display - 500px?
+-
+BUG
+Cover photo is loading full res instead of 800px copy
+
+
+
+
+commissions
+list rates - min/max rate - $$$ signs like
+list by category - props vs emblems vs sewing  vs molds
+
+
+//todo: build a report for trending series/characters without profile images!
+filter search box on the discover page
+new images / people i follow / trending series
+
+apply filter to other pages, like galleries
+
+
+
+button to suggest changes for an event
+
+
+
+possibly remove the feed tab on profiles
+fixes for now at least
+1) changes "5 pics" added to a variable list with a maximum number of pix (20?)
+2) variable list of pix now uses prometheus flow boxes
+3) limit number of feed items per page... 10 feed items?
+
+
+
+
+CUSTOMIZE "FAVORITES" LIST ON USER PROFILES!!
+
+
+
+
+
+1 Open Google Calendar.
+2 Next to "Other calendars" on the left, click the Down arrow .
+3 Select Add by URL.
+4 Enter the calendar's address in the field provided. The address needs to be an ICAL link.
+5 Click Add Calendar.
+
+
+
+
+convert all SVG CSS "fill" properties to HTML "fill" property
+This means CSS overrides are much MUCH easier!
+
+
+
+automatic photo collections for a convention
+instead of one global feed based on upload date
+attempt to sort photos based on when it was taken
+use Exif timestamps, and allow for uploader to change timestamps
+have a photo page for each day
+
+
+
+new Looking For Shoots system
+use node.js system
+new posts automatically go to top of page
+show posts in chronological order, newest on top
+have option for auto-expire times
+set max time length to expire in 12 hours or midnight or whatever
+
+
+
+phonegap load page from server
+
+
+mark individual photos as progress pix
+
+
+tag lists should be center-center instead of center-top
+
+
+
+marketplace
+https://www.facebook.com/peacoquettish/posts/10100954436738365
+
+
+
+FIX SCROLLING MESSAGES ON DESKTOP
+
+var trapScroll;
+
+(function($){
+
+  trapScroll = function(opt){
+
+    var trapElement;
+    var scrollableDist;
+    var trapClassName = 'trapScroll-enabled';
+    var trapSelector = '.trapScroll';
+
+    var trapWheel = function(e){
+
+      if (!$('body').hasClass(trapClassName)) {
+
+        return;
+
+      } else {
+
+        var curScrollPos = trapElement.scrollTop();
+        var wheelEvent = e.originalEvent;
+        var dY = wheelEvent.deltaY;
+
+        // only trap events once we've scrolled to the end
+        // or beginning
+        if ((dY>0 && curScrollPos >= scrollableDist) ||
+            (dY<0 && curScrollPos <= 0)) {
+
+          opt.onScrollEnd();
+          return false;
+
+        }
+
+      }
+
+    }
+
+    $(document)
+      .on('wheel', trapWheel)
+      .on('mouseleave', trapSelector, function(){
+
+        $('body').removeClass(trapClassName);
+
+      })
+      .on('mouseenter', trapSelector, function(){
+
+        trapElement = $(this);
+        var containerHeight = trapElement.outerHeight();
+        var contentHeight = trapElement[0].scrollHeight; // height of scrollable content
+        scrollableDist = contentHeight - containerHeight;
+
+        if (contentHeight>containerHeight)
+          $('body').addClass(trapClassName);
+
+      });
+  }
+
+})($);
+
+var preventedCount = 0;
+var showEventPreventedMsg = function(){
+  $('#mousewheel-prevented').stop().animate({opacity: 1}, 'fast');
+}
+var hideEventPreventedMsg = function(){
+  $('#mousewheel-prevented').stop().animate({opacity: 0}, 'fast');
+}
+var addPreventedCount = function(){
+  $('#prevented-count').html('prevented <small>x</small>' + preventedCount++);
+}
+
+trapScroll({ onScrollEnd: addPreventedCount });
+$('.trapScroll')
+  .on('mouseenter', showEventPreventedMsg)
+  .on('mouseleave', hideEventPreventedMsg);
+$('[id*="parent"]').scrollTop(100);

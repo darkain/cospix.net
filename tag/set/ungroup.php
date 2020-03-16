@@ -1,0 +1,38 @@
+<?php
+$user->requireStaff();
+
+
+////////////////////////////////////////////////////////////
+//PULL TAG
+////////////////////////////////////////////////////////////
+$tag = $db->row([
+	'gr' => 'pudl_group',
+	'gt' => 'pudl_group_type',
+	'gl' => 'pudl_group_label',
+], [
+	'gr.group_type_id=gt.group_type_id',
+	'gl.group_id=gr.group_id',
+	'gl.group_label_id' => $get->id(),
+]);
+
+\af\affirm(422, $tag, 'Unknown Object');
+
+
+
+
+////////////////////////////////////////////////////////////
+//CREATE NEW GROUP
+////////////////////////////////////////////////////////////
+$group_id = $db->insert('pudl_group', [
+	'group_type_id' => $tag['group_type_id'],
+]);
+
+
+
+
+////////////////////////////////////////////////////////////
+//UPDATE TAG TO NEW GROUP
+////////////////////////////////////////////////////////////
+$db->updateId('pudl_group_label', [
+	'group_id' => $group_id,
+], 'group_label_id', $tag);

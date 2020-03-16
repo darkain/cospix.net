@@ -1,0 +1,28 @@
+#event-graph table,
+.cpn-event-reports table {
+	width:100%;
+	table-layout:fixed;
+}
+
+#event-graph table td,
+.cpn-event-reports table td {
+	text-align:center;
+	color:#00C8E6;
+	font-size:16px;
+	overflow:hidden;
+}
+
+#event-graph svg {
+	width:100%;
+	height:300px;
+}
+
+#event-graph svg rect {
+	bottom:100%;
+	fill:#00C8E6;
+	cursor:pointer;
+}
+
+#event-graph svg rect:hover {
+	fill:#BB4574;
+}

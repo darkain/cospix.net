@@ -1,0 +1,180 @@
+a.cpn-costume {
+	float:left;
+	vertical-align:top;
+	width:313px;
+	max-width:100%;
+	height:100px;
+	display:block;
+	padding:0;
+	margin-right:10px;
+	margin-top:10px;
+	overflow:hidden;
+	color:#636466;
+	background:#fff;
+	cursor:pointer;
+	text-decoration:none;
+	box-shadow:0 0 1px rgba(0,200,230,0.3);
+
+	font-size:24px;
+}
+
+.cpn-home-auto a.cpn-costume {width:310px;}
+
+#cpn-profile-canvas a.cpn-costume {
+	width:390px;
+}
+
+a.cpn-costume:hover {
+	background:#fff;
+	color:#00C8E6;
+	opacity:0.8;
+	box-shadow:0 0 4px #00C8E6;
+}
+
+a.cpn-costume img {
+	position:absolute;
+	width:100px;
+	height:100px;
+}
+
+
+
+#cpn-costume-list a.cpn-costume {
+	width:100%;
+	height:50px;
+	margin:10px 0 0 0;
+	font-size:18px;
+}
+
+#cpn-costume-list a.cpn-costume img {
+	width:50px;
+	height:50px;
+}
+
+#cpn-costume-list a.cpn-costume b,
+#cpn-costume-list a.cpn-costume span {
+	padding:0 0 0 55px;
+	display:block;
+	overflow:hidden;
+	white-space:nowrap;
+	line-height:22px;
+	margin:0;
+}
+
+#cpn-costume-list a.cpn-costume b {
+	padding-top:2px;
+}
+
+
+
+a.cpn-costume span {
+	display:block;
+	margin-left:105px;
+	overflow:hidden;
+}
+
+
+div.cpn-costume-info {
+	padding-left:105px;
+	font-size:14px;
+	height:22px;
+	white-space:nowrap;
+	overflow:hidden;
+}
+
+.cpn-costume h3 {
+	font-size:20px;
+	font-weight:bold;
+	margin:0;
+	padding:5px 5px;
+	width:270px;
+}
+
+.cpn-costume-title {
+	height:30px;
+	padding:0;
+	margin:0 0 0 100px;
+}
+
+.cpn-costume strong {
+/*	height:30px;*/
+	display:block;
+	line-height:1.2em;
+	padding:0;
+	margin:5px 2px 6px 105px;
+	font-size:18px;
+	font-weight:bold;
+	white-space:nowrap;
+	overflow:hidden;
+}
+
+
+a.cpn-costume-add {
+	font-size:20px;
+	text-align:center;
+	padding:10px 0 0 0;
+}
+
+a.cpn-costume-add b, a.cpn-costume-add strong {
+	padding:0;
+	margin:0;
+	font-size:50px;
+	line-height:45px;
+	display:block;
+}
+
+
+
+#cpn-costume-list .cpn-button {
+	margin:10px 0 0 0;
+	display:block;
+	text-align:left;
+	background-image:url('../glyph-white/add.png');
+	background-position:right 3px center;
+	background-size:24px 24px;
+	background-repeat:no-repeat;
+}
+
+#cpn-costume-list .cpn-button:hover {
+	background-image:url('../glyph-cyan/add.png');
+}
+
+
+span.cpn-detail-back {
+	display:inline-block;
+	vertical-align:top;
+	text-decoration:none;
+	color:#00C8E6;
+	background:#f8f8f8 url('../glyph-cyan/back.png') no-repeat left top;
+	padding:6px 5px 0 35px;
+	height:32px;
+	font-size:14px;
+	max-width:230px;
+	overflow:hidden;
+	white-space:nowrap;
+	cursor:pointer;
+	float:left;
+}
+
+span.cpn-detail-back:hover {
+	color:#fff;
+	background:#00C8E6 url('../glyph-white/back.png') no-repeat left top;
+}
+
+#cpn-add-detail-popup span.cpn-header {
+	vertical-align:top;
+	display:inline-block;
+	width:200px;
+	height:100px;
+	margin:50px 0 0 0;
+	text-align:center;
+	font-size:30px;
+	padding-top:27px;
+	cursor:pointer;
+}
+
+#cpn-add-detail-popup span.cpn-header:hover {
+	background:#fff;
+	color:#00C8E6;
+	box-shadow:0 0 4px #00C8E6;
+}

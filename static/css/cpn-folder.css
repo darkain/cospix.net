@@ -1,0 +1,57 @@
+table.cpn-folder {
+	font-size:0;
+	table-layout:fixed;
+	margin-bottom:15px;
+	width:100%;
+}
+
+table.cpn-folder.larger {
+	margin:20px 0;
+}
+
+table.cpn-folder td {
+	font-size:18px;
+	text-align:center;
+	cursor:pointer;
+	color:#00C8E6;
+	line-height:2em;
+	padding:0;
+}
+
+table.cpn-folder.larger td {
+	font-size:32px;
+	padding:20px 0;
+}
+
+table.cpn-folder td:hover {
+	box-shadow:0 0 4px #00C8E6;
+}
+
+table.cpn-folder td.cpn-folder-selected,
+table.cpn-folder td.cpn-folder-selected a,
+table.cpn-folder td.cpn-folder-selected a:hover,
+table.cpn-folder td.cpn-folder-selected a:active,
+table.cpn-folder td.cpn-folder-selected a:visited {
+	background:#00C8E6;
+	color:#fff;
+}
+
+table.cpn-folder span {
+	line-height:0.8em;
+	font-size:0.6em;
+	display:block;
+	margin:-0.5em 0 1em 0;
+}
+
+table.cpn-folder a {
+	color:#00C8E6;
+	line-height:2em;
+	display:block;
+	width:100%;
+	height:100%;
+	text-decoration:none;
+}
+
+table.cpn-folder a:hover {
+	color:#00C8E6;
+}

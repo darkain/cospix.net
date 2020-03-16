@@ -1,0 +1,1 @@
+<?php $af->renderPage('tablet.tpl');

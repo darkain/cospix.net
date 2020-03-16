@@ -1,0 +1,80 @@
+#cpn-featured-list {
+	-webkit-flex-flow:row wrap;
+	-moz-flex-flow:row wrap;
+	flex-flow:row wrap;
+	flex-wrap:wrap;
+	display:flex;
+	width:100%;
+}
+
+.cpn-featured-container,
+.cpn-featured-day {
+	width:14%;
+	flex-grow:1;
+}
+
+.cpn-featured-day {
+	text-align:center;
+	font-size:2em;
+	font-size:1.5vw;
+}
+
+.cpn-featured-item {
+	width:100%;
+	height:100%;
+	margin:0;
+	display:block;
+	text-decoration:none;
+	position:relative;
+}
+
+.cpn-featured-item:hover {
+	opacity:0.8;
+}
+
+.cpn-featured-item img {
+	width:100%;
+	height:100%;
+	object-fit:cover;
+}
+
+.cpn-featured-item span {
+	font-size:20px;
+	font-size:1.5vw;
+	font-weight:bold;
+	position:absolute;
+	text-shadow:0 0 20px #000, 0 0 10px #000, 0 0 5px #000, 0 0 1px #000;
+	color:#fff;
+	opacity:0.9;
+	right:10px;
+	bottom:5px;
+	right:1vw;
+	bottom:0.5vw;
+	z-index:1;
+}
+
+.cpn-feature-calendar-header {
+	padding:20px 0 0 5px;
+	margin:0;
+	line-height:1em;
+}
+
+.cpn-feature-calendar-list {
+	padding:0 0 20px 0;
+	-webkit-flex-flow:row wrap;
+	-moz-flex-flow:row wrap;
+	flex-flow:row wrap;
+	flex-wrap:wrap;
+	display:flex;
+}
+
+.cpn-feature-calendar-list a {
+	display:inline-block;
+	font-size:20px;
+	margin:5px;
+	padding:10px;
+	flex-grow:1;
+	width:15%;
+	font-size:2vw;
+}
+

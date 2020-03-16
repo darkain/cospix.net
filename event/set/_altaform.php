@@ -1,0 +1,13 @@
+<?php
+
+
+$user->requireAccessStaff('event');
+
+
+
+
+////////////////////////////////////////////////////////////
+//PULL EVENT INFORMATION
+////////////////////////////////////////////////////////////
+$event = $db->rowId('pudl_event', 'event_id', $get->id());
+\af\affirm(404, $event);

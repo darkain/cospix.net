@@ -1,0 +1,13 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+<g>
+	<circle fill="#00C8E6" cx="99.6" cy="99.9" r="97"/>
+</g>
+<g>
+	<path fill="#FFFFFF" d="M103.8,34h38.7c2.5,0,13.7,15.4,16.7,19.2h7.9c6.5,0,11.8,5.3,11.8,11.8v76.3c0,6.5-5.3,11.8-11.8,11.8
+		H33.3c-6.5,0-11.8-5.3-11.8-11.8V65c0-6.5,5.3-11.8,11.8-11.8h9.4v-9.4h22.2v9.4h22.2C90.1,49.4,101.3,34,103.8,34L103.8,34z"/>
+	<g enable-background="new    ">
+		<path fill="#00C8E6" d="M99.2,133.2V96.1l-10.5,6.3v-8.8c6.7-3.3,12-7.3,15.9-12.1h3.7v51.7H99.2z"/>
+	</g>
+</g>
+</svg>

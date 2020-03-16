@@ -1,0 +1,47 @@
+<!--
+<style>
+#body {
+	position: absolute;
+	width: 1000px;
+	height:2000px;
+	margin:auto;
+	bottom: 0;
+	overflow: hidden;
+	transform-origin: 50% 100%;
+	transform: perspective(300px) rotateX(25deg);
+	z-index:1;
+}
+
+html, body, body *, #body, #body * {
+	color:#ff0 !important;
+	background:#000 !important
+}
+
+footer {
+	display:none !important;
+}
+
+#body:after {
+	position: absolute;
+	content: ' ';
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 60%;
+	background-image:linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%) !important;
+	pointer-events: none;
+	z-index:9999;
+}
+
+#body article {
+	position: absolute;
+	top: 100%;
+	animation: scroll 100s linear infinite;
+}
+
+@keyframes scroll {
+	0% { top: 100%; }
+	100% { top: -170%; }
+}
+</style>
+-->

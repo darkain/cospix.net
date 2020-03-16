@@ -1,0 +1,202 @@
+html {
+	overflow-x:hidden;
+}
+
+body {
+	font-size:20px;
+}
+
+#mobile-body {
+	display:block;
+	background:#eee;
+	width:1000px;
+	min-width:1000px;
+	max-width:1000px;
+	overflow-x:hidden;
+	margin:0 auto;
+}
+
+#cpnx-header {
+	background:#fff;
+	position:fixed;
+	top:0;
+	margin:0 auto;
+	height:125px;
+	z-index:9;
+	width:1000px;
+	min-width:1000px;
+	max-width:1000px;
+}
+
+#cpn-debug-cache,
+#cpn-debug-misses {
+	font-size:20px;
+}
+
+#af-fatal {
+	width:100%;
+	background:#000;
+	color:#fff;
+	font-size:20px;
+	overflow:auto;
+}
+
+#af-fatal i {
+	font-style:normal;
+}
+
+
+#cpnm-btn-menu,
+#cpnm-btn-profile {
+	width:125px;
+	height:125px;
+	overflow:hidden;
+	cursor:pointer;
+}
+
+#cpnm-btn-menu:hover,
+#cpnm-btn-profile:hover {
+	background:#00C8E6;
+}
+
+#cpnm-btn-menu {
+	float:left;
+}
+
+#cpnm-btn-profile {
+	float:right;
+}
+
+#cpnm-btn-menu img,
+#cpnm-btn-profile img {
+	margin:10px;
+	width:105px;
+	height:105px;
+	background:#fff;
+}
+
+#cpnm-btn-profile img {
+	border-radius:1000px;
+}
+
+#cpnm-header {
+	text-align:center;
+}
+
+#cpnm-header img {
+	height:75px;
+	margin:25px;
+}
+
+#cpnm-search {
+	display:block;
+	margin:20px auto;
+	border:1px solid #636466;
+	border-radius:10px;
+	padding:5px 20px;
+	font-size:35px;
+	width:400px;
+}
+
+#cpnm-user-icon {
+	display:block;
+	float:left;
+	overflow:hidden;
+	border-radius:1000px;
+	margin:30px;
+	width:200px;
+	height:200px;
+	padding:0;
+}
+
+#cpnm-user-icon img {
+	width:200px;
+	height:200px;
+}
+
+#cpnm-left-search {
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	overflow:hidden;
+}
+
+#cpnm-left-search a {
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+
+#cpnm-left-search img {
+	margin-right:10px;
+}
+
+.cbp-spmenu-left .cpnm-menu-links,
+.cbp-spmenu-right .cpnm-menu-links {
+	clear:both;
+}
+
+nav.cbp-spmenu-left {
+	overflow:hidden;
+}
+
+.cbp-spmenu-left .cpnm-menu-links {
+	height:100%;
+	overflow-y:auto;
+}
+
+.cbp-spmenu-right .cpnm-menu-links a {
+	float:left;
+	width:50%;
+	overflow:hidden;
+	font-size:40px;
+}
+
+.cbp-spmenu-right .cpnm-menu-large {
+	border-top:5px solid #00C8E6;
+	line-height:0;
+	text-align:center;
+}
+
+.cbp-spmenu-right .cpnm-menu-large img {
+	width:200px;
+	height:200px;
+	margin:-25px 0 -45px 0;
+}
+
+.cbp-spmenu-left .cpnm-menu-links img,
+.cbp-spmenu-right .cpnm-menu-small img {
+	width:70px;
+	height:70px;
+	vertical-align:middle;
+	margin:-5px -15px;
+}
+
+#cpnm-menu-name {
+	font-size:40px;
+	margin-top:100px;
+	height:150px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	line-height:50px;
+}
+
+
+#cpnm-cospix-social a {
+	font-size:0;
+	display:inline-block;
+	padding:20px;
+	margin:10px;
+	border:5px solid #00C8E6;
+	border-radius:200px;
+}
+
+#cpnm-cospix-social a:hover {
+	background:#fff;
+	cursor:pointer;
+}
+
+#cpnm-cospix-social img {
+	width:60px;
+	height:60px;
+}
+
+body .cbp-spmenu-vertical { overflow:auto; }

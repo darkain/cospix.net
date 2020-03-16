@@ -1,0 +1,1 @@
+<?php $afurl->redirect("$afurl->base/article");
