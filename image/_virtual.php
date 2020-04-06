@@ -31,22 +31,16 @@ $discover	= [];
 // PULL IMAGE DATA
 ////////////////////////////////////////////////////////////////////////////////
 $image = $db->selectRow(
-	[
-		'th.*',
-		'fl.*',
-		'mt.*',
-		'JSON_file_meta_value' => pudl::column_json(pudl::column('fm.file_meta_value')),
-	],
+	['th.*', 'fl.*', 'JSON_file_meta_value'=>pudl::column_json(pudl::column('fm.file_meta_value'))],
 	['fl' => _pudl_file( \af\device::tablet() ? 800 : 1920 ) + [
-		['left'=>['fm'=>'file_meta'], 'on'=>[
+		['left'=>['fm'=>'pudl_file_meta'], 'on'=>[
 			'fl.file_hash=fm.file_hash',
 			pudl::column_check(pudl::column('file_meta_value')),
 		]],
-		['left'=>['mt'=>'mimetype'], 'on'=>'fl.mime_id=mt.mime_id'],
 	]],
 	['fl.file_hash' => $filehash]
 );
-
+\af\affirm(404, $image);
 
 $image['gallery_id']	= $get->id('gallery');
 $image['hash']			= bin2hex($image['file_hash']);
@@ -55,12 +49,6 @@ $image['url']			= $afurl->cdn($image, 'thumb_hash',	'mime_id');
 
 if (empty($image['url'])) {
 	$image['url']		= $afurl->cdn($image, 'file_hash',	'mime_id');
-}
-
-if (!empty($image['af_ext'])) {
-	$image['url'] .= '.' . $image['af_ext'];
-} else if (!empty($image['mime_ext'])) {
-	$image['url'] .= '.' . $image['mime_ext'];
 }
 
 
