@@ -219,6 +219,8 @@ $(function(){
 });
 //user: [user.user_id;noerr]
 //owner: [owner.user_id;noerr]
+//gallery: [owner.gallery_id;noerro]
+//img gallery: [image.gallery_id;noerr]
 </script>
 
 <script>
