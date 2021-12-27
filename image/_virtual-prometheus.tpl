@@ -217,6 +217,8 @@ $(function(){
 		}, function(data){ $('.cpn-favorite').html(data) });
 	});
 });
+//user: [user.user_id;noerr]
+//owner: [owner.user_id;noerr]
 </script>
 
 <script>
