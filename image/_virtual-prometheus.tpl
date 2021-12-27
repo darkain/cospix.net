@@ -25,7 +25,7 @@
 			Remove from Favs
 		</a>
 
-		<a href="[afurl.base]/[owner.user_url;ifempty=[owner.user_id;magnet=a]]/gallery/[owner.gallery_id;noerro]">
+		<a href="[afurl.base]/[owner.user_url;ifempty=[owner.user_id;magnet=a]]/gallery/[image.gallery_id;noerro]">
 			[onshow;svg=static/thumb2/gallery.svg]
 			View Full Gallery
 		</a>
@@ -236,7 +236,7 @@ $(function(){
 	$('#cpn-set-gallery-thumb').click(function(){
 		$.post(
 			'[afurl.base]/gallery/set/thumb',
-			'hash=[image.hash]&gallery=[owner.gallery_id;noerr]',
+			'hash=[image.hash]&gallery=[image.gallery_id;noerr]',
 			refresh
 		);
 	});
@@ -260,9 +260,9 @@ $(function(){
 	$('#cpn-set-gallery-delete').click(function(){
 		if (!confirm('Are you SURE you want to remove this image from your [owner.gallery_type;noerr]?')) return;
 		$.post(
-			'[afurl.base]/gallery/delete/[owner.gallery_id;noerr]/[image.hash]',
+			'[afurl.base]/gallery/delete/[image.gallery_id;noerr]/[image.hash]',
 			function(){
-				redirect('[afurl.base]/[owner.user_url;noerr;ifempty='[owner.user_id;noerr]']/[owner.gallery_type;noerr]/[owner.gallery_id;noerr]')
+				redirect('[afurl.base]/[owner.user_url;noerr;ifempty='[owner.user_id;noerr]']/[owner.gallery_type;noerr]/[image.gallery_id;noerr]')
 			}
 		);
 	});
