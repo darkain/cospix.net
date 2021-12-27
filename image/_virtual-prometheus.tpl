@@ -217,15 +217,11 @@ $(function(){
 		}, function(data){ $('.cpn-favorite').html(data) });
 	});
 });
-//user: [user.user_id;noerr]
-//owner: [owner.user_id;noerr]
-//gallery: [owner.gallery_id;noerro]
-//img gallery: [image.gallery_id;noerr]
+//owner: [image.owner]
 </script>
 
 <script>
-[onshow;block=script;when [user.user_id]+-0]
-[onshow;block=script;when [owner.user_id;noerr]=[user.user_id]]
+[onshow;block=script;when [image.owner]=1]
 $(function(){
 
 	$('.cpn-tag-unlink').click(function(e){
