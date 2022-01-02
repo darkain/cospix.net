@@ -51,7 +51,7 @@ $render['recommend'] = [];
 if ($user->isStaff()  &&  $group['group_type_name'] === 'series') {
 	$clause = [];
 	if (!empty($characters)) {
-		$clause['gl.group_label_id'] = pudl::notInSet(array_flip($characters));
+		$clause['gl.group_label_id'] = pudl::neq(array_flip($characters));
 	}
 	$result = $db->group(
 		['gl.*', 'gr.*', 'thumb_hash', 'gt.group_type_name'],
