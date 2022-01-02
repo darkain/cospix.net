@@ -47,7 +47,7 @@ $rows = $db->cache(AF_HOUR)->having(
 			$profile['user_lon']-$lon,
 			$profile['user_lon']+$lon
 		),
-		'event_id'		=> pudl::notInSet($events),
+		'event_id'		=> pudl::neq($events),
 	],
 
 	//HAVING
