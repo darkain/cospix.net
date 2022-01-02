@@ -273,7 +273,7 @@ $result = $db->select(
 	], [
 		'us.user_id=fu.user_id',
 		'fu.file_user_visible=1',
-		'us.user_id'	=> pudl::notInSet($owners),
+		'us.user_id'	=> pudl::neq($owners),
 		'fu.file_hash'	=> $filehash,
 		cpnFilterBanned(),
 	]
@@ -342,7 +342,7 @@ if (!empty($galleries)) {
 			'ar' => _pudl_article(),
 		], [
 			'ar.article_id=gt.article_id',
-			'gt.gallery_id' => pudl::inSet($galleries),
+			'gt.gallery_id' => $galleries,
 		]
 	);
 
