@@ -18,8 +18,8 @@ $rows = $db->cache(AF_DAY)->group(
 		'us' => '~ pudl_user(user_id)',
 	], [
 		cpnFilterBanned(),
-		'fl.file_hash'		=> pudl::notInSet($images),
-		'gi.gallery_id'		=> pudl::notInSet($galleries),
+		'fl.file_hash'		=> pudl::neq($images),
+		'gi.gallery_id'		=> pudl::neq($galleries),
 	],
 	['fl.file_hash'],
 	[pudl::rand()],

@@ -23,7 +23,11 @@ if (count($_FILES) < 1)	\af\error(422, 'No files to process');
 //HASH FILE
 ////////////////////////////////////////////////////////////////////////////////
 $file = reset($_FILES);
-$file['hash'] = @md5_file($file['tmp_name'], true);
+
+\af\affirm(500,
+	$file['hash'] = @md5_file($file['tmp_name'], true),
+	'Unknown server error occurred while processing uploaded file'
+);
 
 
 

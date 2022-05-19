@@ -109,7 +109,7 @@ $db->delete('pudl_gallery_image', [
 		'pudl_gallery',
 		['user_id'=>$user['user_id']]
 	),
-	['gallery_id' => pudl::notInSet($items)],
+	['gallery_id' => pudl::neq($items)],
 ]);
 
 
