@@ -58,6 +58,8 @@ foreach ($matches as $match) {
 		if (substr($item, 0, 15) !== '[afurl.static]/') continue;
 		$item = $static . substr($item, 15);
 
+		print('Loading: ' . $item . "\n");
+
 		$text = @file_get_contents($item);
 		if ($text === false) httpError(500, 'Cannot open file: ' . $item);
 
@@ -79,7 +81,7 @@ file_put_contents($static.'css/altaform.css', $out);
 file_put_contents($static.'css/altaform.css.gz', gzencode($out,9));
 
 $md5 = md5($out);
-echo $static.'css/altaform.css - ' . $md5 . "\n";
+print($static.'css/altaform.css - ' . $md5 . "\n\n");
 
 $af->setting('af.hash.css', $md5);
 
@@ -134,6 +136,6 @@ file_put_contents($static.'js/altaform.js', $out);
 file_put_contents($static.'js/altaform.js.gz', gzencode($out,9));
 
 $md5 = md5($out);
-echo $static.'js/altaform.js - ' . $md5 . "\n";
+print($static.'js/altaform.js - ' . $md5 . "\n");
 
 $af->setting('af.hash.js', $md5);
