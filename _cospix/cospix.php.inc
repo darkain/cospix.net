@@ -21,7 +21,7 @@ $og = [
 	'keywords'		=> '',
 	'viewport'		=> 'width=device-width,initial-scale=1',
 	'themecolor'	=> '#00C8E6',
-	'themeicon'		=> $afurl->static . '/img/cospix-x-192.png',
+	'themeicon'		=> '/static/img/cpn-logo-icon.png',
 	'twittername'	=> '@cospixnet',
 	'twitterdomain'	=> 'Cospix.net',
 ];
