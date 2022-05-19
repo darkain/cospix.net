@@ -55,6 +55,7 @@ window.onerror		= function(message,file,line,col,error) {
 <link rel="stylesheet" type="text/css" href="[style.path;block=link]" />
 <link rel="stylesheet" type="text/css" href="[afurl.static]/css/jquery-ui.css" />
 <link rel="stylesheet" type="text/css" href="[afurl.static]/altaform/af.scss" />
+<link rel="stylesheet" type="text/css" href="[afurl.static]/altaform/styles.scss" />
 
 <link rel="stylesheet" type="text/css" href="[afurl.static]/css/cospix.css" />
 <link rel="stylesheet" type="text/css" href="[afurl.static]/css/cpn.css" />
