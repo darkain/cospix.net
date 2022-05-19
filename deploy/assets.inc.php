@@ -38,7 +38,7 @@ require_once('_scss/scss.inc.php');
 ////////////////////////////////////////////////////////////////////////////////
 //LOAD DATA FOR CSS AND JS MINIFIER
 ////////////////////////////////////////////////////////////////////////////////
-print('Loading: ' . $root . "/header_html_debug.tpl\n\n")
+print('Loading: ' . $root . "/header_html_debug.tpl\n\n");
 $data = file_get_contents($root.'/header_html_debug.tpl');
 
 
