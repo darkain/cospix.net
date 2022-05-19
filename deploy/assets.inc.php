@@ -15,6 +15,7 @@ $static	= $af->staticPath();
 //SET THE CONTENT TYPE TO TEXT
 ////////////////////////////////////////////////////////////////////////////////
 $af->contentType('txt');
+print("Processing Assets\n\n");
 
 
 
