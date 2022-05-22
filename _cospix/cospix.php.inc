@@ -101,7 +101,7 @@ class cospix_altaform extends altaform {
 
 		parent::postLogin();
 
-		$router->homepage = 'discover';
+		$router->homepage = 'story';
 
 		if (!$user->loggedIn()) {
 			$user->messages			= 0;
