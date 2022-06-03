@@ -51,6 +51,8 @@ if (strlen($email) > 100) {
 
 
 //TRANSACTIONS
+$db->begin();
+/*
 $db->begin()->lock([
 	'us'	=> 'pudl_user',
 	'ua'	=> 'pudl_user_auth',
@@ -59,18 +61,20 @@ $db->begin()->lock([
 	'pudl_user_auth',
 	'pudl_user_profile',
 ]);
-
+*/
 
 //VERIFY UNIQUE EMAIL ADDRESS
 if ($db->idExists('pudl_user_profile', 'user_email', $email)) {
-	$db->unlock()->rollback();
+	//$db->unlock()->rollback();
+	$db->rollback();
 	return 'Email address is already in use';
 }
 
 
 //VERIFY UNIQUE EMAIL ADDRESS
 if ($db->idExists('pudl_user_auth', 'auth_account', $email)) {
-	$db->unlock()->rollback();
+	//$db->unlock()->rollback();
+	$db->rollback();
 	return 'Email address is already in use';
 }
 
@@ -80,10 +84,11 @@ if ($db->idExists('pudl_user_auth', 'auth_account', $email)) {
 ////////////////////////////////////////////////////////////////////////////////
 //VERIFY RECAPTCHA
 ////////////////////////////////////////////////////////////////////////////////
+/*
 $data = $afurl->post('https://www.google.com/recaptcha/api/siteverify',	[
 	'secret'	=> $af->config->recaptcha['secret'],
 	'response'	=> $get('g-recaptcha-response'),
-	'remote'	=> afIp::address(),
+	'remote'	=> af\ip::address(),
 ]);
 
 
@@ -92,7 +97,7 @@ $result = pudl::jsonDecode($data['content']);
 if (empty($result['success'])) {
 	return 'Security verification failed';
 }
-
+*/
 
 
 
@@ -117,7 +122,8 @@ $db->insert('pudl_user_profile', [
 
 
 //TRANSACTIONS
-$db->unlock()->commit();
+//$db->unlock()->commit();
+$db->commit();
 
 
 //SET UP THE USER'S PREFERENCES
@@ -128,6 +134,7 @@ require('../newuser.php.inc');
 
 ////////////////////////////////////////////////////////////////////////////////
 //SEND AN EMAIL TO THE ADDRESS PROVIDED
+// TODO: MAKE THIS ASYNC - CREATE A "MAIL" JOB QUEUE THAT IS PROCESSED SEPARATELY
 ////////////////////////////////////////////////////////////////////////////////
 $af->load('create.tpl');
 
