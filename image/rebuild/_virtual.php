@@ -73,7 +73,7 @@ $url	= $afurl->cdn($image);
 if (substr($url, 0, 2) === '//') $url = 'http:' . $url;
 
 $import	= new \af\import($af, $db);
-$data	= $import->importUrl($url);
+$data	= $import->url($url);
 
 
 
