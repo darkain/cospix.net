@@ -9,8 +9,9 @@ foreach ($afconfig->instances as $server) {
 	$servers[]	= 'https://'.$server.'/status/check';
 }
 $servers[]		= 'https://beta.cospix.net/status/check';
-$servers[]		= 'https://router-1.cospix.net';
-$servers[]		= 'https://router-2.cospix.net';
+$servers[]		= 'http://router-0.tac.cospix.net';
+$servers[]		= 'http://router-1.tac.cospix.net';
+$servers[]		= 'http://router-2.tac.cospix.net';
 
 
 
