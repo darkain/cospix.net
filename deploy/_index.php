@@ -80,9 +80,9 @@ if (!empty($af->config->github['strength'])) {
 
 
 ////////////////////////////////////////////////////////////////////////////////
-// PROCESS POST JSON DATA SO FUTURE $get() CALLS CAN ACCESS IT
+// PROCESS PAYLOAD POST JSON DATA SO FUTURE $get() CALLS CAN ACCESS IT
 ////////////////////////////////////////////////////////////////////////////////
-$get->post(true);
+$get->post('payload');
 
 
 
