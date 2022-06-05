@@ -38,7 +38,7 @@ require_once('_scss/scss.inc.php');
 ////////////////////////////////////////////////////////////////////////////////
 //LOAD DATA FOR CSS AND JS MINIFIER
 ////////////////////////////////////////////////////////////////////////////////
-print('Loading: ' . $root . "/header_html_debug.tpl\n\n");
+print("Parsing:\t" . $root . "/header_html_debug.tpl\n\n");
 $data = file_get_contents($root.'/header_html_debug.tpl');
 
 
@@ -58,7 +58,7 @@ foreach ($matches as $match) {
 		if (substr($item, 0, 15) !== '[afurl.static]/') continue;
 		$item = $static . substr($item, 15);
 
-		print('Loading: ' . $item . "\n");
+		print("Loading:\t" . $item . "\n");
 
 		$text = @file_get_contents($item);
 		if ($text === false) httpError(500, 'Cannot open file: ' . $item);
@@ -81,7 +81,9 @@ file_put_contents($static.'css/altaform.css', $out);
 file_put_contents($static.'css/altaform.css.gz', gzencode($out,9));
 
 $md5 = md5($out);
-print($static.'css/altaform.css - ' . $md5 . "\n\n");
+print("\nBuilding:\t");
+print($static . 'css/altaform.css');
+print("\nMD5 Hash:\t" . $md5 . "\n\n");
 
 $af->setting('af.hash.css', $md5);
 
@@ -104,6 +106,8 @@ foreach ($matches as $match) {
 
 		if (strpos($item, 'jquery-ui.min.js') !== false) continue;
 		if (preg_match('/jquery-\d\.\d\.\d\.min\.js/', $item)) continue;
+
+		print("Loading:\t" . $item . "\n");
 
 		$text = @file_get_contents($item);
 		if ($text === false) httpError(500, 'Cannot open file: ' . $item);
@@ -136,6 +140,8 @@ file_put_contents($static.'js/altaform.js', $out);
 file_put_contents($static.'js/altaform.js.gz', gzencode($out,9));
 
 $md5 = md5($out);
-print($static.'js/altaform.js - ' . $md5 . "\n");
+print("\nBuilding:\t");
+print($static . 'js/altaform.js');
+print("\nMD5 Hash:\t" . $md5 . "\n\n");
 
 $af->setting('af.hash.js', $md5);
