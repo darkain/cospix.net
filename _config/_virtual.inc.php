@@ -30,3 +30,6 @@ $og = [
 	'keywords'		=> '',
 	'viewport'		=> 'width=650,user-scalable=no',
 ];
+
+
+require_once('cospix.secret.php');
