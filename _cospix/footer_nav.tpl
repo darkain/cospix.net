@@ -9,11 +9,8 @@
 
 <div style="float:left;width:324px" class="center">
 	<ul>
-		<li><a>Copyright &copy; [onshow..now;date=Y] Cospix LLC</a></li>
+		<li><a>Copyright &copy; [onshow..now;date=Y]</a></li>
 		<li><a href="[afurl.base]/legal/tos">Terms of Service</a></li>
-		<li><a href="[afurl.base]/devlog">Development Log</a></li>
-		<li><a href="[afurl.base]/admin/status" target="_blank">[af.hhvm] - [af.config.unit] - [af.config.magi][onshow;block=li;when [user.permission.admin]=1]</a></li>
-		<li><a>[af.hhvm] - [af.config.unit] - [af.config.magi][onshow;block=li;when [user.permission.admin]!=1]</a></li>
 	</ul>
 </div>
 

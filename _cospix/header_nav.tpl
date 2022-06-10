@@ -30,18 +30,8 @@
 	</footer>
 
 	<footer id="prometheus-footer">
-		<div class="smaller" style="padding-top:0.5em">
-			<a href="[afurl.base]/legal/tos">Terms</a> ·
-			<a href="[afurl.base]/legal/privacy">Privacy</a> ·
-			<a href="[afurl.base]/legal/copyright">Copyright</a>
-		</div>
-		<div class="smaller">
-			<a href="[afurl.base]/staff">Contact</a> ·
-			<a href="[afurl.base]/branding">Branding</a> ·
-			<a href="[afurl.base]/bugs">Bugs</a>
-		</div>
-		<div class="smaller" style="padding-top:0.5em">
-			<a href="[afurl.base]/legal">&copy; [onshow..now;date=Y] Cospix LLC</a>
+		<div>
+			<a href="[afurl.base]/legal">&copy; [onshow..now;date=Y] Cospix.net</a>
 		</div>
 	</footer>
 </nav>

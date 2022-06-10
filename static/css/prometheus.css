@@ -10,6 +10,7 @@
 
 html, body, #body{
 	background:#152b3f !important;
+	scrollbar-color:rgb(0,200,230) rgba(0,200,230,0.1);
 /*	-webkit-text-size-adjust: 100%; */
 }
 
@@ -38,6 +39,25 @@ body::-webkit-scrollbar-thumb {
 }
 
 
+
+body::-webkit-scrollbar-button:single-button {
+  background: green;
+}
+
+body::-webkit-scrollbar-button:single-button:hover {
+  background: red;
+}
+/* Down */
+/*
+body::-webkit-scrollbar-button:single-button:vertical:increment {
+  border-width: 8px 8px 0 8px;
+  border-color: #555555 transparent transparent transparent;
+}
+
+body::-webkit-scrollbar-button:vertical:single-button:increment:hover {
+  border-color: #777777 transparent transparent transparent;
+}
+*/
 
 
 /*//////////////////////////////////////////////////////////////////////////////
@@ -380,23 +400,12 @@ body #prometheus-footer,
 body #copyright {
 	z-index:2;
 	margin:0 !important;
-	padding:10px;
-	font-size:20px;
 	color:#a6a8aa;
 }
 
 body #prometheus-footer a {
-	font-size:1em;
-	display:inline-block;
-	padding-left:10px;
-	margin-left:-10px;
 	color:#a6a8aa;
-}
-
-body #prometheus-footer .smaller a {
-	display:inline-block;
-	padding:0;
-	margin:0;
+	font-size:0.75em;
 }
 
 #prometheus-footer svg,

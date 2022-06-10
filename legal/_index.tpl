@@ -6,7 +6,7 @@
 	<h1 class="cpn-header cpn-discover-header">[af.title]</h1>
 	<div class="cpn-default cpn-tag-categories">
 		<p>
-			&copy; [onshow..now;date=Y] Cospix LLC - Please review the links below
+			&copy; [onshow..now;date=Y] - Please review the links below
 			for additional details
 		</p>
 
