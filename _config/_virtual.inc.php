@@ -32,4 +32,6 @@ $og = [
 ];
 
 
+require_once($afconfig->root.'/cospix.php.inc');
 require_once('cospix.secret.php');
+require_once('_cospix/cospix.php.inc');
