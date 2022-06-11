@@ -7,6 +7,22 @@ require_once('_buildurl/src/http_build_url.php');
 
 
 ////////////////////////////////////////////////////////////////////////////////
+// BLOCK LIST OF SPAMMY DOMAINS
+////////////////////////////////////////////////////////////////////////////////
+$blocklist = [
+	'viromin.com',
+	'bookmark-share.com',
+	'bookmarkmiracle.com',
+	'finanzas.kelisto.es',
+	'hantsservicesltd.co.uk',
+	'mythem.es',
+];
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
 // GET THE PATH
 ////////////////////////////////////////////////////////////////////////////////
 $path = $afurl->uri;
@@ -29,8 +45,20 @@ if (empty($parsed['scheme'])) $path = 'https://' . $path;
 // VALIDATE THE URL
 ////////////////////////////////////////////////////////////////////////////////
 \af\affirm(400,
+	filter_var($path, FILTER_VALIDATE_URL),
+	'Invalid URL'
+);
+
+foreach ($blocklist as $item) {
+	\af\affirm(400,
+		stripos($path, $item) === false,
+		'Invalid Domain'
+	);
+}
+
+\af\affirm(400,
 	strlen($path) < 255,
-	'Invalid Data'
+	'URL Too Long'
 );
 
 
