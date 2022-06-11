@@ -61,7 +61,7 @@ foreach ($matches as $match) {
 		print("Loading:\t" . $item . "\n");
 
 		$text = @file_get_contents($item);
-		if ($text === false) httpError(500, 'Cannot open file: ' . $item);
+		if ($text === false) \af\error(500, 'Cannot open file: ' . $item);
 
 		if (substr($item, -5) === '.scss') {
 			$text = (new Compiler)->compile($text);
@@ -110,7 +110,7 @@ foreach ($matches as $match) {
 		print("Loading:\t" . $item . "\n");
 
 		$text = @file_get_contents($item);
-		if ($text === false) httpError(500, 'Cannot open file: ' . $item);
+		if ($text === false) \af\error(500, 'Cannot open file: ' . $item);
 
 		$line = preg_split('/\n|\r/', trim($text));
 		if (trim($line[0]) === "'use strict';") {
