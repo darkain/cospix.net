@@ -18,8 +18,6 @@ $afconfig([
 	'origins'		=> [
 						'http://cospix.net',
 						'https://cospix.net',
-						'http://m.cospix.net',
-						'https://m.cospix.net',
 	],
 
 ]);

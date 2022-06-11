@@ -3,7 +3,7 @@
 
 //CONTENT DELIVARY NETWORKS
 $afurl->cdn			=	'//beta.cospix.net/files';
-$afurl->push		=	'https://chat.cospix.net/push';
+$afurl->push		=	'//chat.beta.cospix.net/push';
 
 
 //Basic configuration for web site
@@ -19,10 +19,6 @@ $afconfig([
 	'origins'		=> [
 						'http://beta.cospix.net',
 						'https://beta.cospix.net',
-						'http://php.cospix.net',
-						'https://php.cospix.net',
-						'http://php7.cospix.net',
-						'https://php7.cospix.net',
 	],
 
 ]);
