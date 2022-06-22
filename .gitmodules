@@ -50,6 +50,3 @@
 	path = _products
 	url = git@github.com:darkain/Amazon-ECS-PHP-Library.git
 
-[submodule "_scss"]
-	path = _scss
-	url = https://github.com/leafo/scssphp.git
