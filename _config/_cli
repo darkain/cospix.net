@@ -11,6 +11,7 @@ $afconfig([
 
 	'root'			=>	'_cospix',
 	'secure'		=>	['max-age'=>3600, 'includeSubDomains'],
+	'debug'			=>	true,	//Enable all DEBUG features!
 
 
 
