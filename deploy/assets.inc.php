@@ -24,7 +24,7 @@ print("Processing Assets\n\n");
 //INCLUDE ALL THE THINGS!!
 ////////////////////////////////////////////////////////////////////////////////
 use MatthiasMullie\Minify;
-use Leafo\ScssPhp\Compiler;
+use ScssPhp\ScssPhp\Compiler;
 require_once('_pathconvert/src/ConverterInterface.php');
 require_once('_pathconvert/src/Converter.php');
 require_once('_minify/src/Minify.php');
@@ -64,7 +64,7 @@ foreach ($matches as $match) {
 		if ($text === false) \af\error(500, 'Cannot open file: ' . $item);
 
 		if (substr($item, -5) === '.scss') {
-			$text = (new Compiler)->compile($text);
+			$text = (new Compiler)->compileString($text)->getCss();
 		}
 
 		$text = (new Minify\CSS($text))->minify();

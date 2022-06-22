@@ -1,7 +1,7 @@
 <?php
 
 
-use Leafo\ScssPhp\Compiler;
+use ScssPhp\ScssPhp\Compiler;
 
 require_once('_scss/scss.inc.php');
 
@@ -19,9 +19,9 @@ require_once('_scss/scss.inc.php');
 
 
 // COMPILE SCSS TO CSS
-$css = (new Compiler)->compile(
+$css = (new Compiler)->compileString(
 	file_get_contents($af->path() . $router->parts['path'])
-);
+)->getCss();
 
 
 // SET CONTENT TYPE TO CSS, AND OUTPUT IT
