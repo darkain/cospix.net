@@ -1,146 +1,23 @@
-<style>
-.prometheus-profile-flow {
-	margin:10px -10px;
-	display:flex;
-	flex-flow:row wrap;
-}
-
-.prometheus-profile-flow>div {
-	width:calc(25%-20px);
-	min-width:325px;
-	min-height:280px;
-	margin:10px;
-	flex-grow:1;
-	flex-basis:0;
-	background:#fff;
-	box-shadow:0 0 10px #000;
-}
-
-.prometheus-profile-flow>div>div,
-.prometheus-profile-flow>div>a {
-	min-width:325px;
-	width:100%;
-	height:300px;
-	margin:auto;
-	overflow:hidden;
-	text-align:center;
-	line-height:1em;
-	display:block;
-	color:#4F4C4C;
-}
-
-.prometheus-profile-flow svg {
-	margin:auto;
-	height:70%;
-}
-
-.prometheus-profile-flow>div>a:hover {
-	color:#00C8E6;
-}
-
-
-.prometheus-profile-flow>div>a:hover svg path {
-	fill:#00C8E6 !important;
-}
-
-.prometheus-profile-flow b {
-	font-size:4em;
-	display:block;
-	text-align:center;
-	width:100%;
-}
-
-
-.event-weather {
-	min-width:325px;
-	max-width:325px;
-	width:325px;
-	padding-top:80px;
-	overflow:hidden;
-	height:243px;
-	min-height:243px;
-	max-height:243px;
-}
-
-.event-weather iframe {
-	border:0;
-	height:500px;
-	width:500px;
-	margin-top:-45px;
-	margin-left:-180px;
-}
-
-#cpn-event-time {
-	display:block;
-	font-size:1.7em;
-	text-align:center;
-}
-
-#ui-event-date {
-	height:auto;
-	margin-top:1.5em;
-}
-
-#ui-event-date table {
-	width:322px;
-	margin:0 auto;
-}
-
-#ui-event-date .ui-datepicker,
-#ui-event-date .ui-widget-content,
-#ui-event-date .ui-datepicker-header {
-	background:none;
-	border-radius:none;
-	border:none;
-	width:100%;
-}
-
-#ui-event-date .ui-datepicker-header {
-	padding:0;
-	margin:0;
-	font-size:2em;
-	font-weight:normal;
-}
-
-#ui-event-date .ui-datepicker th {
-	padding:0;
-}
-
-.cpn-profile-body .cpn-map-list {
-	display:flex;
-	flex-flow:row wrap;
-	margin:0 -10px 10px -10px;
-}
-
-.cpn-profile-body .cpn-map-list li {
-	flex-grow:1;
-	flex-basis:0;
-	width:calc(25%-20px);
-	margin:10px;
-	min-width:325px;
-}
-</style>
-
 <section class="cpn-profile-body">
 
 	<div class="prometheus-profile-flow">
 
 		<div>
-			<a href="[afurl.base]/event/[event.event_name;safe=url]/attendees">
+			<a href="[afurl.base]/event/[event.event_name;f=urlname]/attendees">
 				[onshow;svg=static/thumb2/profile.svg]
 				<b>Attendees</b>
 			</a>
 		</div>
 
 		<div>
-			<a href="[afurl.base]/event/[event.event_name;safe=url]/galleries">
+			<a href="[afurl.base]/event/[event.event_name;f=urlname]/galleries">
 				[onshow;svg=static/thumb2/camera.svg]
 				<b>Galleries</b>
 			</a>
 		</div>
 
 		<div>
-			<a target="_blank" href="https://maps.apple.com/?sll=[event.event_lat],[event.event_lon]&amp;address=[event.event_venue;safe=url]&amp;t=m&amp;z=16">
+			<a target="_blank" href="https://maps.apple.com/?sll=[event.event_lat],[event.event_lon]&amp;address=[event.event_venue;f=urlname]&amp;t=m&amp;z=16">
 				[onshow;svg=static/thumb2/convention.svg]
 				<b>Map ➥</b>
 			</a>
@@ -162,7 +39,7 @@
 
 		<div>
 			<div class="event-weather">
-				<iframe src="//forecast.io/embed/#lat=[event.event_lat]&amp;lon=[event.event_lon]&amp;color=%2300C8E6&amp;units=us" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
+				<iframe src="//forecast.io/embed/#lat=[event.event_lat]&amp;lon=[event.event_lon]&amp;color=%2300C8E6&amp;units=us" sandbox="allow-scripts allow-same-origin"></iframe>
 			</div>
 		</div>
 

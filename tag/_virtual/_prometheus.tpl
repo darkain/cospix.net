@@ -1,5 +1,3 @@
-<style>.cpn-discover-header{display:none}</style>
-
 <script>
 $(function(){
 	var filter_search	= $('#prometheus-filter').val();

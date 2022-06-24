@@ -1,4 +1,3 @@
-
 /* TODO: lower max width of flex items */
 /* TODO: add a search bar!! */
 /* TODO: High DPI displays: above 1080p, 2x scale - above 2160p, 4x scale; */
@@ -41,21 +40,21 @@ body::-webkit-scrollbar-thumb {
 
 
 body::-webkit-scrollbar-button:single-button {
-  background: green;
+	background: green;
 }
 
 body::-webkit-scrollbar-button:single-button:hover {
-  background: red;
+	background: red;
 }
 /* Down */
 /*
 body::-webkit-scrollbar-button:single-button:vertical:increment {
-  border-width: 8px 8px 0 8px;
-  border-color: #555555 transparent transparent transparent;
+	border-width: 8px 8px 0 8px;
+	border-color: #555555 transparent transparent transparent;
 }
 
 body::-webkit-scrollbar-button:vertical:single-button:increment:hover {
-  border-color: #777777 transparent transparent transparent;
+	border-color: #777777 transparent transparent transparent;
 }
 */
 
@@ -67,34 +66,43 @@ body::-webkit-scrollbar-button:vertical:single-button:increment:hover {
 @media only screen and (min-width: 6000px) { body { zoom:3.0; } }
 
 
+
 @media only screen and (max-width: 950px) {
-	body #prometheus-footer {
-		display:none !important;
+
+
+	body {
+		#prometheus-footer {
+			display:none !important;
+		}
+
+		#prometheus-sidebar {
+			width:40px;
+		}
+
+		#body {
+			margin-left:40px !important;
+		}
 	}
 
-	body #prometheus-sidebar {
-		width:40px;
+
+	body.prometheus-scale {
+		#body .cpn-discover {
+			zoom:0.85;
+		}
+
+		#cpn-profile-canvas {
+			zoom:0.85;
+		}
+
+		#body .cpn-discover h1.cpn-discover-header {
+			font-size:calc((100vw - 40px) / 10);
+		}
+
+		#body #cpn-profile-canvas .cpn-discover {
+			zoom:1;
+		}
 	}
 
-	body #body {
-		margin-left:40px !important;
-	}
-
-	body.prometheus-scale #body .cpn-discover {
-		zoom:0.85;
-	}
-
-	body.prometheus-scale #cpn-profile-canvas {
-		zoom:0.85;
-	}
-
-	body.prometheus-scale #body .cpn-discover h1.cpn-discover-header {
-		font-size:calc((100vw - 40px) / 10);
-	}
-
-	body.prometheus-scale #body #cpn-profile-canvas .cpn-discover {
-		zoom:1;
-	}
 
 	body #cospix-message-list {
 		left:40px !important;
@@ -448,38 +456,52 @@ body #body div.cpn-discover {
 	margin-left:-10px;
 }
 
-body #body div.cpn-discover figure {
-	margin:10px 0 0 10px !important;
-	flex-grow:1;
-	height:300px !important;
-}
+body #body div.cpn-discover a {
+	margin:		10px 0 0 10px !important;
+	flex-grow:	1;
+	height:		300px !important;
+	overflow:	hidden;
 
-body #body div.cpn-discover figure>a {
-	display:block;
-	width:100%;
-	height:300px;
-	overflow:hidden;
-	position:relative;
-}
+	> figure {
+		display:	block;
+		width:		100% !important;
+		height:		300px;
+		overflow:	hidden;
+		position:	relative;
+		background:	none;
+		margin:		0 !important;
+		padding:	0 !important;
 
-body #body div.cpn-discover figure>a img {
-	width:auto;
-	height:300px;
-	min-height:100%;
-	min-width:100%;
-	position:absolute;
-	top:-999px;
-	bottom:-999px;
-	left:-999px;
-	right:-999px;
-	margin:auto;
-	object-fit:cover;
-	object-position:50% 10%;
-}
 
-body #body div.cpn-discover figure>a:hover img {
-	opacity:0.8;
+		img {
+			width:				auto;
+			height:				300px;
+			min-height:			100%;
+			min-width:			100%;
+			position:			absolute;
+			top:				-999px;
+			bottom:				-999px;
+			left:				-999px;
+			right:				-999px;
+			margin:				auto;
+			object-fit:			cover;
+			object-position:	50% 10%;
+		}
+
+		&:hover {
+			box-shadow: 0 0 10px;
+
+			img {
+				opacity:0.8;
+			}
+		}
+
+	}
 }
+/*
+div.cpn-discover figure:hover
+*/
+
 
 @media all and (-ms-high-contrast:none) {
 	#body #cpn-profile-canvas div.cpn-discover figure a img {
@@ -1352,4 +1374,243 @@ body .af-edit-input {
 	z-index:99999999;
 	width:300px;
 	margin:auto;
+}
+
+
+
+
+/*//////////////////////////////////////////////////////////////////////////////
+// USER PROFILE
+//////////////////////////////////////////////////////////////////////////////*/
+div.profile-flex {
+	display:flex;
+	flex-wrap:wrap;
+	max-width:1800px;
+	margin:auto;
+	color:#fff;
+
+	> div {
+		flex-grow:1;
+		flex-shrink:1;
+		width:300px;
+		margin:1em;
+	}
+}
+
+
+div.profile-things {
+	background:#fff;
+	border-radius:10px;
+	padding:1em;
+	box-shadow:inset 0 0 5px #000;
+	color:#456;
+
+	> div {
+		display:flex;
+		flex-wrap:wrap;
+
+		> div {
+			flex-grow:1;
+			flex-shrink:1;
+			width:120px;
+		}
+	}
+
+	h3 {
+		color:#456;
+		border-bottom:4px solid #456;
+		padding-bottom:0.2em;
+
+		span {
+			float:right;
+			font-size:0.75em;
+			cursor:pointer;
+		}
+	}
+
+	h4 {
+		font-size:1em;
+		padding-top:1em;
+		color:#00C8E6;
+		font-weight:bold;
+	}
+
+	ul, li {
+		list-style:none;
+		padding:0;
+		margin:0;
+	}
+}
+
+
+div.cpn-profile-about {
+	h3 {
+		border-bottom:4px solid #00C8E6;
+		padding-bottom:0.2em;
+		margin-bottom:1em;
+	}
+
+	p {
+		text-align:left;
+	}
+
+	textarea {
+		min-width:100%;
+		max-width:100%;
+	}
+}
+
+
+div.profile-badges {
+	margin-top:2em;
+
+	> div {
+		display:flex;
+		flex-wrap:wrap;
+	}
+
+	a {
+		padding:0;
+		margin:1em 1em 0 0;
+		border-radius:9999px;
+		width:60px;
+		flex-grow:1;
+		flex-shrink:1;
+	}
+
+	svg {
+		width:100%;
+		height:100%;
+	}
+}
+
+
+
+
+/*//////////////////////////////////////////////////////////////////////////////
+// CONVENTION / EVENT PROFILE
+//////////////////////////////////////////////////////////////////////////////*/
+.prometheus-profile-flow {
+	margin:10px -10px;
+	display:flex;
+	flex-flow:row wrap;
+
+	> div {
+		width:calc(25%-20px);
+		min-width:325px;
+		min-height:280px;
+		margin:10px;
+		flex-grow:1;
+		flex-basis:0;
+		background:#fff;
+		box-shadow:0 0 10px #000;
+
+		> div,
+		> a {
+			min-width:325px;
+			width:100%;
+			height:300px;
+			margin:auto;
+			overflow:hidden;
+			text-align:center;
+			line-height:1em;
+			display:block;
+			color:#4F4C4C;
+		}
+
+		> a:hover {
+			color:#00C8E6;
+
+			svg path {
+				fill:#00C8E6 !important;
+			}
+		}
+	}
+
+	svg {
+		margin:auto;
+		height:70%;
+	}
+
+	b {
+		font-size:4em;
+		display:block;
+		text-align:center;
+		width:100%;
+	}
+}
+
+
+.event-weather {
+	min-width:325px;
+	max-width:325px;
+	width:325px;
+	padding-top:80px;
+	overflow:hidden;
+	height:243px;
+	min-height:243px;
+	max-height:243px;
+
+	iframe {
+		border:0;
+		height:500px;
+		width:500px;
+		margin-top:-45px;
+		margin-left:-180px;
+	}
+}
+
+
+#cpn-event-time {
+	display:block;
+	font-size:1.7em;
+	text-align:center;
+}
+
+#ui-event-date {
+	height:auto;
+	margin-top:1.5em;
+
+	table {
+		width:322px;
+		margin:0 auto;
+	}
+
+
+	.ui-datepicker,
+	.ui-widget-content,
+	.ui-datepicker-header {
+		background:none;
+		border-radius:none;
+		border:none;
+		width:100%;
+	}
+
+	.ui-datepicker-header {
+		padding:0;
+		margin:0;
+		font-size:2em;
+		font-weight:normal;
+	}
+
+	.ui-datepicker th {
+		padding:0;
+	}
+}
+
+
+.cpn-profile-body {
+	.cpn-map-list {
+		display:flex;
+		flex-flow:row wrap;
+		margin:0 -10px 10px -10px;
+
+		li {
+			flex-grow:1;
+			flex-basis:0;
+			width:calc(25%-20px);
+			margin:10px;
+			min-width:325px;
+		}
+	}
 }

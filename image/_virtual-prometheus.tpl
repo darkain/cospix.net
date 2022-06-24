@@ -30,22 +30,22 @@
 			View Full Gallery
 		</a>
 
-		<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=[afurl.full;safe=url]">
+		<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=[afurl.full;f=url]">
 			[onshow;svg=static/social2/facebook.svg]
 			Share on Facebook
 		</a>
 
-		<a target="_blank" href="https://twitter.com/home?status=Check%20out%20this%20awesome%20%23cosplay%20photo%20on%20%40cospixnet%21%20[afurl.full;safe=url]">
+		<a target="_blank" href="https://twitter.com/home?status=Check%20out%20this%20awesome%20%23cosplay%20photo%20on%20%40cospixnet%21%20[afurl.full;f=url]">
 			[onshow;svg=static/social2/twitter.svg]
 			Share on Twitter
 		</a>
 
-		<a target="_blank" href="https://pinterest.com/pin/create/button/?url=[afurl.full;safe=url]&media=https:[image.url;f=url]&description=Check%20out%20this%20awesome%20cosplay%20photo%20on%20Cospix%21%20">
+		<a target="_blank" href="https://pinterest.com/pin/create/button/?url=[afurl.full;f=url]&media=https:[image.url;f=url]&description=Check%20out%20this%20awesome%20cosplay%20photo%20on%20Cospix%21%20">
 			[onshow;svg=static/social2/pinterest.svg]
 			Share on Pinterest
 		</a>
 
-		<a target="_blank" href="https://plus.google.com/share?url=[afurl.full;safe=url]">
+		<a target="_blank" href="https://plus.google.com/share?url=[afurl.full;f=url]">
 			[onshow;svg=static/social2/googleplus.svg]
 			Share on Google+
 		</a>

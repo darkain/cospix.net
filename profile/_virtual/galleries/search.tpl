@@ -1,1 +1,1 @@
-<style>#body #prometheus-filter{display:block;}</style>
+<!--<style>#body #prometheus-filter{display:block;}</style>-->

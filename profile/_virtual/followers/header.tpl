@@ -14,7 +14,7 @@ $('.cpn-folder td').click(function(){
 	$(this).addClass('cpn-folder-selected');
 
 	var url = $(this).text().trim().toLowerCase();
-	$.get('[afurl.base]/[profile.user_url;safe=url]/followers/'+url, function(data) {
+	$.get('[afurl.base]/[profile.user_url;f=url]/followers/'+url, function(data) {
 		var item = $('#cpn-profile-body div.cpn-discover');
 		item.before(data);
 		item.remove();

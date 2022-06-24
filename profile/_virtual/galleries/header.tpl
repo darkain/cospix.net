@@ -16,7 +16,7 @@ $('.cpn-folder td').click(function(){
 	$(this).addClass('cpn-folder-selected');
 
 	var url = $(this).text().trim().toLowerCase();
-	$.get('[afurl.base]/[profile.user_url;safe=url]/galleries/'+url, {
+	$.get('[afurl.base]/[profile.user_url;f=url]/galleries/'+url, {
 		jq: 1,
 	}, function(data) {
 		var item = $('#cpn-profile-body div.cpn-discover');
@@ -26,4 +26,4 @@ $('.cpn-folder td').click(function(){
 });
 </script>
 
-<style>#prometheus-filter{display:none;}</style>
+<!--<style>#prometheus-filter{display:none;}</style>-->

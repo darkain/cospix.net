@@ -1,15 +1,15 @@
-<figure style="width:300px"
+<a	style="width:300px"
 	class="cpn-prometheus-item cpn-discover-tag cpn-no-drag"
 	id="cpn-add-photo">
-	<a>
+	<figure>
 		<img src="[afurl.static]/thumb2/add.svg" />
 		<figcaption>
 			<div class="cpn-discover-text">
 				<span>Upload Photos</span>
 			</div>
 		</figcaption>
-	</a>
-</figure>
+	</figure>
+</a>
 
 <script>
 $(function(){

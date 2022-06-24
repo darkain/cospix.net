@@ -30,7 +30,7 @@ $galleries = $db->cache(60)->group(
 		'ga.gallery_name',	'ga.gallery_id',	'ga.gallery_timestamp',
 		'ga.gallery_type',
 		'th.thumb_hash',
-		'fl.file_width',	'fl.file_height',	'fl.mime_id',
+		'fl.file_width',	'fl.file_height',	'fl.mime_id',	'fl.file_average',
 	],
 	[
 		'ga' => _pudl_gallery($size),
@@ -91,19 +91,19 @@ $af->footer();
 
 /*
 'file_meta_value' =>
-  array (
-    'COMPUTED' =>
-    array (
-      'html' => 'width="2346" height="2850"',
-      'Width' => 2346,
-      'Height' => 2850,
-      'IsColor' => 1,
-    ),
-    'FileName' => 'phpVupKYz',
-    'FileSize' => 965505,
-    'FileType' => 2,
-    'MimeType' => 'image/jpeg',
-    'FileDateTime' => 1445267122,
-    'SectionsFound' => '',
-  ),
+	array (
+		'COMPUTED' =>
+		array (
+			'html' => 'width="2346" height="2850"',
+			'Width' => 2346,
+			'Height' => 2850,
+			'IsColor' => 1,
+		),
+		'FileName' => 'phpVupKYz',
+		'FileSize' => 965505,
+		'FileType' => 2,
+		'MimeType' => 'image/jpeg',
+		'FileDateTime' => 1445267122,
+		'SectionsFound' => '',
+	),
 */

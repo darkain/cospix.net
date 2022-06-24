@@ -245,6 +245,12 @@ foreach ($render[$block] as $item) {
 	if ($x++ == 3) break;
 } unset($item);
 
+foreach ($render[$block] as $item) {
+	$item->name = $render['gallery']['gallery_name'];
+	#TODO:	create an actual "alt" tag so this is hidden
+	#		we dont always need/want to visually display the text
+} unset($item);
+
 
 
 

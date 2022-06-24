@@ -15,7 +15,7 @@
 				[panel.schedule_panel_start;date=h:i A;parentgrp=start;block=div]
 			</span>
 			<div>
-				<a href="[afurl.base]/event/[event.event_name;convert=url]/schedule/[panel.schedule_panel_id]-[panel.schedule_panel_name;safe=urlid]" class="cpn-panel-item cpn-panel-[panel.schedule_panel_type;ifempty=default]">
+				<a href="[afurl.base]/event/[event.event_name;convert=url]/schedule/[panel.schedule_panel_id]-[panel.schedule_panel_name;f=urlid]" class="cpn-panel-item cpn-panel-[panel.schedule_panel_type;ifempty=default]">
 					<em class="cpn-panel-restrict">
 						[panel.schedule_panel_restricted;magnet=em]
 					</em>

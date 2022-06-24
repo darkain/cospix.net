@@ -93,7 +93,7 @@ window.onerror		= function(message,file,line,col,error) {
 <link rel="stylesheet" type="text/css" href="[afurl.static]/css/cpn-vote.css" />
 <link rel="stylesheet" type="text/css" href="[afurl.static]/css/cpn-youtube.css" />
 <link rel="stylesheet" type="text/css" href="[afurl.static]/css/featherlight.min.css" />
-<link rel="stylesheet" type="text/css" href="[afurl.static]/css/prometheus.css" />
+<link rel="stylesheet" type="text/css" href="[afurl.static]/css/prometheus.scss" />
 
 <link rel="stylesheet" type="text/css" href="[afurl.static]/tagit/css/jquery.tagit.css" />
 
