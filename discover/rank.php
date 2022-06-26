@@ -28,4 +28,4 @@ require('event-distance.php.inc');
 
 
 ksort($data, SORT_NUMERIC);
-af_dump($data);
+\af\dump($data);

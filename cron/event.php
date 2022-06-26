@@ -59,5 +59,5 @@ try {
 	echo 'GOOD!';
 
 } catch (FacebookApiException $e) {
-	af_dump($e);
+	\af\dump($e);
 }

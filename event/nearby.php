@@ -34,4 +34,4 @@ echo "\n";
 $rows = $result->rows();
 $result->free();
 
-af_dump($rows);
+\af\dump($rows);

@@ -127,7 +127,7 @@ if (!empty($winner)) {
 		}
 
 	} catch (FacebookApiException $e) {
-		af_dump($e);
+		\af\dump($e);
 	}
 }
 
