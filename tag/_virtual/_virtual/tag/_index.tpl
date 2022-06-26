@@ -17,20 +17,18 @@
 
 
 <div class="cpn-discover">
-	<figure>
-		<a href="[afurl.base]/image/[g.file_hash;f=hex;noerr]?gallery=[g.gallery_id]">
+	<a href="[afurl.base]/image/[g.file_hash;f=hex;noerr]?gallery=[g.gallery_id]">
+		<figure>
 			<img src="[g.img;ifempty='[afurl.static]/thumb2/[g.gallery_type;ifempty=blank].svg']" alt="[g.gallery_name;ifempty='Untitled [g.gallery_type]']" />
-		</a>
-		<figcaption>
-			<img src="[afurl.static]/thumb2/[g.gallery_type;ifempty=blank].svg" class="cpn-discover-icon" alt="[g.gallery_type]" />
-			<div class="cpn-discover-text">
-				<span>[g.gallery_name;block=figure;ifempty='Untitled [g.gallery_type]']</span>
-				<a href="[afurl.base]/[g.user_url;ifempty=[g.user_id;noerr];noerr]">
-					[g.user_name;noerr;magnet=a]
-				</a>
-			</div>
-		</figcaption>
-	</figure>
+			<figcaption>
+				<img src="[afurl.static]/thumb2/[g.gallery_type;ifempty=blank].svg" class="cpn-discover-icon" alt="[g.gallery_type]" />
+				<div class="cpn-discover-text">
+					<span>[g.gallery_name;block=a;ifempty='Untitled [g.gallery_type]']</span>
+					<span>[g.user_name;noerr;magnet=span]</span>
+				</div>
+			</figcaption>
+		</figure>
+	</a>
 
 	<div class="clear"></div>
 </div>

@@ -8,20 +8,18 @@
 	</tr></table>
 
 	<div class="cpn-default cpn-discover">
-		<figure>
-			<a href="[afurl.base]/[g.user_url;ifempty='[g.user_id]']/[type]/[g.gallery_id]">
+		<a href="[afurl.base]/[g.user_url;ifempty='[g.user_id]']/[type]/[g.gallery_id]">
+			<figure>
 				<img src="[g.img;ifempty='[afurl.static]/thumb2/[type;ifempty=blank].svg']" alt="[g.gallery_name;ifempty='Untitled [type]']" />
-			</a>
-			<figcaption>
-				<img src="[afurl.static]/thumb2/[type;ifempty=blank].svg" class="cpn-discover-icon" alt="[type]" />
-				<div class="cpn-discover-text">
-					<span>[g.gallery_name;block=figure;ifempty='Untitled [type]']</span>
-					<a href="[afurl.base]/[g.user_url;ifempty=[g.user_id;noerr];noerr]">
-						[g.user_name;noerr;magnet=a]
-					</a>
-				</div>
-			</figcaption>
-		</figure>
+				<figcaption>
+					<img src="[afurl.static]/thumb2/[type;ifempty=blank].svg" class="cpn-discover-icon" alt="[type]" />
+					<div class="cpn-discover-text">
+						<span>[g.gallery_name;block=a;ifempty='Untitled [type]']</span>
+						<span>[g.user_name;noerr;magnet=span]
+					</div>
+				</figcaption>
+			</figure>
+		</a>
 
 		<div class="clear"></div>
 	</div>

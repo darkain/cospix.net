@@ -21,7 +21,7 @@ $rows = $db->cache(AF_MINUTE*5)->group(
 			], [
 				'fl.file_hash=pv.file_hash',
 				'fl.file_views'		=> pudl::gt(9),
-				'pv.view_timestamp'	=> pudl::gt( \af\time::from(AF_MONTH, AF_MINUTE*5) ),
+				'pv.view_timestamp'	=> pudl::gt( \af\time::from(AF_HOUR, AF_MINUTE*5) ),
 				'fl.file_hash'		=> pudl::neq($images),
 			],
 			'fl.file_hash',

@@ -9,20 +9,18 @@
 
 
 	<div class="cpn-default cpn-discover">
-		<figure>
-			<a href="[afurl.base]/[users.user_url;ifempty='[users.user_id]']">
+		<a href="[afurl.base]/[users.user_url;ifempty='[users.user_id]']">
+			<figure>
 				<img src="[users.img;ifempty='[afurl.static]/thumb2/profile.svg']" alt="[users.user_name]" />
-			</a>
-			<figcaption>
-				<img src="[afurl.static]/thumb2/profile.svg" class="cpn-discover-icon" alt="Profile" />
-				<div class="cpn-discover-text">
-					<span>[users.types;block=figure;magnet=span]</span>
-					<a href="[afurl.base]/[users.user_url;ifempty=[users.user_id]]">
-						[users.user_name]
-					</a>
-				</div>
-			</figcaption>
-		</figure>
+				<figcaption>
+					<img src="[afurl.static]/thumb2/profile.svg" class="cpn-discover-icon" alt="Profile" />
+					<div class="cpn-discover-text">
+						<span>[users.types;block=figure;magnet=span]</span>
+						<span>[users.user_name]</span>
+					</div>
+				</figcaption>
+			</figure>
+		</a>
 
 		<div class="clear"></div>
 	</div>

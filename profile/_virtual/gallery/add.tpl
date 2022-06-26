@@ -1,4 +1,4 @@
-<a	style="width:300px"
+<a	style="width:300px; flex-grow:0"
 	class="cpn-prometheus-item cpn-discover-tag cpn-no-drag"
 	id="cpn-add-photo">
 	<figure>
