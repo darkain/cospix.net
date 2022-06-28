@@ -87,7 +87,7 @@ foreach ($render['eventlist'] as &$item) {
 ////////////////////////////////////////////////////////////
 // OPEN GRAPH, TWITTER CARD, MICRO DATA
 ////////////////////////////////////////////////////////////
-$og['description'] = substr($profile['user_bio'], 0, 300);
+$og['description'] = substr($profile['user_bio'] || '', 0, 300);
 
 $thumb = $db->selectRow(
 	'thumb_hash',
