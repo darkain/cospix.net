@@ -1,5 +1,9 @@
 <?php
 
+
+\af\error(404);
+
+
 //FIX FOR HHVM
 require_once('_buildurl/src/http_build_url.php');
 

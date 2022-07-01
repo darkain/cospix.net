@@ -2,7 +2,10 @@
 	"folders":
 	[
 		{
-			"path": "..\\"
-		}
-	]
+			"path": "..\\",
+		},
+		{
+			"path": "/Volumes/www/cospix.net"
+		},
+	],
 }
