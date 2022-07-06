@@ -502,26 +502,17 @@ body #body div.cpn-discover a {
 
 	}
 }
-/*
-div.cpn-discover figure:hover
-*/
 
 
-@media all and (-ms-high-contrast:none) {
-	#body #cpn-profile-canvas div.cpn-discover figure a img {
-		width:auto !important;
-		height:auto !important;
-	}
 
-	body #body div.cpn-discover figure>a img {
-		width:auto;
-		min-width:auto;
-		max-width:100%;
-		height:auto;
-		min-height:auto;
-		max-height:auto;
+/* INTERNET EXPLORER 11 "STRETCHED IMAGE" FIX */
+@media all and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	div.cpn-discover img {
+		height: auto !important;
 	}
 }
+
+
 
 @supports (-ms-ime-align:auto) {
 	#body #cpn-profile-canvas div.cpn-discover figure a img {
@@ -539,8 +530,8 @@ div.cpn-discover figure:hover
 	}
 }
 
-body #body div.cpn-discover figure.cpn-discover-tag>a img,
-body #body div.cpn-discover figure.cpn-discover-event>a img {
+body #body div.cpn-discover a>figure.cpn-discover-tag img,
+body #body div.cpn-discover a>figure.cpn-discover-event img {
 	object-position:50% 50%;
 }
 
