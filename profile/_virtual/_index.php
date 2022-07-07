@@ -5,7 +5,7 @@ require_once('../types/types.php.inc');
 
 
 ////////////////////////////////////////////////////////////////////////////////
-//WE'RE LOADING A LETTER, NOT A USER PROFILE
+// WE'RE LOADING A LETTER, NOT A USER PROFILE
 ////////////////////////////////////////////////////////////////////////////////
 if (preg_match('/^[a-z]$/', $router->virtual[0])) {
 	return require('../letter.php.inc');
@@ -15,7 +15,7 @@ if (preg_match('/^[a-z]$/', $router->virtual[0])) {
 
 
 ////////////////////////////////////////////////////////////////////////////////
-//WE'RE LOADING A CATEGORY, NOT A USER PROFILE
+// WE'RE LOADING A CATEGORY, NOT A USER PROFILE
 ////////////////////////////////////////////////////////////////////////////////
 if (!empty($afusertypes[$router->part[2]])) {
 	return require('../category.php.inc');
@@ -25,7 +25,7 @@ if (!empty($afusertypes[$router->part[2]])) {
 
 
 ////////////////////////////////////////////////////////////////////////////////
-//STYLES AND JS FOR FEED POSTING
+// STYLES AND JS FOR FEED POSTING
 ////////////////////////////////////////////////////////////////////////////////
 $af->script($afurl->static . '/js/underscore.js');
 $af->script($afurl->static . '/js/jquery-textntags.js');
@@ -35,7 +35,7 @@ $af->style( $afurl->static . '/css/jquery-textntags.css');
 
 
 ////////////////////////////////////////////////////////////////////////////////
-//LOAD UP ALL THE PROFILE GOODNESS
+// LOAD UP ALL THE PROFILE GOODNESS
 ////////////////////////////////////////////////////////////////////////////////
 require_once('profile.php.inc');
 
@@ -47,9 +47,12 @@ if (empty($profile['subpage'])) {
 
 
 ////////////////////////////////////////////////////////////////////////////////
-//PULL SOCIAL LINKS FOR THE PAGE
+// PULL SOCIAL LINKS FOR THE PAGE
 ////////////////////////////////////////////////////////////////////////////////
 $render['social'] = $db->rowsId('pudl_user_social', 'user_id', $profile);
+
+if (empty($render['social'])) $render['social'] = [];
+
 foreach($render['social'] as &$item) {
 	if (strpos($item['social_url'], '://') === false) {
 		$item['social_url'] = 'http://' . $item['social_url'];
@@ -60,7 +63,7 @@ foreach($render['social'] as &$item) {
 
 
 ////////////////////////////////////////////////////////////////////////////////
-//RENDER ALL THE THINGS
+// RENDER ALL THE THINGS
 ////////////////////////////////////////////////////////////////////////////////
 $af->title = (!empty($af->title) ? $af->title.' - ' : '') . $profile['user_name'];
 
@@ -145,7 +148,3 @@ if (!$prometheus) {
 	$af->footer();
 
 }
-
-
-
-
