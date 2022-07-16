@@ -22,23 +22,6 @@
 
 <div class="af-prefs-list">
 	<div class="large">
-		<h3 style="margin:2em 0 0 0">Homepage Style</h3>
-		<ul class="settings-list">
-			<li><label class="pointer">
-				<input name="af-pref-homepage" type="radio" [user.user_home;checked=homepage] />
-				Classic
-			</label></li>
-			<li><label class="pointer">
-				<input name="af-pref-homepage" type="radio" [user.user_home;checked=discover] />
-				Discover
-			</label></li>
-		</ul>
-	</div>
-</div>
-
-
-<div class="af-prefs-list">
-	<div class="large">
 		<h3 style="margin:2em 0 0 0">Location</h3><br />
 		<input type="text" value="[user.location]" style="width:30em" data-id="[user.user_city;noerr]" disabled /><br/>
 		<button class="cpn-button large" style="padding:0.5em 3em; margin:10px 0" onclick="popup('[afurl.base]/settings/cospix/location', 'Change Location')">Change</button>
