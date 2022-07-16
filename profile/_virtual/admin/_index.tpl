@@ -17,7 +17,6 @@
 			<tr><th class="right" style="padding-right:1em">user_id</th><td>[account.user_id;noerr;magnet=tr]</td></tr>
 			<tr><th class="right" style="padding-right:1em">user_email</th><td>[account.user_email;noerr;magnet=tr]</td></tr>
 			<tr><th class="right" style="padding-right:1em">user_url</th><td>[account.user_url;noerr;magnet=tr]</td></tr>
-			<tr><th class="right" style="padding-right:1em">user_adfree</th><td>[account.user_adfree;noerr;magnet=tr]</td></tr>
 			<tr><th class="right" style="padding-right:1em">user_location</th><td>[account.user_location;noerr;magnet=tr]</td></tr>
 			<tr><th class="right" style="padding-right:1em">user_geo</th><td>[account.user_lat;noerr;magnet=tr] - [account.user_lon;noerr;magnet=tr]</td></tr>
 			<tr><th class="right" style="padding-right:1em">user_permission</th><td>[account.user_permission;noerr;magnet=tr]</td></tr>

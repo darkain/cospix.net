@@ -87,12 +87,6 @@ $db->insert('pudl_user_badge', [
 );
 
 
-//LIFETIME AD-FREE ACCOUNT!!
-if ($data['badge_id'] == '5') {
-	$user->update(['user_adfree' => '253402300799']);
-}
-
-
 
 //TRANSACTIONS!!
 $db->commit();

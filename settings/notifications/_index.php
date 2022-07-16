@@ -6,8 +6,6 @@ $user->badge['alpha'] = $db->clauseExists('pudl_user_badge', [
 	'user_id' => $user['user_id'],
 ]);
 
-$user['adfree'] = (int)!!$user['user_adfree'];
-
 
 $af->load('_index.tpl');
 	$af->field('prefs', $user->getPreferences());

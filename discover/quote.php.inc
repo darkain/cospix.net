@@ -24,7 +24,6 @@ array (
   'user_name' => NULL,
   'user_url' => NULL,
   'user_icon' => NULL,
-  'user_adfree' => NULL,
   'user_type' => NULL,
 )
 */
