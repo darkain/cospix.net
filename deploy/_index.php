@@ -118,7 +118,7 @@ if (empty($afconfig->instances)) {
 
 	foreach ($afconfig->instances as $instance) {
 		$url		= 'https://' . $instance . '/deploy/pull';
-		$token		= afUser::password(32);
+		$token		= af\password(32);
 		$message	= implode('-', [$af->time(), $token]);
 
 		$data		= $afurl->post($url, [
