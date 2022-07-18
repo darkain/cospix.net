@@ -16,7 +16,7 @@ $account = new afUser($db, $account);
 ////////////////////////////////////////////////////////////////////////////////
 //GENERATE AND UPDATE THE ACCOUNT PASSWORD
 ////////////////////////////////////////////////////////////////////////////////
-$password = afString::password();
+$password = af\password();
 $account->setPassword($get('auth_account'), $password);
 
 
@@ -29,11 +29,11 @@ $af->load('reset.tpl');
 
 $af->field('password', $password);
 
-\af\mail([
-	'reply'	=>  $afconfig->email,
-	'from'	=> [$afconfig->email, $og['title']],
-	'to'	=>  $get('auth_account'),
-], $og['title'].' New Password', $af->renderToString());
+\af\mail(
+	['to' => $get('auth_account')],
+	$og['title'].' New Password',
+	$af->renderToString()
+);
 
 
 
