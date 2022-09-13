@@ -13,8 +13,6 @@ $db->updateCount('pudl_file', 'file_comments', [
 
 
 $mailheaders = [
-	'return'	=> 'return@cospix.net',
-	'from'		=> ['notify@cospix.net', 'Cospix.net Notification'],
 	'to'		=> '',
 ];
 

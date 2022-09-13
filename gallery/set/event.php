@@ -12,7 +12,7 @@ $image = $db->rowId('pudl_gallery', 'gallery_id', $id);
 
 
 
-$text = $get->string('text');
+$text = $get('text');
 if (empty($text)) {
 	$db->updateId('pudl_gallery', [
 		'event_id' => NULL,
@@ -42,4 +42,4 @@ $db->updateId('pudl_gallery', [
 
 
 
-echo $get->string('text', _GETVAR_HTMLSAFE);
+echo htmlspecialchars($get('text'));

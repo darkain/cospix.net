@@ -12,6 +12,9 @@ $servers[]		= 'https://beta.cospix.net/status/check';
 $servers[]		= 'http://router-0.tac.cospix.net';
 $servers[]		= 'http://router-1.tac.cospix.net';
 $servers[]		= 'http://router-2.tac.cospix.net';
+$servers[]		= 'http://router-3.tac.cospix.net';
+$servers[]		= 'http://router-1.sea.cospix.net';
+$servers[]		= 'http://router-1.eat.cospix.net';
 
 
 

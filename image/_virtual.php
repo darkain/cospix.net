@@ -432,7 +432,7 @@ if (!empty($owner['file_text'])) {
 if (empty($owner)) {
 	$thumbs = [];
 } else {
-	$thumbs_left = array_reverse($db->selectRows([
+	$thumbs_left = $db->selectRows([
 			'th.*',
 			'gi.*',
 			'us.user_id',
@@ -451,7 +451,15 @@ if (empty($owner)) {
 			'image_time'
 		],
 		9
-	));
+	);
+
+	// TODO: figure out why we're not getting an ARRAY sometimes!!
+	if (!is_array($thumbs_left)) {
+		$thumbs_left = [];
+	} else {
+		$thumbs_left = array_reverse($thumbs_left);
+	}
+
 
 	$thumbs_right = $db->selectRows([
 			'th.*',

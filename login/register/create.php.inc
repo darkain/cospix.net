@@ -139,15 +139,14 @@ require('../newuser.php.inc');
 $af->load('create.tpl');
 
 $af->field('address', $afurl->build(['profile', 'email'], [
-	'id'	=> $account->user_id,
-	'hash'	=> md5($af->config->afkey() . $account->user_id . $email),
+	'id'	=>	$account->user_id,
+	'hash'	=>	md5($af->config->afkey() . $account->user_id . $email),
 ], true));
 
-\af\mail([
-	'reply'	=>  $afconfig->email,
-	'from'	=> [$afconfig->email, $og['title']],
-	'to'	=>  $email,
-], $og['title'].' Email Verification', $af->renderToString());
+\af\mail(
+	['to' => $email],
+	$og['title'].' Email Verification', $af->renderToString()
+);
 
 
 

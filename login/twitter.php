@@ -20,7 +20,7 @@ $oauth->session_started	= true;
 
 
 if ($ok = $oauth->Initialize()) {
-	if (stripos($get->server('HTTP_REFERER'), $afurl->host) === 0) {
+	if (stripos($get->server('HTTP_REFERER', ''), $afurl->host) === 0) {
 		$_SESSION['referer'] = $get->server('HTTP_REFERER');
 	}
 

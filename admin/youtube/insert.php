@@ -2,7 +2,7 @@
 
 
 
-$links	= $get->string('links', _GETVAR_BASIC);
+$links	= $get('links');
 $links	= str_replace(["\t", "\r", ' '], "\n", $links);
 $list	= explode("\n", $links);
 

@@ -18,7 +18,7 @@ $image = $db->row(
 
 
 
-$text = $get->string('text');
+$text = $get('text');
 if (empty($text)) {
 	$db->updateId('pudl_gallery', ['gathering_id'=>NULL], 'gallery_id', $id);
 	return;
@@ -50,4 +50,4 @@ $db->updateId('pudl_gallery', [
 	'gathering_id' => $gathering['gathering_id']
 ], 'gallery_id', $id);
 
-echo $get->string('text', _GETVAR_HTMLSAFE);
+echo htmlspecialchars($get('text'));

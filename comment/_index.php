@@ -12,8 +12,8 @@ $db->begin();
 //GET SHIT
 ////////////////////////////////////////////////////////////
 $id		= $get->id();
-$text	= $get->string('text', _GETVAR_BASIC);
-$type	= $get->string('type');
+$text	= $get('text');
+$type	= $get('type');
 $hash	= NULL;
 if (empty($text)  ||  empty($type)) \af\error(422);
 

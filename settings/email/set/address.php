@@ -29,11 +29,7 @@ $af->field('address', $afurl->build(['profile', 'email'], [
 
 
 \af\mail(
-	[
-		'return'	=> 'return@cospix.net',
-		'from'		=> '"Cospix.net Verify" <verify@cospix.net>',
-		'to'		=> $text,
-	],
+	['to' => $text],
 	'Cospix.net Email Verification',
 	$af->renderToString()
 );
