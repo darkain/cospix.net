@@ -1,5 +1,4 @@
-<a	style="width:300px; flex-grow:0"
-	class="cpn-prometheus-item cpn-discover-tag cpn-no-drag"
+<a	class="cpn-prometheus-item cpn-discover-tag cpn-no-drag"
 	id="cpn-add-photo">
 	<figure>
 		<img src="[afurl.static]/thumb2/add.svg" />

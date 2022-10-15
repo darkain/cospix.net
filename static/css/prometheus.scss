@@ -71,40 +71,25 @@ html, body, #body{
 @media only screen and (max-width: 950px) {
 
 
-	body {
-		#prometheus-footer {
-			display:none !important;
-		}
-
-		#prometheus-sidebar {
-			width:40px;
-		}
-
-		#body {
-			margin-left:40px !important;
-		}
-	}
-
-
 	body.prometheus-scale {
-		#body .cpn-discover {
+		/*#body .cpn-discover {
 			zoom:0.85;
 		}
 
 		#cpn-profile-canvas {
 			zoom:0.85;
-		}
-
+		}*/
+/*
 		#body .cpn-discover h1.cpn-discover-header {
 			font-size:calc((100vw - 40px) / 10);
 		}
-
+*/
 		#body #cpn-profile-canvas .cpn-discover {
 			zoom:1;
 		}
 	}
 
-
+/*
 	body #copyright { display:block; }
 
 	body #prometheus-sidebar div a#prometheus-profile {
@@ -124,7 +109,7 @@ html, body, #body{
 		height:32px;
 		padding:2px;
 	}
-
+*/
 	body .cpn-profile-stats div,
 	body .cpn-profile-stats a {
 		font-size:0.8em;
@@ -228,14 +213,14 @@ html, body, #body{
 	background:		linear-gradient(to top,#13273a 0%,#152b3f 100%);
 	filter:			progid:DXImageTransform.Microsoft.gradient( startColorstr='#13273a', endColorstr='#152b3f',GradientType=1 );
 
-	-webkit-touch-callout:none;
-	-webkit-user-select:none;
-	-khtml-user-select:none;
-	-moz-user-select:none;
-	-ms-user-select:none;
-	user-select:none;
+	-webkit-touch-callout:	none;
+	-webkit-user-select:	none;
+	-khtml-user-select:		none;
+	-moz-user-select:		none;
+	-ms-user-select:		none;
+	user-select:			none;
 
-	-ms-overflow-style: -ms-autohiding-scrollbar;
+	-ms-overflow-style:		-ms-autohiding-scrollbar;
 
 
 

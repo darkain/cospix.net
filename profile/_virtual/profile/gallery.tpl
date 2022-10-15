@@ -1,5 +1,4 @@
 <a	href="[afurl.all]/galleries"
-	style="width:300px; flex-grow:0"
 	class="cpn-prometheus-item cpn-discover-tag cpn-no-drag">
 	<figure>
 		[onshow;svg=static/thumb2/camera.svg]

@@ -132,6 +132,7 @@ div.cpn-gallery .cpn-gallery-title h3 {
 div.cpn-gallery .cpn-gallery-info {
 	padding-left:210px;
 	font-size:20px;
+/*	overflow: hidden;*/
 }
 
 div.cpn-gallery .cpn-gallery-info table {
