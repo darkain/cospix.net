@@ -154,7 +154,7 @@
 		</div>
 
 
-		<div style="width:600px;float:left">
+		<div>
 			<h3 class="cpn-header">Description</h3>
 			<div class="profile-box-body cpn-profile-about" itemprop="description">
 				[onload;block=div;when [owner.user_id;noerr]!=[user.user_id]]
@@ -167,7 +167,8 @@
 			</div>
 		</div>
 
-		<div style="width:600px;float:left">
+		<div>
+			[onload;block=div;when 0]
 			<h3 class="cpn-header">Comments</h3>
 			[onload;file=comment/comment.tpl]
 			[onload;file=comment/new.tpl]
