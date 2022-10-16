@@ -23,7 +23,7 @@ body { overflow-x:hidden; }
 	box-shadow:0 0 4px #00C8E6;
 }
 
-
+/*
 nav.cpn-default,
 main.cpn-default,
 article.cpn-default {
@@ -31,18 +31,13 @@ article.cpn-default {
 	margin:0 auto;
 	width:990px;
 }
-
-#mobile-body nav.cpn-default,
-#mobile-body main.cpn-default,
-#mobile-body article.cpn-default {
-	width:1000px;
-}
-
+*/
+/*
 section.cpn-default, div.cpn-default {
 	background:white;
 	padding:10px;
 }
-
+*/
 .cpn-header, h1.cpn-header {
 	white-space:nowrap;
 	overflow:hidden;
@@ -81,10 +76,6 @@ h1.cpn-header {
 	padding:3px 5px;
 }
 
-#mobile-body h1.cpn-header {
-	font-size:50px;
-	padding:10px 20px;
-}
 
 h2.cpn-header a {
 	font-size:24px;

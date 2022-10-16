@@ -44,7 +44,7 @@ $galleries = $db->cache(60)->group(
 		'gi.gallery_id=ga.gallery_id',
 		'ga.gallery_type'		=> $type,
 		'ga.gallery_thumb'		=> pudl::neq(NULL),
-		'ga.gallery_timestamp'	=> pudl::gt( \af\time::from(AF_MONTH, 60) ),
+		'ga.gallery_timestamp'	=> pudl::gt( \af\time::from(AF_MONTH*12, 60) ),
 		cpnFilterBanned(),
 	],
 	'ga.gallery_id',

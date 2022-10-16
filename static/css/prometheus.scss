@@ -61,58 +61,56 @@ html, body, #body{
 
 
 /*//////////////////////////////////////////////////////////////////////////////
-// Mobile Layout
+// Mobile Hamburger Menu
+//////////////////////////////////////////////////////////////////////////////*/
+#prometheus-menu-background {
+	display:				none;
+	background:				black;
+	opacity:				0.8;
+	position:				fixed;
+	top:					0;
+	right:					0;
+	bottom:					0;
+	left:					0;
+	z-index:				5000;
+}
+
+#prometheus-sidebar-menu {
+	display:none;
+	width:40px;
+	height:40px;
+	padding:4px 0 0 0;
+}
+
+#cospix-logo-mobile {
+	display:none
+}
+
+
+
+
+/*//////////////////////////////////////////////////////////////////////////////
+// Giant Layouts
 //////////////////////////////////////////////////////////////////////////////*/
 @media only screen and (min-width: 3000px) { body { zoom:1.5; } }
 @media only screen and (min-width: 6000px) { body { zoom:3.0; } }
 
 
 
+
+/*//////////////////////////////////////////////////////////////////////////////
+// Medium Layout
+//////////////////////////////////////////////////////////////////////////////*/
 @media only screen and (max-width: 950px) {
 
+	#body .cpn-discover h1.cpn-discover-header {
+		font-size:	2em;
+	}
 
-	body.prometheus-scale {
-		/*#body .cpn-discover {
-			zoom:0.85;
+	body .cpn-profile-stats {
+		div, a {
+			font-size:0.8em;
 		}
-
-		#cpn-profile-canvas {
-			zoom:0.85;
-		}*/
-/*
-		#body .cpn-discover h1.cpn-discover-header {
-			font-size:calc((100vw - 40px) / 10);
-		}
-*/
-		#body #cpn-profile-canvas .cpn-discover {
-			zoom:1;
-		}
-	}
-
-/*
-	body #copyright { display:block; }
-
-	body #prometheus-sidebar div a#prometheus-profile {
-		text-align:center;
-		margin:auto !important;
-		width:40px !important;
-		height:40px !important;
-	}
-
-	body #prometheus-sidebar div a#prometheus-profile img {
-		width:1em !important;
-		height:1em !important;
-	}
-
-	body .cpn-profile-social svg {
-		width:32px;
-		height:32px;
-		padding:2px;
-	}
-*/
-	body .cpn-profile-stats div,
-	body .cpn-profile-stats a {
-		font-size:0.8em;
 	}
 
 	body a.cpn-profile-name {
@@ -127,19 +125,26 @@ html, body, #body{
 		font-size:0.7em;
 	}
 
-	body #prometheus-sidebar div a {
-		text-shadow:none;
+	body #prometheus-sidebar {
+		div a {
+			text-shadow:none;
+		}
+
+		div#cospix-user {
+			a {
+				span {
+					display:none;
+				}
+
+				img {
+					margin-left:-2px;
+					width:25px;
+					height:25px;
+				}
+			}
+		}
 	}
 
-	body #prometheus-sidebar div#cospix-user a span {
-		display:none;
-	}
-
-	body #prometheus-sidebar div#cospix-user a img {
-		margin-left:-2px;
-		width:25px;
-		height:25px;
-	}
 
 	body #cpn-profile-icon {
 		bottom:10px;
@@ -167,34 +172,71 @@ html, body, #body{
 }
 
 
-/*
-@media only screen and (max-width: 750px) {
-	body.prometheus-scale #body .cpn-discover {
-		zoom:0.68;
-/ *		-webkit-text-size-adjust:68%; * /
-	}
 
-	body.prometheus-scale #cpn-profile-canvas {
-		zoom:0.68;
-/ *		-webkit-text-size-adjust:68%; * /
-	}
-}
-
-
-
+/*//////////////////////////////////////////////////////////////////////////////
+// Mobile Layout
+//////////////////////////////////////////////////////////////////////////////*/
 @media only screen and (max-width: 480px) {
-	body.prometheus-scale #body .cpn-discover {
-		zoom:0.4;
-/ *		-webkit-text-size-adjust:50%; * /
+	body {
+		padding-top:		50px;
 	}
 
-	body.prometheus-scale #cpn-profile-canvas {
-		zoom:0.4;
-/ *		-webkit-text-size-adjust:50%; * /
+	#debug-warning {
+		top:				0 !important;
 	}
+
+	nav#prometheus-sidebar {
+		position:			fixed;
+		left:				0;
+		top:				0;
+		z-index:			5001;
+
+		#cospix-logo {
+			display:		none !important;
+		}
+
+		a {
+			display:		block !important;
+
+
+			&#cospix-logo-mobile {
+				height:		40px;
+				width:		calc(100% - 200px);
+				position:	absolute;
+				top:		5px;
+				left:		100px;
+				right:		100px;
+				text-align: center;
+
+				svg {
+					width:150px;
+				}
+			}
+		}
+
+		#prometheus-sidebar-links {
+			display:		none;
+		}
+
+		#prometheus-sidebar-menu {
+			display:		inline-block;
+
+			svg {
+				width:		40px;
+				height:		40px;
+
+				path {
+					fill:	#00C8E6;
+				}
+			}
+		}
+	}
+
+
+
+
 }
 
-*/
 
 
 
@@ -260,7 +302,9 @@ html, body, #body{
 				margin-right:	5px;
 			}
 
-			&#cospix-logo {
+			&#cospix-logo,
+			&#cospix-logo-mobile {
+				display:		inline-block;
 				height:			37px;
 				width:			150px;
 
@@ -980,7 +1024,7 @@ body #cospix-message-list div span {
 	display:inline-block;
 	width:150px;
 	height:150px;
-	z-index:10;
+	z-index:1;
 	overflow:hidden;
 	text-overflow:ellipsis;
 }
@@ -1283,7 +1327,7 @@ body .af-edit-input {
 	background:rgba(255,0,0,0.5);
 	color:#fff;
 	text-align:center;
-	z-index:99999999;
+	z-index:4999;
 	width:300px;
 	margin:auto;
 }

@@ -1,5 +1,4 @@
-#body .cpn-discover h1.cpn-discover-header,
-#mobile-body .cpn-discover h1.cpn-discover-header {
+#body .cpn-discover h1.cpn-discover-header {
 	text-align:center;
 	font-size:55px;
 	padding:50px 0;
@@ -43,8 +42,7 @@ div.cpn-discover figure div.cpn-discover-text {
 }
 
 
-#body .cpn-discover-no-icon div.cpn-discover figure div.cpn-discover-text,
-#mobile-body .cpn-discover-no-icon div.cpn-discover figure div.cpn-discover-text {
+#body .cpn-discover-no-icon div.cpn-discover figure div.cpn-discover-text {
 	margin-left:5px;
 	height:30px;
 }
@@ -85,40 +83,7 @@ div.cpn-discover figure a:hover {
 
 
 
-/*********** SIZING INFORMATION ************/
-/*
-#body div.cpn-discover figure { width:245px; height:290px; }
-#mobile-body div.cpn-discover figure { width:330px; height:385px; }
 
-
-#body div.cpn-discover figure img { width:245px; height:245px; }
-#mobile-body div.cpn-discover figure img { width:330px; height:330px; }
-
-
-#body div.cpn-discover figure:nth-child(4n+2) { margin:5px 0 5px 7px; }
-#body div.cpn-discover figure:nth-child(4n+3) { margin:5px 7px 5px 6px; }
-#mobile-body div.cpn-discover figure:nth-child(3n+2) { margin:5px; }
-
-
-#body .cpn-discover-no-icon div.cpn-discover figure { height:275px; }
-#mobile-body .cpn-discover-no-icon div.cpn-discover figure { height:360px; }
-
-
-#body div.cpn-discover figure figcaption { top:245px; }
-#mobile-body div.cpn-discover figure figcaption { top:330px; }
-
-
-#body div.cpn-discover figure img.cpn-discover-icon  { width:45px; height:45px; }
-#mobile-body div.cpn-discover figure img.cpn-discover-icon { width:55px; height:55px; }
-
-
-#body div.cpn-discover figure figcaption { font-size:16px; line-height:18px; }
-#mobile-body div.cpn-discover figure figcaption { font-size:22px; line-height:22px; }
-
-
-#body div.cpn-discover figure div.cpn-discover-text { margin-left:45px; height:45px; }
-#mobile-body div.cpn-discover figure div.cpn-discover-text { margin-left:55px; height:55px; }
-*/
 
 /*********** PROFILE SIZING INFORMATION ************/
 
@@ -127,9 +92,3 @@ div.cpn-discover figure a:hover {
 #body #cpn-profile-canvas div.cpn-discover figure { margin:5px; }
 #body #cpn-profile-canvas div.cpn-discover figure:nth-child(3n+1) { margin-left:0; }
 #body #cpn-profile-canvas div.cpn-discover figure:nth-child(3n+0) { margin-right:0; }
-
-#mobile-body #cpn-profile-canvas div.cpn-discover figure { width:266px; height:311px; }
-#mobile-body #cpn-profile-canvas div.cpn-discover figure a img { width:266px; height:266px; }
-#mobile-body #cpn-profile-canvas div.cpn-discover figure { margin:5px; }
-#mobile-body #cpn-profile-canvas div.cpn-discover figure:nth-child(3n+1) { margin-left:0; }
-#mobile-body #cpn-profile-canvas div.cpn-discover figure:nth-child(3n+0) { margin-right:0; }

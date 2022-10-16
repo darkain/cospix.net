@@ -5,7 +5,6 @@
 
 	<div>
 		[onload;file=profile/things.tpl]
-		[onload;file=profile/badges.tpl]
 	</div>
 </div>
 

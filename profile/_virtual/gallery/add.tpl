@@ -1,5 +1,6 @@
 <a	class="cpn-prometheus-item cpn-discover-tag cpn-no-drag"
-	id="cpn-add-photo">
+	id="cpn-add-photo"
+	style="min-width:300px">
 	<figure>
 		<img src="[afurl.static]/thumb2/add.svg" />
 		<figcaption>

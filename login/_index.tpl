@@ -2,14 +2,6 @@
 
 
 <div style="width:760px; max-width:100%; margin:0 auto">
-	<div class="justify large" style="padding:1em">
-		Select your login service. If you already have an account with
-		Cospix, please use the same login service that you used when registering
-		your Cospix account. If you don't already have an account, signing in
-		using Facebook, Google, or Twitter will automatically create a Cospix
-		account for you!
-	</div>
-
 	<div id="prometheus-login">
 		<div id="cpn-login-email">
 			<form action="https://[afurl.domain][afurl.base]/login/auth"
@@ -29,14 +21,6 @@
 		</div>
 
 		<div id="cpn-login-services">
-			<a href="[afurl.host][afurl.base]/login/facebook">
-				[onshow;svg=static/svg/login-facebook.svg]
-			</a>
-
-			<a href="[afurl.host][afurl.base]/login/google">
-				[onshow;svg=static/svg/login-google.svg]
-			</a>
-
 			<a href="[afurl.host][afurl.base]/login/twitter">
 				[onshow;svg=static/svg/login-twitter.svg]
 			</a>

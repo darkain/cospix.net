@@ -1,5 +1,4 @@
-#body div.cpn-discover figure:after,
-#mobile-body div.cpn-discover figure:after {
+#body div.cpn-discover figure:after {
 	width:125px; height:100px;
 	position:relative;
 	display:block;
@@ -9,8 +8,4 @@
 	background-size:100%;
 	content:'';
 	pointer-events: none;
-}
-
-#mobile-body div.cpn-discover figure:after {
-	top:-385px;
 }

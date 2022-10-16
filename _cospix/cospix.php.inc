@@ -142,7 +142,7 @@ class cospix_altaform extends altaform {
 
 
 		if ($user->isStafF()) {
-			array_unshift($this->prometheus, ['name'=>'Admin', 'style'=> 'color:#f00']);
+			array_push($this->prometheus, ['name'=>'Admin', 'style'=> 'color:#f00']);
 		}
 
 
