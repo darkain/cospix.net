@@ -1,6 +1,6 @@
 <?php
 
-$rows = $db->cache(AF_MINUTE*5)->group(
+$rows = $db->cache(AF_MINUTE*60)->group(
 	[
 		'xx.*',
 		'us.user_name',

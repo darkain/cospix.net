@@ -34,7 +34,7 @@ var afScrollForever = function() {
 			if (prometheus.length) {
 				var html = $(data);
 				html.find('.prometheus-insert').remove();
-				html = html.find('figure').unwrap();
+				html = html.find('a').unwrap();
 				html.insertBefore($('.prometheus-insert').first());
 			} else {
 				$('main.cpn-discover').append(data);

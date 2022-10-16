@@ -15,9 +15,9 @@
 		</figure>
 	</a>
 
-	<figure class="prometheus-insert"></figure>
-	<figure class="prometheus-insert"></figure>
-	<figure class="prometheus-insert"></figure>
-	<figure class="prometheus-insert"></figure>
-	<figure class="prometheus-insert"></figure>
+	<a class="prometheus-insert"></a>
+	<a class="prometheus-insert"></a>
+	<a class="prometheus-insert"></a>
+	<a class="prometheus-insert"></a>
+	<a class="prometheus-insert"></a>
 </div>

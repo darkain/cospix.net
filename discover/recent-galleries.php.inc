@@ -1,6 +1,6 @@
 <?php
 
-$result = $db->cache(AF_MINUTE*5)->group(
+$result = $db->cache(AF_MINUTE*60)->group(
 	[
 		'type'	=> pudl::text('gallery'),
 		'id'	=> 'ga.gallery_id',
@@ -29,7 +29,7 @@ $result = $db->cache(AF_MINUTE*5)->group(
 		'gi.gallery_id=ga.gallery_id',
 		'ga.gallery_name'		=> pudl::neq(NULL),
 		'ga.gallery_thumb'		=> pudl::neq(NULL),
-		'ga.gallery_timestamp'	=> pudl::gt( \af\time::from(AF_MONTH*3, AF_MINUTE*5) ),
+		'ga.gallery_timestamp'	=> pudl::gt( \af\time::from(AF_MONTH*24, AF_MINUTE*5) ),
 	],
 	'ga.gallery_id',
 	['total'=>pudl::dsc()]
