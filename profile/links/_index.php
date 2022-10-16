@@ -10,7 +10,7 @@ $user->requireLogin();
 ////////////////////////////////////////////////////////////////////////////////
 $fields	= $db->listFields('pudl_user_social');
 
-$data	= str_replace(['enum(', ')', '\''], '', $fields['social_type']['Type']);
+$data	= str_replace(['enum(', ')', '\''], '', $fields['social_type']['type']);
 
 $types	= (new pudlObject($data, PUDL_CSV))
 			->flip()->ksort(SORT_FLAG_CASE|SORT_STRING);
