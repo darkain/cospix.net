@@ -80,4 +80,11 @@ $('#prometheus-sidebar-menu, #prometheus-menu-background').click(function(){
 	$('#prometheus-sidebar-links').slideToggle();
 	$('#prometheus-menu-background').fadeToggle();
 });
+/*
+$(window).on('resize', function(){
+	if ($('#prometheus-sidebar-menu').css('display') == 'none') {
+		$('#prometheus-sidebar-links').show();
+	}
+});
+*/
 </script>

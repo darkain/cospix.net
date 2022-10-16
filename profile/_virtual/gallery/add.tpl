@@ -2,7 +2,7 @@
 	id="cpn-add-photo"
 	style="min-width:300px">
 	<figure>
-		<img src="[afurl.static]/thumb2/add.svg" />
+		[onshow;svg=static/thumb2/add.svg]
 		<figcaption>
 			<div class="cpn-discover-text">
 				<span>Upload Photos</span>

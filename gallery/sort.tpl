@@ -26,7 +26,7 @@ $(function(){
 		tolerance:				'pointer',
 		delay:					$.support.touch ? 300 : 150,
 		distance:				20,
-		items:					'> figure',
+		items:					'> a',
 		cancel:					'.cpn-no-drag',
 		opacity:				0.7,
 		scroll:					false,

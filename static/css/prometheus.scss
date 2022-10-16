@@ -126,10 +126,6 @@ html, body, #body{
 		font-size:2em;
 	}
 
-	body #body figure.cpn-no-drag {
-		flex-grow:1 !important;
-	}
-
 	body #body table.cpn-folder td {
 		font-size:0.7em;
 	}
@@ -846,15 +842,6 @@ body div.dz-progress {
 #body div.dz-error-mark,
 #body div.dz-success-mark {
 	display:none !important;
-}
-
-#body figure.cpn-no-drag {
-	flex-grow:0 !important;
-	background:rgba(0,0,0,0.5);
-}
-
-#body figure.cpn-no-drag img {
-	object-fit:contain !important;
 }
 
 
