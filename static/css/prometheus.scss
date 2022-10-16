@@ -176,7 +176,8 @@ html, body, #body{
 /*//////////////////////////////////////////////////////////////////////////////
 // Mobile Layout
 //////////////////////////////////////////////////////////////////////////////*/
-@media only screen and (max-width: 480px) {
+/*@media only screen and (max-width: 480px) {*/
+@media only screen and (max-width: 950px) {
 	body {
 		padding-top:		50px;
 	}
@@ -191,6 +192,7 @@ html, body, #body{
 		top:				0;
 		z-index:			5001;
 
+
 		#cospix-logo {
 			display:		none !important;
 		}
@@ -202,7 +204,7 @@ html, body, #body{
 			&#cospix-logo-mobile {
 				height:		40px;
 				width:		calc(100% - 200px);
-				position:	absolute;
+				position:	fixed;
 				top:		5px;
 				left:		100px;
 				right:		100px;
@@ -214,12 +216,19 @@ html, body, #body{
 			}
 		}
 
+		#prometheus-sidebar-links::before {
+			content: "";
+			height:45px;
+			display:block
+		}
+
 		#prometheus-sidebar-links {
 			display:		none;
 		}
 
 		#prometheus-sidebar-menu {
 			display:		inline-block;
+			position:		fixed;
 
 			svg {
 				width:		40px;
@@ -1569,4 +1578,10 @@ div.profile-badges {
 			min-width:325px;
 		}
 	}
+}
+
+
+
+div.cpn-gallery {
+	overflow:hidden;
 }

@@ -29,6 +29,8 @@ main p {
 }
 </style>
 
+<div>&nbsp;</div>
+
 <main>
 	<h1>The Long Overdue Cospix Update</h1>
 
@@ -69,3 +71,5 @@ main p {
 	<p>- <a href="https://cospix.net/darkain">Vince</a> <i>(AKA "That One Cospix Guy")</i></p>
 	<br/>
 </main>
+
+<div>&nbsp;</div>
