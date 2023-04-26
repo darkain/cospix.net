@@ -1,5 +1,5 @@
 <a	id="cpn-gallery-create"
-	style="min-width:300px"
+	style="min-width:300px; max-width:800px"
 	data-featherlight="[afurl.base]/gallery/new"
 	lass="cpn-prometheus-item cpn-discover-tag cpn-no-drag">
 	<figure >
