@@ -58,10 +58,10 @@ window.onerror		= function(message,file,line,col,error) {
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="[afurl.static]/jquery/jquery-3.3.1.min.js"><\/script>')</script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="[afurl.static]/jquery/jquery-3.6.4.min.js"><\/script>')</script>
 
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
 <script>window.jQuery.ui || document.write('<script src="[afurl.static]/jquery/jquery-ui.min.js"><\/script>')</script>
 
 <script src="[afurl.static]/js/altaform.js[afurl.gz]?[af.config.hash.js]"></script>
