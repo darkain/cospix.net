@@ -46,7 +46,7 @@ main p {
 	
 	<p>However, now that things have settled, in 2023 the exact opposite is now the case. That little burst of energy is gone, and interest from others has dropped to zero.</p>
 	
-	<p>This isn't limited to just the Cospix web site however, there have been many negative personal interactions this year that have really pushed me away from the cosplay community as a whole. As such, maintaining this site these days gives me a sense of dread rather than a burst of enjoyment it once did.</p>
+	<p>This isn't limited to just the Cospix web site however, there have been many negative personal interactions this year that have really pushed me away from the cosplay community as a whole. As such, maintaining this site these days gives me a sense of dread rather than a burst of enjoyment it once did. This isn't to say the community as a whole is bad, quite the opposite! However, the few key negative experiences this year have hit me very hard.</p>
 
 	<p>The site will stay online for the time being so those that want to archive their content can. I'm once again pushing hard forward in my career away from Cospix, so won't be spending the time to actually shut off the infrastructure for the time being.</p>
 	
