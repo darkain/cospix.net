@@ -32,6 +32,26 @@ main p {
 <div>&nbsp;</div>
 
 <main>
+	<h1>The End of Cospix</h1>
+	
+	<p>The TLDR is that as of now, I don't see much of a reason to keep this site active online anymore.</p>
+	
+	<p>The active user base has dropped to virtually zero, and the wants and needs of the overall Cosplay community have changed since this project launched a decade ago.</p>
+	
+	<p>First, this isn't an idea I take lightly. I've given it great thought. Four years of thought, in fact, as I was already considering closing Cospix back in 2019 after the formal company disolved.</p>
+
+	<p>Why didn't I? My life honestly was too busy with my career at the time to really make a decision one way or another. And then the pandemic happened a year later. I decided to see how things would play out with my free time during the pandemic, and what "return to normal" would look like afterwardss.</p>
+	
+	<p>2022 was an absolutely fun and fantastic year for the small handful of events that I attended, and things seemed to be on an upward trend again with everyone excited to see each other once again.</p>
+	
+	<p>However, now that things have settled, in 2023 the exact opposite is now the case. That little burst of energy is gone, and interest from others has dropped to zero.</p>
+	
+	<p>This isn't limited to just the Cospix web site however, there have been many negative personal interactions this year that have really pushed me away from the cosplay community as a whole. As such, maintaining this site these days gives me a sense of dread rather than a burst of enjoyment it once did.</p>
+
+	<p>The site will stay online for the time being so those that want to archive their content can. I'm once again pushing hard forward in my career away from Cospix, so won't be spending the time to actually shut off the infrastructure for the time being.</p>
+	
+	
+<!--
 	<h1>The Long Overdue Cospix Update</h1>
 
 	<p>Hey there, <a href="https://cospix.net/darkain">Vince</a> here!</p>
@@ -70,6 +90,7 @@ main p {
 	<br/>
 	<p>- <a href="https://cospix.net/darkain">Vince</a> <i>(AKA "That One Cospix Guy")</i></p>
 	<br/>
+-->
 </main>
 
 <div>&nbsp;</div>
