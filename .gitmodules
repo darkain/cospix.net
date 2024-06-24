@@ -46,10 +46,6 @@
 	path = _facebook
 	url = git@github.com:darkain/facebook-php-sdk.git
 
-[submodule "_products"]
-	path = _products
-	url = git@github.com:darkain/Amazon-ECS-PHP-Library.git
-
 [submodule "_scss"]
 	path = _scss
 	url = git@github.com:scssphp/scssphp.git
