@@ -211,7 +211,7 @@ foreach ($menu as $key => $item) {
 ////////////////////////////////////////////////////////////////////////////////
 // AMAZON PRODUCTS
 ////////////////////////////////////////////////////////////////////////////////
-require_once('_altaform/modules/product.php');
+// require_once('_altaform/modules/product.php');
 
 $product	= [];
 $search		= afString::unslash($group['group_label']);
